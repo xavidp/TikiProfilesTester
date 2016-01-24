@@ -75,6 +75,9 @@ rm(profilesList)
 if (!dir.exists(file.path(getwd(), "log"))) {
   dir.create(file.path(getwd(), "log"))
 }
+if (!dir.exists(file.path(getwd(), "results"))) {
+  dir.create(file.path(getwd(), "results"))
+}
 profilesList <- fread("Tiki12_Profiles_List.csv", stringsAsFactors=FALSE, data.table=FALSE)
 profilesResults <- cbind(Version, Revision, N, profilesList, N.Errors,
                       N.Notices, N.Warnings, stringsAsFactors=FALSE)
@@ -108,7 +111,7 @@ for (vv in 1:length(Versions)) {
     
     } # end of ii loop (profile ID)
   
-    write.csv(profilesResults, paste0(format(Sys.Date(), "%y%m%d_Tiki_"), Versions[vv], "_ProfilesResults.csv"), row.names=F)
+    write.csv(profilesResults, file.path("results", paste0(format(Sys.Date(), "%y%m%d_Tiki_"), Versions[vv], "_ProfilesResults.csv")), row.names=F)
   
 } # end of loop for Tiki version
 #RRprofStop()
