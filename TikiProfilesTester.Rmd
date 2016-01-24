@@ -119,12 +119,12 @@ for (vv in 1:length(Versions)) {
                                length(warnings[[ii]]) 
                                )
         if (length(error[[ii]]) > 0) {
-              cat(error[[ii]], file=file.path("results", format(Sys.Date(), "%y%m%d"), "errors_", Versions[vv], "_p", sprintf("%02d", ii),"__", profilesList[ii,2],".txt")))
+              cat(error[[ii]], file=file.path(getwd(), "results", format(Sys.Date(), "%y%m%d"), paste0("errors_", Versions[vv], "_p", sprintf("%02d", ii),"__", profilesList[ii,2],".txt")))
         }
 
     } # end of ii loop (profile ID)
   
-    write.csv(profilesResults, "results_", Versions[vv], ".csv")), row.names=F)
+    write.csv(profilesResults, file.path(getwd(), "results", format(Sys.Date(), "%y%m%d"), paste0("results_", Versions[vv], ".csv")), row.names=F)
   
 } # end of loop for Tiki version
 #RRprofStop()
@@ -142,10 +142,10 @@ head(profilesResults)
 # Some bar chart
 require(rCharts)
 profilesResults.all <- list()
-results.files <- list.files(file.path("results", format(Sys.Date(), "%y%m%d")), pattern="results", ignore.case=T)
+results.files <- list.files(file.path(getwd(), "results", format(Sys.Date(), "%y%m%d")), pattern="results", ignore.case=T)
 if (length(results.files) > 0 ) {
   for (ff in 1:length(results.files)) {
-    profilesResults.all[[ff]] <- fread(file.path("results", format(Sys.Date(), "%y%m%d"), results.files[ff])) 
+    profilesResults.all[[ff]] <- fread(file.path(getwd(), "results", format(Sys.Date(), "%y%m%d"), results.files[ff])) 
     p.r <- rbindlist(profilesResults.all, use.names=T, fill=FALSE, idcol=NULL)
     p.e <- subset(as.data.frame(p.r), N.Errors > 0)
     p.n <- subset(as.data.frame(p.r), N.Notices > 0)
