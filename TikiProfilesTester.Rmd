@@ -1,0 +1,125 @@
+---
+title: "TikiProfilesTester"
+author: "Xavier de Pedro Puente"
+output: html_document
+---
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r install and load required packages}
+source("http://bioconductor.org/biocLite.R")
+#    biocLite("Rgraphviz")
+#install.packages("GUIProfiler")
+#install.packages("readr") # you only need to do this one time on your system
+#install.packages("data.table")
+#install.packages("R.utils")
+require(readr)
+require(GUIProfiler)
+require(data.table)
+require(R.utils)
+```
+
+Example of output when the profile application failed:
+root@penguinbookpro:/var/www/html/trunk# php console.php d:i --force;php console.php cache:clear --all;php console.php profile:apply Voting_System
+Installation completed.
+Queries executed successfully: 1392
+Clearing all caches
+Installation failed:
+Applying profile: Voting_System
+Preference set: feature_trackers=y
+Preference set: feature_wiki_argvariable=y
+Preference set: useGroupHome=y
+Preference set: limitedGoGroupHome=y
+Preference set: trackerfield_autoincrement=y
+Preference set: trackerfield_dropdownother=y
+Preference set: wikiplugin_jq=y
+Preference set: instructions=Profile_Voting_System_voting_page
+Added (or modified): tracker "Tracker for the Voting System"
+Added (or modified): tracker_field "Note from the Voting System"
+Added (or modified): tracker_field "Presidency"
+Added (or modified): tracker_field "Vicepresidency"
+Added (or modified): tracker_field "Secretarial"
+Added (or modified): tracker_field "Treasury"
+Added (or modified): tracker_field "Extra Membership 1"
+Added (or modified): tracker_field "Extra Membership 2"
+Added (or modified): tracker_field "Extra Membership 3"
+Added (or modified): tracker_field "Extra Membership 4"
+Added (or modified): tracker_field "Username"
+Added (or modified): tracker_field "Vote #"
+An error occurred: Cannot add user user1 to nonexistent group Group1
+root@penguinbookpro:/var/www/html/trunk# 
+
+
+```{r run command to test another profile}
+output <- list()
+output.splitted <- list()
+outputFilename <- ""
+error <- list()
+notices <- list()
+warnings <- list()
+error.idx <- ""
+notices.idx <- ""
+warnings.idx <- ""
+N.Errors <- ""
+N.Notices <- ""
+N.Warnings <- ""
+Version <- ""
+Revision <- ""
+N <- ""
+profilesResults <- ""
+Versions <- c("12.x", "14.x", "trunk")
+rm(profilesList)
+# make log folder if missing
+if (!dir.exists(file.path(getwd(), "log"))) {
+  dir.create(file.path(getwd(), "log"))
+}
+profilesList <- fread("Tiki12_Profiles_List.csv", stringsAsFactors=FALSE, data.table=FALSE)
+profilesResults <- cbind(Version, Revision, N, profilesList, N.Errors,
+                      N.Notices, N.Warnings, stringsAsFactors=FALSE)
+#RRprofStart()
+for (vv in 1:length(Versions)) {
+  cat(paste0("\n* Version: ", Versions[vv], " -------------------------------------- \n"))
+  Revision <- system(paste0("cd /var/www/html/", Versions[vv],";svn info | grep Revision"), intern=TRUE)
+  Revision <- sub("Revision: ", "r", Revision, fixed=T)
+
+#  for (ii in 1:dim(profilesList)[1]) { # ii counter of profile ID number
+    for (ii in 1:2) {
+    #vv <- 1;ii <- 1;
+  cat(paste0("\n** Profile (", ii, "/", dim(profilesList)[1],"): ", profilesList[ii,2], "\n"))
+  
+    # read all profile
+    outputFilename[ii] <- paste0(Versions[vv], "_", format(Sys.Date(), "%y%m%d"), "_p", sprintf("%02d", ii), "_output_", profilesList[ii,2], ".txt")
+      command <- paste0("cd /var/www/html/", Versions[vv], "/;php console.php d:i --force;php console.php cache:clear --all;php console.php profile:apply ", profilesList[ii,2], " > \"", file.path(getwd(), "log", outputFilename[ii]), "\" 2>&1")
+      system(command)  
+    output[[ii]] <- read_file(file.path(getwd(), "log", outputFilename[ii]))
+    output.splitted[[ii]] <- splitByPattern(output[[ii]], "\n")
+    error.idx <- grep("error", output.splitted[[ii]], fixed=TRUE, value=F)
+    error[[ii]] <- output.splitted[[ii]][error.idx]
+    notices.idx  <- grep("Notice", output.splitted[[ii]], fixed=TRUE, value=F)
+    notices[[ii]] <- output.splitted[[ii]][notices.idx]
+    warnings.idx  <- grep("Warning", output.splitted[[ii]], fixed=TRUE, value=F)
+    warnings[[ii]] <- output.splitted[[ii]][warnings.idx]
+    profilesResults[ii,] <- c(Versions[vv], Revision, sprintf("%02d", ii), profilesList[ii,1:2], length(error[[ii]]),
+                                            length(notices[[ii]]), 
+                                            length(warnings[[ii]]) )
+  
+    
+    } # end of ii loop (profile ID)
+  
+    write.csv(profilesResults, paste0(format(Sys.Date(), "%y%m%d_Tiki_"), Versions[vv], "_ProfilesResults.csv"), row.names=F)
+  
+} # end of loop for Tiki version
+#RRprofStop()
+# Uncomment to open the report
+#RRprofReport()
+
+```
+
+Check the output produced.
+
+```{r, echo=TRUE}
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
