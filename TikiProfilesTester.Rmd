@@ -8,7 +8,7 @@ This is an R Markdown document. Markdown is a simple formatting syntax for autho
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
-```{r install and load required packages}
+```{r install and load required packages, echo = FALSE}
 source("http://bioconductor.org/biocLite.R")
 #    biocLite("Rgraphviz")
 #install.packages("GUIProfiler")
@@ -21,6 +21,13 @@ require(readr)
 require(GUIProfiler)
 require(data.table)
 require(R.utils)
+# Table file.path("results", format(Sys.Date(), "%y%m%d"),
+#head(profilesResults)
+if (!require("DT")) {
+  # install from CRAN
+  install.packages('DT', repos = 'http://cran.rstudio.com')
+}
+require('DT')
 ```
 
 Example of output when the profile application failed:
@@ -62,6 +69,7 @@ error <- list()
 notices <- list()
 warnings <- list()
 error.idx <- list()
+
 notices.idx <- ""
 warnings.idx <- ""
 N.Errors <- ""
@@ -71,8 +79,8 @@ Version <- ""
 Revision <- ""
 N <- ""
 profilesResults <- ""
+profilesResults.all <- list()
 Versions <- c("12.x", "14.x", "trunk")
-rm(profilesList)
 # make log folder if missing
 if (!dir.exists(file.path(getwd(), "log", format(Sys.Date(), "%y%m%d")))) {
   dir.create(file.path(getwd(), "log", format(Sys.Date(), "%y%m%d")), recursive=T)
@@ -91,16 +99,16 @@ for (vv in 1:length(Versions)) {
   Revision <- system(paste0("cd /var/www/html/", Versions[vv],";svn info | grep Revision"), intern=TRUE)
   Revision <- sub("Revision: ", "r", Revision, fixed=T)
 
-  for (ii in 1:dim(profilesList)[1]) { # ii counter of profile ID number
-#    for (ii in 1:2) {
+#  for (ii in 1:dim(profilesList)[1]) { # ii counter of profile ID number
+    for (ii in 1:2) {
     #vv <- 1;ii <- 1;
   cat(paste0("\n** Profile (", ii, "/", dim(profilesList)[1],"): ", profilesList[ii,2], "\n"))
   
     # read all profile
     outputFilename[ii] <- paste0(Versions[vv], "_", format(Sys.Date(), "%y%m%d"), "_p", sprintf("%02d", ii), "_output_", profilesList[ii,2], ".txt")
-      command <- paste0("cd /var/www/html/", Versions[vv], "/;php console.php d:i --force > \"", file.path(getwd(), "log", outputFilename[ii]), "\" 2>&1 ;php console.php cache:clear --all >> \"", file.path(getwd(), "log", outputFilename[ii]), "\" 2>&1;php console.php profile:apply ", profilesList[ii,2], " >> \"", file.path(getwd(), "log", outputFilename[ii]), "\" 2>&1")
+      command <- paste0("cd /var/www/html/", Versions[vv], "/;php console.php d:i --force > \"", file.path(getwd(), "log", format(Sys.Date(), "%y%m%d"), outputFilename[ii]), "\" 2>&1 ;php console.php cache:clear --all >> \"", file.path(getwd(), "log", format(Sys.Date(), "%y%m%d"), outputFilename[ii]), "\" 2>&1;php console.php profile:apply ", profilesList[ii,2], " >> \"", file.path(getwd(), "log", format(Sys.Date(), "%y%m%d"), outputFilename[ii]), "\" 2>&1")
       system(command)  
-    output[[ii]] <- read_file(file.path(getwd(), "log", outputFilename[ii]))
+    output[[ii]] <- read_file(file.path(getwd(), "log", format(Sys.Date(), "%y%m%d"), outputFilename[ii]))
     output.splitted[[ii]] <- splitByPattern(output[[ii]], "\n")
     error.idx[[ii]] <- grep("error", output.splitted[[ii]], fixed=TRUE, value=F)
     error[[ii]] <- output.splitted[[ii]][ error.idx[[ii]] ]
@@ -136,12 +144,6 @@ for (vv in 1:length(Versions)) {
 Check the output produced.
 
 ```{r, echo=TRUE}
-# Table file.path("results", format(Sys.Date(), "%y%m%d"),
-head(profilesResults)
-
-# Some bar chart
-require(rCharts)
-profilesResults.all <- list()
 results.files <- list.files(file.path(getwd(), "results", format(Sys.Date(), "%y%m%d")), pattern="results", ignore.case=T)
 if (length(results.files) > 0 ) {
   for (ff in 1:length(results.files)) {
@@ -150,9 +152,53 @@ if (length(results.files) > 0 ) {
     p.e <- subset(as.data.frame(p.r), N.Errors > 0)
     p.n <- subset(as.data.frame(p.r), N.Notices > 0)
     p.w <- subset(as.data.frame(p.r), N.Warnings > 0)
+    head(p.r)
+    p.e
+    p.n
+    p.w
 
-#n1 <- nPlot(Freq ~ Hair, group = "Eye", data = hair_eye_male, type = "multiBarChart")
-#n1$save("chart.html")
+# Some bar chart
+require(rCharts)
+profilesResults.all <- list()
+    n1 <- nPlot(N.Errors ~ N, group = "Version", data = p.r, type = "multiBarChart")
+    n1$chart(reduceXTicks = F)
+    n1$xAxis(staggerLabels = T)
+    n1$xAxis(rotateLabels=-90)
+    n1$save(file.path(getwd(), "results", format(Sys.Date(), "%y%m%d"), "errors_chart.html"), cdn = F)
+
+    # Some table
+#     require(formattable)
+#     p.r$N <- as.numeric(p.r$N)
+#     formattable(p.r[,3:8], list(
+#                     N.Errors = color_tile("white", "orange"),
+#                     N.Notices = color_tile("white", "orange"),
+#                     N.Warnings = color_tile("white", "orange")
+#                     ))
+
+p.r$N <- as.numeric(p.r$N)
+p.r$N.Errors <- as.numeric(p.r$N.Errors)
+p.r$N.Notices <- as.numeric(p.r$N.Notices)
+p.r$N.Warnings <- as.numeric(p.r$N.Warnings)
+require(DT)
+    d = data.frame(
+      p.r,
+      stringsAsFactors = FALSE
+    )
+    dt <- datatable(d, filter = 'bottom', options = list(pageLength = 10)) %>%
+    formatStyle('N.Errors',  
+                color = styleInterval(c(0.5, 10), c('black', 'red', 'blue')),
+                backgroundColor = styleInterval(0.5, c('white', 'yellow')),
+                fontWeight = styleInterval(0.5, c('italics', 'bold'))) %>%
+    formatStyle('N.Notices',  
+                color = styleInterval(c(2, 5, 10), c('blue', 'red', 'green', 'brown')),
+                backgroundColor = styleInterval(c(2, 5, 50), c('white', 'snow', 'lightyellow', 'lightgrey'))) %>%
+    formatStyle('N.Warnings',
+                background = styleColorBar(p.r$N.Warnings, 'steelblue'),
+                backgroundSize = '100% 90%',
+                backgroundRepeat = 'no-repeat',
+                backgroundPosition = 'center'  )
+ 
+    saveWidget(dt, file.path(getwd(), "results", format(Sys.Date(), "%y%m%d"),'error_summary.html'))
 
   }
   
