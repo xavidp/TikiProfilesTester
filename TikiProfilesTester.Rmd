@@ -162,7 +162,7 @@ require(rCharts)
 profilesResults.all <- list()
     n1 <- nPlot(N.Errors ~ N, group = "Version", data = p.r, type = "multiBarChart")
     n1$chart(reduceXTicks = F)
-    n1$xAxis(staggerLabels = T)
+    n1$xAxis(staggerLabels = F)
     n1$xAxis(rotateLabels=-90)
     n1$save(file.path(getwd(), "results", format(Sys.Date(), "%y%m%d"), "errors_chart.html"), cdn = F)
 
