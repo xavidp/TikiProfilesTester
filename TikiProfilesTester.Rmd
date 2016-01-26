@@ -112,8 +112,8 @@ for (vv in 1:length(Versions)) {
                          stringsAsFactors=FALSE
                          ) 
   
-#  for (ii in 1:dim(profilesList)[1]) { # ii counter of profile ID number
-    for (ii in 1:2) {
+  for (ii in 1:dim(profilesList)[1]) { # ii counter of profile ID number
+#    for (ii in 1:2) {
     #vv <- 1;ii <- 1;
   cat(paste0("** Profile (", ii, "/", dim(profilesList)[1],"): ", profilesList[ii,paste0("ProfileName_", Versions[vv])], "\n"))
   
