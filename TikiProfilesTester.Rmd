@@ -9,25 +9,53 @@ This is an R Markdown document. Markdown is a simple formatting syntax for autho
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
 ```{r install and load required packages, echo=FALSE}
-source("http://bioconductor.org/biocLite.R")
-#    biocLite("Rgraphviz")
-#install.packages("GUIProfiler")
-#install.packages("readr") # you only need to do this one time on your system
-#install.packages("data.table")
-#install.packages("R.utils")
-#require(devtools)
-#install_github('rCharts', 'ramnathv')
-require(readr)
-require(GUIProfiler)
-require(data.table)
-require(R.utils)
-# Table file.path("results", format(Sys.Date(), "%y%m%d"),
-#head(profilesResults)
+#############################
+# Package dependencies
+#############################
+## ----librerias, eval=TRUE------------------------------------------------
+## Bioconductor
+installifnot <- function (pckgName){
+  if(!(require(pckgName, character.only=TRUE))){
+    source("http://Bioconductor.org/biocLite.R")
+    biocLite(pckgName)
+  }
+}
+# Names of packages to be installed from BIOCONDUCTOR if not present yet in this machine
+pBIOC <- c("Rgraphviz")
+
+if( any(!pBIOC %in% rownames(installed.packages())) ){
+  installifnot(pBIOC[!pBIOC %in% rownames(installed.packages())])
+}
+
+# Names of packages to be installed from CRAN if not present yet in this machine
+pCRAN <- c("devtools",
+           "GUIProfiler".
+           "readr",
+           "data.table",
+           "R.utils")
+
 if (!require("DT")) {
   # install from CRAN
   install.packages('DT', repos = 'http://cran.rstudio.com')
 }
 require('DT')
+
+if( any(!pCRAN %in% rownames(installed.packages())) ){
+  install.packages(pCRAN[!pCRAN %in% rownames(installed.packages())])
+}
+
+if(!require(rCharts)) install_github('rCharts', 'ramnathv')
+#if(!require(plotly)) devtools::install_github("ropensci/plotly")
+#if(!require(Nozzle.R1)) install.packages( "Nozzle.R1", type="source" );
+# "Nozzle: a report generation toolkit for data analysis pipelines"
+# http://bioinformatics.oxfordjournals.org/content/early/2013/02/17/bioinformatics.btt085
+
+#Load required libraries
+packages <- c(pBIOC, pCRAN)
+for (ii in 1:length(packages)) {
+  require(as.character(packages[ii]), character.only=TRUE)
+}
+
 ```
 
 Example of output when the profile application failed:
@@ -187,7 +215,7 @@ profilesResults.all <- list()
     n1$chart(reduceXTicks = F)
     n1$xAxis(staggerLabels = F)
     n1$xAxis(rotateLabels=-90)
-    n1$save(file.path(getwd(), "results", format(Sys.Date(), "%y%m%d"), "error_chart.html"), cdn = F)
+    n1$save(file.path(getwd(), "results", format(Sys.Date(), "%y%m%d"), "error_chart.html"), cdn = T)
 
 p.r$N <- as.numeric(p.r$N)
 p.r$N.Errors <- as.numeric(p.r$N.Errors)
