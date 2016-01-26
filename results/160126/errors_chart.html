@@ -1,0 +1,450 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='/usr/local/lib/R/site-library/rCharts/libraries/nvd3/css/nv.d3.css'>
+    <link rel='stylesheet' href='/usr/local/lib/R/site-library/rCharts/libraries/nvd3/css/rNVD3.css'>
+    
+    <script src='/usr/local/lib/R/site-library/rCharts/libraries/nvd3/js/jquery-1.8.2.min.js' type='text/javascript'></script>
+    <script src='/usr/local/lib/R/site-library/rCharts/libraries/nvd3/js/d3.v3.min.js' type='text/javascript'></script>
+    <script src='/usr/local/lib/R/site-library/rCharts/libraries/nvd3/js/nv.d3.min-new.js' type='text/javascript'></script>
+    <script src='/usr/local/lib/R/site-library/rCharts/libraries/nvd3/js/fisheye.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart4b8aaa1adfa' class = 'rChart nvd3'></div>    
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart4b8aaa1adfa()
+    });
+    function drawchart4b8aaa1adfa(){  
+      var opts = {
+ "dom": "chart4b8aaa1adfa",
+"width":    800,
+"height":    400,
+"x": "N",
+"y": "N.Errors",
+"group": "Version",
+"type": "multiBarChart",
+"id": "chart4b8aaa1adfa" 
+},
+        data = [
+ {
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "01",
+"ProfileCategory": "Featured Site Profiles",
+"ProfileName_trunk": "Collaborative_Community_12x",
+"N.Errors": "0",
+"N.Notices": "18",
+"N.Warnings": "0",
+"N.StrictsStd": "1" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "02",
+"ProfileCategory": "Featured Site Profiles",
+"ProfileName_trunk": "Company_Intranet_12x",
+"N.Errors": "0",
+"N.Notices": "37",
+"N.Warnings": "27",
+"N.StrictsStd": "1" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "03",
+"ProfileCategory": "Featured Site Profiles",
+"ProfileName_trunk": "Personal_Blog_and_Profile_12x",
+"N.Errors": "0",
+"N.Notices": "25",
+"N.Warnings": "8",
+"N.StrictsStd": "1" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "04",
+"ProfileCategory": "Featured Site Profiles",
+"ProfileName_trunk": "Small_Organization_Web_Presence_12x",
+"N.Errors": "0",
+"N.Notices": "11",
+"N.Warnings": "0",
+"N.StrictsStd": "1" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "05",
+"ProfileCategory": "Useful Micro Configurations",
+"ProfileName_trunk": "Collaborative_Community_Wiki_menupage",
+"N.Errors": "0",
+"N.Notices": "0",
+"N.Warnings": "0",
+"N.StrictsStd": "0" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "06",
+"ProfileCategory": "Useful Micro Configurations",
+"ProfileName_trunk": "Random_header_images_14",
+"N.Errors": "1",
+"N.Notices": "0",
+"N.Warnings": "0",
+"N.StrictsStd": "0" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "07",
+"ProfileCategory": "Useful Micro Configurations",
+"ProfileName_trunk": "Multilingual_Wiki_12x",
+"N.Errors": "0",
+"N.Notices": "0",
+"N.Warnings": "0",
+"N.StrictsStd": "0" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "08",
+"ProfileCategory": "Useful Micro Configurations",
+"ProfileName_trunk": "Countries_By_Region",
+"N.Errors": "0",
+"N.Notices": "0",
+"N.Warnings": "0",
+"N.StrictsStd": "0" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "09",
+"ProfileCategory": "Useful Changes in Display Mode",
+"ProfileName_trunk": "Mobile",
+"N.Errors": "0",
+"N.Notices": "1",
+"N.Warnings": "0",
+"N.StrictsStd": "0" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "10",
+"ProfileCategory": "Useful Changes in Display Mode",
+"ProfileName_trunk": "Slideshow_demo",
+"N.Errors": "0",
+"N.Notices": "0",
+"N.Warnings": "0",
+"N.StrictsStd": "0" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "11",
+"ProfileCategory": "Useful New Technology Configurations",
+"ProfileName_trunk": "Together",
+"N.Errors": "0",
+"N.Notices": "0",
+"N.Warnings": "0",
+"N.StrictsStd": "0" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "12",
+"ProfileCategory": "Useful New Technology Configurations",
+"ProfileName_trunk": "Post-it_Sticky_Note",
+"N.Errors": "0",
+"N.Notices": "0",
+"N.Warnings": "0",
+"N.StrictsStd": "0" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "13",
+"ProfileCategory": "Useful Administration Configurations",
+"ProfileName_trunk": "Debug_Mode_Enabled",
+"N.Errors": "0",
+"N.Notices": "0",
+"N.Warnings": "0",
+"N.StrictsStd": "0" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "14",
+"ProfileCategory": "Useful Administration Configurations",
+"ProfileName_trunk": "Debug_Mode_Disabled",
+"N.Errors": "0",
+"N.Notices": "0",
+"N.Warnings": "0",
+"N.StrictsStd": "0" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "15",
+"ProfileCategory": "Demo of Commonly Used Configurations",
+"ProfileName_trunk": "User_Trackers",
+"N.Errors": "0",
+"N.Notices": "0",
+"N.Warnings": "0",
+"N.StrictsStd": "0" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "16",
+"ProfileCategory": "Demo of Commonly Used Configurations",
+"ProfileName_trunk": "Custom_Contact_Form",
+"N.Errors": "0",
+"N.Notices": "0",
+"N.Warnings": "0",
+"N.StrictsStd": "0" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "17",
+"ProfileCategory": "Demo of Commonly Used Configurations",
+"ProfileName_trunk": "Dynamic_items_list",
+"N.Errors": "0",
+"N.Notices": "0",
+"N.Warnings": "0",
+"N.StrictsStd": "0" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "18",
+"ProfileCategory": "Demo of Commonly Used Configurations",
+"ProfileName_trunk": "Sortable Tables",
+"N.Errors": "0",
+"N.Notices": "0",
+"N.Warnings": "0",
+"N.StrictsStd": "0" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "19",
+"ProfileCategory": "Demo of Interesting Use Cases",
+"ProfileName_trunk": "Bug_Tracker",
+"N.Errors": "0",
+"N.Notices": "0",
+"N.Warnings": "0",
+"N.StrictsStd": "0" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "20",
+"ProfileCategory": "Demo of Interesting Use Cases",
+"ProfileName_trunk": "Time_Sheet",
+"N.Errors": "0",
+"N.Notices": "2",
+"N.Warnings": "0",
+"N.StrictsStd": "0" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "21",
+"ProfileCategory": "Demo of Interesting Use Cases",
+"ProfileName_trunk": "Tracker_as_Calendar_12 ",
+"N.Errors": "0",
+"N.Notices": "0",
+"N.Warnings": "0",
+"N.StrictsStd": "0" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "22",
+"ProfileCategory": "Demo of Interesting Use Cases",
+"ProfileName_trunk": "Voting_System",
+"N.Errors": "0",
+"N.Notices": "0",
+"N.Warnings": "0",
+"N.StrictsStd": "0" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "23",
+"ProfileCategory": "Demo of Other Interesting Use Cases",
+"ProfileName_trunk": "Structured Master Documents",
+"N.Errors": "0",
+"N.Notices": "0",
+"N.Warnings": "0",
+"N.StrictsStd": "0" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "24",
+"ProfileCategory": "Demo of Other Interesting Use Cases",
+"ProfileName_trunk": "Consensus Forums",
+"N.Errors": "0",
+"N.Notices": "0",
+"N.Warnings": "0",
+"N.StrictsStd": "0" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "25",
+"ProfileCategory": "Demo of Other Interesting Use Cases",
+"ProfileName_trunk": "Barter_Market",
+"N.Errors": "0",
+"N.Notices": "16",
+"N.Warnings": "15",
+"N.StrictsStd": "1" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "26",
+"ProfileCategory": "Demo of Other Interesting Use Cases",
+"ProfileName_trunk": "Revision Approval",
+"N.Errors": "0",
+"N.Notices": "0",
+"N.Warnings": "0",
+"N.StrictsStd": "0" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "27",
+"ProfileCategory": "Demo of More Advanced Configurations",
+"ProfileName_trunk": "Shoping_Cart",
+"N.Errors": "0",
+"N.Notices": "0",
+"N.Warnings": "0",
+"N.StrictsStd": "0" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "28",
+"ProfileCategory": "Demo of More Advanced Configurations",
+"ProfileName_trunk": "Easy GeoBlog",
+"N.Errors": "0",
+"N.Notices": "0",
+"N.Warnings": "0",
+"N.StrictsStd": "0" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "29",
+"ProfileCategory": "Highly Specialized Configurations",
+"ProfileName_trunk": "Cartograf",
+"N.Errors": "0",
+"N.Notices": "14",
+"N.Warnings": "1",
+"N.StrictsStd": "2" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "30",
+"ProfileCategory": "Highly Specialized Configurations",
+"ProfileName_trunk": "R_demo",
+"N.Errors": "0",
+"N.Notices": "0",
+"N.Warnings": "0",
+"N.StrictsStd": "0" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "31",
+"ProfileCategory": "Highly Specialized Configurations",
+"ProfileName_trunk": "R_Heatmaps",
+"N.Errors": "0",
+"N.Notices": "0",
+"N.Warnings": "0",
+"N.StrictsStd": "0" 
+},
+{
+ "Version": "trunk",
+"Revision": "r57318",
+"N": "32",
+"ProfileCategory": "Extra",
+"ProfileName_trunk": "Conditional_Display_in_Forms_14",
+"N.Errors": "4",
+"N.Notices": "16",
+"N.Warnings": "0",
+"N.StrictsStd": "0" 
+} 
+]
+  
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .width(opts.width)
+          .height(opts.height)
+          
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+          
+         
+        chart
+  .reduceXTicks(false)
+          
+        chart.xAxis
+  .staggerLabels(false)
+  .rotateLabels(   -90)
+
+        
+        
+        
+      
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+    
+    <script></script>    
+  </body>
+</html>
