@@ -187,7 +187,7 @@ profilesResults.all <- list()
     n1$chart(reduceXTicks = F)
     n1$xAxis(staggerLabels = F)
     n1$xAxis(rotateLabels=-90)
-    n1$save(file.path(getwd(), "results", format(Sys.Date(), "%y%m%d"), "errors_chart.html"), cdn = F)
+    n1$save(file.path(getwd(), "results", format(Sys.Date(), "%y%m%d"), "error_chart.html"), cdn = F)
 
 p.r$N <- as.numeric(p.r$N)
 p.r$N.Errors <- as.numeric(p.r$N.Errors)
