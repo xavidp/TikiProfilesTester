@@ -102,6 +102,7 @@ img {
 <pre><code>## The following objects are masked from 'package:base':
 ## 
 ##     cat, commandArgs, getOption, inherits, isOpen, parse, warnings</code></pre>
+<pre><code>## Loading required package: DT</code></pre>
 <p>Example of output when the profile application failed: <a href="mailto:root@penguinbookpro">root@penguinbookpro</a>:/var/www/html/trunk# php console.php d:i –force;php console.php cache:clear –all;php console.php profile:apply Voting_System Installation completed. Queries executed successfully: 1392 Clearing all caches Installation failed: Applying profile: Voting_System Preference set: feature_trackers=y Preference set: feature_wiki_argvariable=y Preference set: useGroupHome=y Preference set: limitedGoGroupHome=y Preference set: trackerfield_autoincrement=y Preference set: trackerfield_dropdownother=y Preference set: wikiplugin_jq=y Preference set: instructions=Profile_Voting_System_voting_page Added (or modified): tracker “Tracker for the Voting System” Added (or modified): tracker_field “Note from the Voting System” Added (or modified): tracker_field “Presidency” Added (or modified): tracker_field “Vicepresidency” Added (or modified): tracker_field “Secretarial” Added (or modified): tracker_field “Treasury” Added (or modified): tracker_field “Extra Membership 1” Added (or modified): tracker_field “Extra Membership 2” Added (or modified): tracker_field “Extra Membership 3” Added (or modified): tracker_field “Extra Membership 4” Added (or modified): tracker_field “Username” Added (or modified): tracker_field “Vote #” An error occurred: Cannot add user user1 to nonexistent group Group1 <a href="mailto:root@penguinbookpro">root@penguinbookpro</a>:/var/www/html/trunk#</p>
 <pre class="r"><code>output &lt;- list()
 output.splitted &lt;- list()
@@ -109,13 +110,16 @@ outputFilename &lt;- &quot;&quot;
 error &lt;- list()
 notices &lt;- list()
 warnings &lt;- list()
+stricstd &lt;- list()
 error.idx &lt;- list()
 
 notices.idx &lt;- &quot;&quot;
 warnings.idx &lt;- &quot;&quot;
+stricstd.idx &lt;- &quot;&quot;
 N.Errors &lt;- &quot;&quot;
 N.Notices &lt;- &quot;&quot;
 N.Warnings &lt;- &quot;&quot;
+N.StrictsStd &lt;- &quot;&quot;
 Version &lt;- &quot;&quot;
 Revision &lt;- &quot;&quot;
 N &lt;- &quot;&quot;
@@ -129,25 +133,35 @@ if (!dir.exists(file.path(getwd(), &quot;log&quot;, format(Sys.Date(), &quot;%y%
 if (!dir.exists(file.path(getwd(), &quot;results&quot;, format(Sys.Date(), &quot;%y%m%d&quot;)))) {
   dir.create(file.path(getwd(), &quot;results&quot;, format(Sys.Date(), &quot;%y%m%d&quot;)), recursive=T)
 }
-profilesList &lt;- fread(&quot;Tiki12_Profiles_List.csv&quot;, stringsAsFactors=FALSE, data.table=FALSE)
-
-profilesResults &lt;- cbind(Version, Revision, N, profilesList, N.Errors,
-                      N.Notices, N.Warnings, stringsAsFactors=FALSE)  
+profilesList &lt;- fread(&quot;Tiki12_Profiles_List.csv&quot;, stringsAsFactors=FALSE, data.table=FALSE) 
 
 #RRprofStart()
 for (vv in 1:length(Versions)) {
+  
   cat(paste0(&quot;\n* Version: &quot;, Versions[vv], &quot; -------------------------------------- \n&quot;))
   Revision &lt;- system(paste0(&quot;cd /var/www/html/&quot;, Versions[vv],&quot;;svn info | grep Revision&quot;), intern=TRUE)
   Revision &lt;- sub(&quot;Revision: &quot;, &quot;r&quot;, Revision, fixed=T)
 
+  profilesResults &lt;- cbind(Version, 
+                         Revision, 
+                         N, 
+                         profilesList[&quot;ProfileCategory&quot;],
+                         profilesList[paste0(&quot;ProfileName_&quot;, Versions[vv])],
+                         N.Errors,
+                         N.Notices,
+                         N.Warnings,
+                         N.StrictsStd,
+                         stringsAsFactors=FALSE
+                         ) 
+  
 #  for (ii in 1:dim(profilesList)[1]) { # ii counter of profile ID number
     for (ii in 1:2) {
     #vv &lt;- 1;ii &lt;- 1;
-  cat(paste0(&quot;\n** Profile (&quot;, ii, &quot;/&quot;, dim(profilesList)[1],&quot;): &quot;, profilesList[ii,2], &quot;\n&quot;))
+  cat(paste0(&quot;** Profile (&quot;, ii, &quot;/&quot;, dim(profilesList)[1],&quot;): &quot;, profilesList[ii,paste0(&quot;ProfileName_&quot;, Versions[vv])], &quot;\n&quot;))
   
     # read all profile
-    outputFilename[ii] &lt;- paste0(Versions[vv], &quot;_&quot;, format(Sys.Date(), &quot;%y%m%d&quot;), &quot;_p&quot;, sprintf(&quot;%02d&quot;, ii), &quot;_output_&quot;, profilesList[ii,2], &quot;.txt&quot;)
-      command &lt;- paste0(&quot;cd /var/www/html/&quot;, Versions[vv], &quot;/;php console.php d:i --force &gt; \&quot;&quot;, file.path(getwd(), &quot;log&quot;, format(Sys.Date(), &quot;%y%m%d&quot;), outputFilename[ii]), &quot;\&quot; 2&gt;&amp;1 ;php console.php cache:clear --all &gt;&gt; \&quot;&quot;, file.path(getwd(), &quot;log&quot;, format(Sys.Date(), &quot;%y%m%d&quot;), outputFilename[ii]), &quot;\&quot; 2&gt;&amp;1;php console.php profile:apply &quot;, profilesList[ii,2], &quot; &gt;&gt; \&quot;&quot;, file.path(getwd(), &quot;log&quot;, format(Sys.Date(), &quot;%y%m%d&quot;), outputFilename[ii]), &quot;\&quot; 2&gt;&amp;1&quot;)
+    outputFilename[ii] &lt;- paste0(Versions[vv], &quot;_&quot;, format(Sys.Date(), &quot;%y%m%d&quot;), &quot;_p&quot;, sprintf(&quot;%02d&quot;, ii), &quot;_output_&quot;, profilesList[ii,paste0(&quot;ProfileName_&quot;, Versions[vv])], &quot;.txt&quot;)
+      command &lt;- paste0(&quot;cd /var/www/html/&quot;, Versions[vv], &quot;/;php console.php d:i --force &gt; \&quot;&quot;, file.path(getwd(), &quot;log&quot;, format(Sys.Date(), &quot;%y%m%d&quot;), outputFilename[ii]), &quot;\&quot; 2&gt;&amp;1 ;php console.php cache:clear --all &gt;&gt; \&quot;&quot;, file.path(getwd(), &quot;log&quot;, format(Sys.Date(), &quot;%y%m%d&quot;), outputFilename[ii]), &quot;\&quot; 2&gt;&amp;1;php console.php profile:apply &quot;, profilesList[ii,paste0(&quot;ProfileName_&quot;, Versions[vv])], &quot; &gt;&gt; \&quot;&quot;, file.path(getwd(), &quot;log&quot;, format(Sys.Date(), &quot;%y%m%d&quot;), outputFilename[ii]), &quot;\&quot; 2&gt;&amp;1&quot;)
       system(command)  
     output[[ii]] &lt;- read_file(file.path(getwd(), &quot;log&quot;, format(Sys.Date(), &quot;%y%m%d&quot;), outputFilename[ii]))
     output.splitted[[ii]] &lt;- splitByPattern(output[[ii]], &quot;\n&quot;)
@@ -159,16 +173,20 @@ for (vv in 1:length(Versions)) {
     notices[[ii]] &lt;- output.splitted[[ii]][notices.idx]
     warnings.idx  &lt;- grep(&quot;Warning&quot;, output.splitted[[ii]], fixed=TRUE, value=F)
     warnings[[ii]] &lt;- output.splitted[[ii]][warnings.idx]
+    stricstd.idx  &lt;- grep(&quot;Strict Standards&quot;, output.splitted[[ii]], fixed=TRUE, value=F)
+    stricstd[[ii]] &lt;- output.splitted[[ii]][stricstd.idx]
     profilesResults[ii,] &lt;- c(Versions[vv], 
                                Revision, 
                                sprintf(&quot;%02d&quot;, ii),
-                               profilesList[ii,1:2],
+                               profilesList[ii,1],
+                               profilesList[ii, paste0(&quot;ProfileName_&quot;, Versions[vv])],
                                length(error[[ii]]),
                                length(notices[[ii]]),
-                               length(warnings[[ii]]) 
-                               )
+                               length(warnings[[ii]]),
+                               length(stricstd[[ii]])
+                              )
         if (length(error[[ii]]) &gt; 0) {
-              cat(error[[ii]], file=file.path(getwd(), &quot;results&quot;, format(Sys.Date(), &quot;%y%m%d&quot;), paste0(&quot;errors_&quot;, Versions[vv], &quot;_p&quot;, sprintf(&quot;%02d&quot;, ii),&quot;__&quot;, profilesList[ii,2],&quot;.txt&quot;)))
+              cat(error[[ii]], file=file.path(getwd(), &quot;results&quot;, format(Sys.Date(), &quot;%y%m%d&quot;), paste0(&quot;errors_&quot;, Versions[vv], &quot;_p&quot;, sprintf(&quot;%02d&quot;, ii),&quot;__&quot;, profilesList[ii,paste0(&quot;ProfileName_&quot;, Versions[vv])],&quot;.txt&quot;)))
         }
 
     } # end of ii loop (profile ID)
@@ -178,22 +196,16 @@ for (vv in 1:length(Versions)) {
 } # end of loop for Tiki version</code></pre>
 <pre><code>## 
 ## * Version: 12.x -------------------------------------- 
-## 
-## ** Profile (1/31): Collaborative_Community_12x
-## An error occurred: Column 'user' cannot be null
-## ** Profile (2/31): Company_Intranet_12x
+## ** Profile (1/32): Collaborative_Community_12x
+## An error occurred: Column 'user' cannot be null** Profile (2/32): Company_Intranet_12x
 ## 
 ## * Version: 14.x -------------------------------------- 
-## 
-## ** Profile (1/31): Collaborative_Community_12x
-## 
-## ** Profile (2/31): Company_Intranet_12x
+## ** Profile (1/32): Collaborative_Community_12x
+## ** Profile (2/32): Company_Intranet_12x
 ## 
 ## * Version: trunk -------------------------------------- 
-## 
-## ** Profile (1/31): Collaborative_Community_12x
-## 
-## ** Profile (2/31): Company_Intranet_12x</code></pre>
+## ** Profile (1/32): Collaborative_Community_12x
+## ** Profile (2/32): Company_Intranet_12x</code></pre>
 <pre class="r"><code>#RRprofStop()
 # Uncomment to open the report
 #RRprofReport()</code></pre>
@@ -206,43 +218,31 @@ if (length(results.files) &gt; 0 ) {
     p.e &lt;- subset(as.data.frame(p.r), N.Errors &gt; 0)
     p.n &lt;- subset(as.data.frame(p.r), N.Notices &gt; 0)
     p.w &lt;- subset(as.data.frame(p.r), N.Warnings &gt; 0)
+    p.s &lt;- subset(as.data.frame(p.r), N.StrictsStd &gt; 0)
     head(p.r)
     p.e
     p.n
     p.w
+    p.s
 
-# Table file.path(&quot;results&quot;, format(Sys.Date(), &quot;%y%m%d&quot;),
-#head(profilesResults)
-if (!require(&quot;DT&quot;)) {
-  # install from CRAN
-  install.packages('DT', repos = 'http://cran.rstudio.com')
-}
-if (!require(&quot;formattable&quot;)) {
-  install.packages(&quot;formattable&quot;)
-}
-
+#     require(tidyr)
+#     p.r.t &lt;- p.r %&gt;% tidyr::gather(Issue, Freq, N.Errors:N.StrictsStd, na.rm = T)
+#     p.r.t
+    
 # Some bar chart
 require(rCharts)
 profilesResults.all &lt;- list()
     n1 &lt;- nPlot(N.Errors ~ N, group = &quot;Version&quot;, data = p.r, type = &quot;multiBarChart&quot;)
     n1$chart(reduceXTicks = F)
-    n1$xAxis(staggerLabels = T)
+    n1$xAxis(staggerLabels = F)
     n1$xAxis(rotateLabels=-90)
     n1$save(file.path(getwd(), &quot;results&quot;, format(Sys.Date(), &quot;%y%m%d&quot;), &quot;errors_chart.html&quot;), cdn = F)
 
-    # Some table
-#     require(formattable)
-#     p.r$N &lt;- as.numeric(p.r$N)
-#     formattable(p.r[,3:8], list(
-#                     N.Errors = color_tile(&quot;white&quot;, &quot;orange&quot;),
-#                     N.Notices = color_tile(&quot;white&quot;, &quot;orange&quot;),
-#                     N.Warnings = color_tile(&quot;white&quot;, &quot;orange&quot;)
-#                     ))
-
 p.r$N &lt;- as.numeric(p.r$N)
-p.r$N.Error &lt;- as.numeric(p.r$N.Error)
+p.r$N.Errors &lt;- as.numeric(p.r$N.Errors)
 p.r$N.Notices &lt;- as.numeric(p.r$N.Notices)
 p.r$N.Warnings &lt;- as.numeric(p.r$N.Warnings)
+p.r$N.StrictsStd &lt;- as.numeric(p.r$N.StrictsStd)
 require(DT)
     d = data.frame(
       p.r,
@@ -255,25 +255,27 @@ require(DT)
                 fontWeight = styleInterval(0.5, c('italics', 'bold'))) %&gt;%
     formatStyle('N.Notices',  
                 color = styleInterval(c(2, 5, 10), c('blue', 'red', 'green', 'brown')),
-                backgroundColor = styleInterval(c(2, 5, 50), c('white', 'snow', 'lightyellow', 'lightgrey'))) %&gt;%
+                backgroundColor = styleInterval(c(2, 5, 25), c('white', 'snow', 'lightyellow', 'lightgrey'))) %&gt;%
     formatStyle('N.Warnings',
                 background = styleColorBar(p.r$N.Warnings, 'steelblue'),
                 backgroundSize = '100% 90%',
                 backgroundRepeat = 'no-repeat',
-                backgroundPosition = 'center'  )
+                backgroundPosition = 'center'  ) %&gt;%
+    formatStyle('N.StrictsStd',  
+                color = styleInterval(c(2, 5, 10), c('blue', 'red', 'green', 'brown')),
+                backgroundColor = styleInterval(c(2, 5, 25), c('white', 'lightgreen', 'green', 'lightgrey')))
+
  
     saveWidget(dt, file.path(getwd(), &quot;results&quot;, format(Sys.Date(), &quot;%y%m%d&quot;),'error_summary.html'))
+
+  # Save Rda to disk
+  my.rda.file &lt;- paste0(&quot;my.rda&quot;)
+  save(profilesResults.all,
+     file=my.rda.file)
 
   }
   
 }</code></pre>
-<pre><code>## Loading required package: DT</code></pre>
-<pre><code>## Loading required package: formattable</code></pre>
-<pre><code>## 
-## Attaching package: 'formattable'</code></pre>
-<pre><code>## The following object is masked from 'package:Rgraphviz':
-## 
-##     style</code></pre>
 <pre><code>## Loading required package: rCharts</code></pre>
 <pre><code>## 
 ## Attaching package: 'rCharts'</code></pre>

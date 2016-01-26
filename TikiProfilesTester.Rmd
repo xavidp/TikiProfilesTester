@@ -8,7 +8,7 @@ This is an R Markdown document. Markdown is a simple formatting syntax for autho
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
-```{r install and load required packages, echo = FALSE}
+```{r install and load required packages, echo=FALSE}
 source("http://bioconductor.org/biocLite.R")
 #    biocLite("Rgraphviz")
 #install.packages("GUIProfiler")
@@ -68,13 +68,16 @@ outputFilename <- ""
 error <- list()
 notices <- list()
 warnings <- list()
+stricstd <- list()
 error.idx <- list()
 
 notices.idx <- ""
 warnings.idx <- ""
+stricstd.idx <- ""
 N.Errors <- ""
 N.Notices <- ""
 N.Warnings <- ""
+N.StrictsStd <- ""
 Version <- ""
 Revision <- ""
 N <- ""
@@ -88,25 +91,35 @@ if (!dir.exists(file.path(getwd(), "log", format(Sys.Date(), "%y%m%d")))) {
 if (!dir.exists(file.path(getwd(), "results", format(Sys.Date(), "%y%m%d")))) {
   dir.create(file.path(getwd(), "results", format(Sys.Date(), "%y%m%d")), recursive=T)
 }
-profilesList <- fread("Tiki12_Profiles_List.csv", stringsAsFactors=FALSE, data.table=FALSE)
-
-profilesResults <- cbind(Version, Revision, N, profilesList, N.Errors,
-                      N.Notices, N.Warnings, stringsAsFactors=FALSE)  
+profilesList <- fread("Tiki12_Profiles_List.csv", stringsAsFactors=FALSE, data.table=FALSE) 
 
 #RRprofStart()
 for (vv in 1:length(Versions)) {
+  
   cat(paste0("\n* Version: ", Versions[vv], " -------------------------------------- \n"))
   Revision <- system(paste0("cd /var/www/html/", Versions[vv],";svn info | grep Revision"), intern=TRUE)
   Revision <- sub("Revision: ", "r", Revision, fixed=T)
 
+  profilesResults <- cbind(Version, 
+                         Revision, 
+                         N, 
+                         profilesList["ProfileCategory"],
+                         profilesList[paste0("ProfileName_", Versions[vv])],
+                         N.Errors,
+                         N.Notices,
+                         N.Warnings,
+                         N.StrictsStd,
+                         stringsAsFactors=FALSE
+                         ) 
+  
 #  for (ii in 1:dim(profilesList)[1]) { # ii counter of profile ID number
     for (ii in 1:2) {
     #vv <- 1;ii <- 1;
-  cat(paste0("\n** Profile (", ii, "/", dim(profilesList)[1],"): ", profilesList[ii,2], "\n"))
+  cat(paste0("** Profile (", ii, "/", dim(profilesList)[1],"): ", profilesList[ii,paste0("ProfileName_", Versions[vv])], "\n"))
   
     # read all profile
-    outputFilename[ii] <- paste0(Versions[vv], "_", format(Sys.Date(), "%y%m%d"), "_p", sprintf("%02d", ii), "_output_", profilesList[ii,2], ".txt")
-      command <- paste0("cd /var/www/html/", Versions[vv], "/;php console.php d:i --force > \"", file.path(getwd(), "log", format(Sys.Date(), "%y%m%d"), outputFilename[ii]), "\" 2>&1 ;php console.php cache:clear --all >> \"", file.path(getwd(), "log", format(Sys.Date(), "%y%m%d"), outputFilename[ii]), "\" 2>&1;php console.php profile:apply ", profilesList[ii,2], " >> \"", file.path(getwd(), "log", format(Sys.Date(), "%y%m%d"), outputFilename[ii]), "\" 2>&1")
+    outputFilename[ii] <- paste0(Versions[vv], "_", format(Sys.Date(), "%y%m%d"), "_p", sprintf("%02d", ii), "_output_", profilesList[ii,paste0("ProfileName_", Versions[vv])], ".txt")
+      command <- paste0("cd /var/www/html/", Versions[vv], "/;php console.php d:i --force > \"", file.path(getwd(), "log", format(Sys.Date(), "%y%m%d"), outputFilename[ii]), "\" 2>&1 ;php console.php cache:clear --all >> \"", file.path(getwd(), "log", format(Sys.Date(), "%y%m%d"), outputFilename[ii]), "\" 2>&1;php console.php profile:apply ", profilesList[ii,paste0("ProfileName_", Versions[vv])], " >> \"", file.path(getwd(), "log", format(Sys.Date(), "%y%m%d"), outputFilename[ii]), "\" 2>&1")
       system(command)  
     output[[ii]] <- read_file(file.path(getwd(), "log", format(Sys.Date(), "%y%m%d"), outputFilename[ii]))
     output.splitted[[ii]] <- splitByPattern(output[[ii]], "\n")
@@ -118,16 +131,20 @@ for (vv in 1:length(Versions)) {
     notices[[ii]] <- output.splitted[[ii]][notices.idx]
     warnings.idx  <- grep("Warning", output.splitted[[ii]], fixed=TRUE, value=F)
     warnings[[ii]] <- output.splitted[[ii]][warnings.idx]
+    stricstd.idx  <- grep("Strict Standards", output.splitted[[ii]], fixed=TRUE, value=F)
+    stricstd[[ii]] <- output.splitted[[ii]][stricstd.idx]
     profilesResults[ii,] <- c(Versions[vv], 
                                Revision, 
                                sprintf("%02d", ii),
-                               profilesList[ii,1:2],
+                               profilesList[ii,1],
+                               profilesList[ii, paste0("ProfileName_", Versions[vv])],
                                length(error[[ii]]),
                                length(notices[[ii]]),
-                               length(warnings[[ii]]) 
-                               )
+                               length(warnings[[ii]]),
+                               length(stricstd[[ii]])
+                              )
         if (length(error[[ii]]) > 0) {
-              cat(error[[ii]], file=file.path(getwd(), "results", format(Sys.Date(), "%y%m%d"), paste0("errors_", Versions[vv], "_p", sprintf("%02d", ii),"__", profilesList[ii,2],".txt")))
+              cat(error[[ii]], file=file.path(getwd(), "results", format(Sys.Date(), "%y%m%d"), paste0("errors_", Versions[vv], "_p", sprintf("%02d", ii),"__", profilesList[ii,paste0("ProfileName_", Versions[vv])],".txt")))
         }
 
     } # end of ii loop (profile ID)
@@ -143,7 +160,7 @@ for (vv in 1:length(Versions)) {
 
 Check the output produced.
 
-```{r, echo=TRUE}
+```{r output, echo=TRUE}
 results.files <- list.files(file.path(getwd(), "results", format(Sys.Date(), "%y%m%d")), pattern="results", ignore.case=T)
 if (length(results.files) > 0 ) {
   for (ff in 1:length(results.files)) {
@@ -152,11 +169,17 @@ if (length(results.files) > 0 ) {
     p.e <- subset(as.data.frame(p.r), N.Errors > 0)
     p.n <- subset(as.data.frame(p.r), N.Notices > 0)
     p.w <- subset(as.data.frame(p.r), N.Warnings > 0)
+    p.s <- subset(as.data.frame(p.r), N.StrictsStd > 0)
     head(p.r)
     p.e
     p.n
     p.w
+    p.s
 
+#     require(tidyr)
+#     p.r.t <- p.r %>% tidyr::gather(Issue, Freq, N.Errors:N.StrictsStd, na.rm = T)
+#     p.r.t
+    
 # Some bar chart
 require(rCharts)
 profilesResults.all <- list()
@@ -166,19 +189,11 @@ profilesResults.all <- list()
     n1$xAxis(rotateLabels=-90)
     n1$save(file.path(getwd(), "results", format(Sys.Date(), "%y%m%d"), "errors_chart.html"), cdn = F)
 
-    # Some table
-#     require(formattable)
-#     p.r$N <- as.numeric(p.r$N)
-#     formattable(p.r[,3:8], list(
-#                     N.Errors = color_tile("white", "orange"),
-#                     N.Notices = color_tile("white", "orange"),
-#                     N.Warnings = color_tile("white", "orange")
-#                     ))
-
 p.r$N <- as.numeric(p.r$N)
 p.r$N.Errors <- as.numeric(p.r$N.Errors)
 p.r$N.Notices <- as.numeric(p.r$N.Notices)
 p.r$N.Warnings <- as.numeric(p.r$N.Warnings)
+p.r$N.StrictsStd <- as.numeric(p.r$N.StrictsStd)
 require(DT)
     d = data.frame(
       p.r,
@@ -191,14 +206,23 @@ require(DT)
                 fontWeight = styleInterval(0.5, c('italics', 'bold'))) %>%
     formatStyle('N.Notices',  
                 color = styleInterval(c(2, 5, 10), c('blue', 'red', 'green', 'brown')),
-                backgroundColor = styleInterval(c(2, 5, 50), c('white', 'snow', 'lightyellow', 'lightgrey'))) %>%
+                backgroundColor = styleInterval(c(2, 5, 25), c('white', 'snow', 'lightyellow', 'lightgrey'))) %>%
     formatStyle('N.Warnings',
                 background = styleColorBar(p.r$N.Warnings, 'steelblue'),
                 backgroundSize = '100% 90%',
                 backgroundRepeat = 'no-repeat',
-                backgroundPosition = 'center'  )
+                backgroundPosition = 'center'  ) %>%
+    formatStyle('N.StrictsStd',  
+                color = styleInterval(c(2, 5, 10), c('blue', 'red', 'green', 'brown')),
+                backgroundColor = styleInterval(c(2, 5, 25), c('white', 'lightgreen', 'green', 'lightgrey')))
+
  
     saveWidget(dt, file.path(getwd(), "results", format(Sys.Date(), "%y%m%d"),'error_summary.html'))
+
+  # Save Rda to disk
+  my.rda.file <- paste0("my.rda")
+  save(profilesResults.all,
+     file=my.rda.file)
 
   }
   
