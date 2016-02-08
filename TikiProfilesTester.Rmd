@@ -6,7 +6,13 @@ output: html_document
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can also extract the R code from this document with:
+
+> library(knitr)
+> knit(f)  # compile to html
+> purl(f)  # tangle R code
+> purl(f, documentation = 0)  # extract R code only
+> purl(f, documentation = 2)  # also include documentation
 
 ```{r install and load required packages, echo=FALSE}
 #############################
@@ -121,7 +127,7 @@ Revision <- ""
 N <- ""
 profilesResults <- ""
 profilesResults.all <- list()
-Versions <- c("12.x", "14.x", "trunk")
+Versions <- c("12.x", "14.x", "15.x", "trunk")
 # make log folder if missing
 if (!dir.exists(file.path(getwd(), "log", format(Sys.Date(), "%y%m%d")))) {
   dir.create(file.path(getwd(), "log", format(Sys.Date(), "%y%m%d")), recursive=T)
@@ -239,6 +245,7 @@ profilesResults.all <- list()
     p.r.t$Version <- as.character(p.r.t$Version)
     p.r.t.12x    <- subset(p.r.t, Version == "12.x")
     p.r.t.14x    <- subset(p.r.t, Version == "14.x")
+    p.r.t.15x    <- subset(p.r.t, Version == "15.x")
     p.r.t.trunk  <- subset(p.r.t, Version == "trunk")
 
     # First plot a chart with data from all versions analyzed
@@ -259,6 +266,12 @@ profilesResults.all <- list()
     n2.14x$xAxis(staggerLabels = F)
     n2.14x$xAxis(rotateLabels=-90)
     n2.14x$save(file.path(getwd(), "results", format(Sys.Date(), "%y%m%d"), "issue_chart_tiki14x.html"), cdn = F)
+
+    n2.15x <- nPlot(Freq ~ ProfileName_12.x, group = "Issue", data = p.r.t.15x, type = "multiBarChart")
+    n2.15x$chart(reduceXTicks = F)
+    n2.15x$xAxis(staggerLabels = F)
+    n2.15x$xAxis(rotateLabels=-90)
+    n2.15x$save(file.path(getwd(), "results", format(Sys.Date(), "%y%m%d"), "issue_chart_tiki15x.html"), cdn = F)
 
     n2.trunk <- nPlot(Freq ~ ProfileName_12.x, group = "Issue", data = p.r.t.trunk, type = "multiBarChart")
     n2.trunk$chart(reduceXTicks = F)
