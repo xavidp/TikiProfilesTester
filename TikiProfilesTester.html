@@ -67,19 +67,28 @@ img {
 
 
 <p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
-<p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
-<pre><code>## Bioconductor version 3.1 (BiocInstaller 1.18.5), ?biocLite for help</code></pre>
-<pre><code>## A newer version of Bioconductor is available for this version of R,
-##   ?BiocUpgrade for help</code></pre>
-<pre><code>## Loading required package: readr</code></pre>
+<p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can also extract the R code from this document with:</p>
+<blockquote>
+<p>library(knitr) knit(f) # compile to html purl(f) # tangle R code purl(f, documentation = 0) # extract R code only purl(f, documentation = 2) # also include documentation</p>
+</blockquote>
+<pre><code>## Loading required package: DT</code></pre>
+<pre><code>## Loading required package: rCharts</code></pre>
+<pre><code>## Loading required package: Rgraphviz</code></pre>
+<pre><code>## Loading required package: graph</code></pre>
+<pre><code>## Loading required package: grid</code></pre>
+<pre><code>## Loading required package: devtools</code></pre>
 <pre><code>## Loading required package: GUIProfiler</code></pre>
 <pre><code>## Loading required package: Nozzle.R1</code></pre>
 <pre><code>## Loading required package: MASS</code></pre>
 <pre><code>## Loading required package: proftools</code></pre>
-<pre><code>## Loading required package: Rgraphviz</code></pre>
-<pre><code>## Loading required package: graph</code></pre>
-<pre><code>## Loading required package: grid</code></pre>
+<pre><code>## Loading required package: readr</code></pre>
+<pre><code>## 
+## Attaching package: 'readr'</code></pre>
+<pre><code>## The following object is masked from 'package:rCharts':
+## 
+##     read_file</code></pre>
 <pre><code>## Loading required package: data.table</code></pre>
+<pre><code>## Loading required package: tidyr</code></pre>
 <pre><code>## Loading required package: R.utils</code></pre>
 <pre><code>## Loading required package: R.oo</code></pre>
 <pre><code>## Loading required package: R.methodsS3</code></pre>
@@ -87,6 +96,9 @@ img {
 <pre><code>## R.oo v1.19.0 (2015-02-27) successfully loaded. See ?R.oo for help.</code></pre>
 <pre><code>## 
 ## Attaching package: 'R.oo'</code></pre>
+<pre><code>## The following objects are masked from 'package:devtools':
+## 
+##     check, unload</code></pre>
 <pre><code>## The following objects are masked from 'package:methods':
 ## 
 ##     getClasses, getMethods</code></pre>
@@ -96,13 +108,21 @@ img {
 <pre><code>## R.utils v2.2.0 (2015-12-09) successfully loaded. See ?R.utils for help.</code></pre>
 <pre><code>## 
 ## Attaching package: 'R.utils'</code></pre>
+<pre><code>## The following object is masked from 'package:tidyr':
+## 
+##     extract</code></pre>
 <pre><code>## The following object is masked from 'package:utils':
 ## 
 ##     timestamp</code></pre>
 <pre><code>## The following objects are masked from 'package:base':
 ## 
 ##     cat, commandArgs, getOption, inherits, isOpen, parse, warnings</code></pre>
-<pre><code>## Loading required package: DT</code></pre>
+<pre class="r"><code>my.rda.file &lt;- paste0(&quot;my.rda&quot;)
+
+if (file.exists(file.path(getwd(), my.rda.file))) {
+    ## ----loadData------------------------------------------------------------
+    load(file=file.path(getwd(), my.rda.file))
+}</code></pre>
 <p>Example of output when the profile application failed: <a href="mailto:root@penguinbookpro">root@penguinbookpro</a>:/var/www/html/trunk# php console.php d:i –force;php console.php cache:clear –all;php console.php profile:apply Voting_System Installation completed. Queries executed successfully: 1392 Clearing all caches Installation failed: Applying profile: Voting_System Preference set: feature_trackers=y Preference set: feature_wiki_argvariable=y Preference set: useGroupHome=y Preference set: limitedGoGroupHome=y Preference set: trackerfield_autoincrement=y Preference set: trackerfield_dropdownother=y Preference set: wikiplugin_jq=y Preference set: instructions=Profile_Voting_System_voting_page Added (or modified): tracker “Tracker for the Voting System” Added (or modified): tracker_field “Note from the Voting System” Added (or modified): tracker_field “Presidency” Added (or modified): tracker_field “Vicepresidency” Added (or modified): tracker_field “Secretarial” Added (or modified): tracker_field “Treasury” Added (or modified): tracker_field “Extra Membership 1” Added (or modified): tracker_field “Extra Membership 2” Added (or modified): tracker_field “Extra Membership 3” Added (or modified): tracker_field “Extra Membership 4” Added (or modified): tracker_field “Username” Added (or modified): tracker_field “Vote #” An error occurred: Cannot add user user1 to nonexistent group Group1 <a href="mailto:root@penguinbookpro">root@penguinbookpro</a>:/var/www/html/trunk#</p>
 <pre class="r"><code>output &lt;- list()
 output.splitted &lt;- list()
@@ -125,7 +145,7 @@ Revision &lt;- &quot;&quot;
 N &lt;- &quot;&quot;
 profilesResults &lt;- &quot;&quot;
 profilesResults.all &lt;- list()
-Versions &lt;- c(&quot;12.x&quot;, &quot;14.x&quot;, &quot;trunk&quot;)
+Versions &lt;- c(&quot;12.x&quot;, &quot;14.x&quot;, &quot;15.x&quot;, &quot;trunk&quot;)
 # make log folder if missing
 if (!dir.exists(file.path(getwd(), &quot;log&quot;, format(Sys.Date(), &quot;%y%m%d&quot;)))) {
   dir.create(file.path(getwd(), &quot;log&quot;, format(Sys.Date(), &quot;%y%m%d&quot;)), recursive=T)
@@ -263,6 +283,40 @@ for (vv in 1:length(Versions)) {
 ## ** Profile (31/32): R_Heatmaps
 ## ** Profile (32/32): Conditional_Display_in_Forms_14
 ## PHP Parse error:  syntax error, unexpected ';' in /var/www/html/14.x/lib/core/Tracker/Field/Computed.php(125) : eval()'d code on line 1 PHP Parse error:  syntax error, unexpected ';' in /var/www/html/14.x/lib/core/Tracker/Field/Computed.php(125) : eval()'d code on line 1 PHP Parse error:  syntax error, unexpected ';' in /var/www/html/14.x/lib/core/Tracker/Field/Computed.php(125) : eval()'d code on line 1 PHP Parse error:  syntax error, unexpected ';' in /var/www/html/14.x/lib/core/Tracker/Field/Computed.php(125) : eval()'d code on line 1
+## * Version: 15.x -------------------------------------- 
+## ** Profile (1/32): Collaborative_Community_12x
+## ** Profile (2/32): Company_Intranet_12x
+## ** Profile (3/32): Personal_Blog_and_Profile_12x
+## ** Profile (4/32): Small_Organization_Web_Presence_12x
+## ** Profile (5/32): Collaborative_Community_Wiki_menupage
+## ** Profile (6/32): Random_header_images_14
+## PHP Catchable fatal error:  Object of class Zend\Http\Header\Etag could not be converted to string in /var/www/html/15.x/lib/core/TikiDb/Pdo.php on line 75** Profile (7/32): Multilingual_Wiki_12x
+## ** Profile (8/32): Countries_By_Region
+## ** Profile (9/32): Mobile
+## ** Profile (10/32): Slideshow_demo
+## ** Profile (11/32): Together
+## ** Profile (12/32): Post-it_Sticky_Note
+## ** Profile (13/32): Debug_Mode_Enabled
+## ** Profile (14/32): Debug_Mode_Disabled
+## ** Profile (15/32): User_Trackers
+## ** Profile (16/32): Custom_Contact_Form
+## ** Profile (17/32): Dynamic_items_list
+## ** Profile (18/32): Sortable Tables
+## ** Profile (19/32): Bug_Tracker
+## ** Profile (20/32): Time_Sheet
+## ** Profile (21/32): Tracker_as_Calendar_12 
+## ** Profile (22/32): Voting_System
+## ** Profile (23/32): Structured Master Documents
+## ** Profile (24/32): Consensus Forums
+## ** Profile (25/32): Barter_Market
+## ** Profile (26/32): Revision Approval
+## ** Profile (27/32): Shoping_Cart
+## ** Profile (28/32): Easy GeoBlog
+## ** Profile (29/32): Cartograf
+## ** Profile (30/32): R_demo
+## ** Profile (31/32): R_Heatmaps
+## ** Profile (32/32): Conditional_Display_in_Forms_14
+## PHP Parse error:  syntax error, unexpected ';' in /var/www/html/15.x/lib/core/Tracker/Field/Computed.php(125) : eval()'d code on line 1 PHP Parse error:  syntax error, unexpected ';' in /var/www/html/15.x/lib/core/Tracker/Field/Computed.php(125) : eval()'d code on line 1 PHP Parse error:  syntax error, unexpected ';' in /var/www/html/15.x/lib/core/Tracker/Field/Computed.php(125) : eval()'d code on line 1 PHP Parse error:  syntax error, unexpected ';' in /var/www/html/15.x/lib/core/Tracker/Field/Computed.php(125) : eval()'d code on line 1
 ## * Version: trunk -------------------------------------- 
 ## ** Profile (1/32): Collaborative_Community_12x
 ## ** Profile (2/32): Company_Intranet_12x
@@ -304,8 +358,9 @@ for (vv in 1:length(Versions)) {
 <pre class="r"><code>results.files &lt;- list.files(file.path(getwd(), &quot;results&quot;, format(Sys.Date(), &quot;%y%m%d&quot;)), pattern=&quot;results&quot;, ignore.case=T)
 if (length(results.files) &gt; 0 ) {
   for (ff in 1:length(results.files)) {
-    profilesResults.all[[ff]] &lt;- fread(file.path(getwd(), &quot;results&quot;, format(Sys.Date(), &quot;%y%m%d&quot;), results.files[ff])) 
-    p.r &lt;- rbindlist(profilesResults.all, use.names=T, fill=FALSE, idcol=NULL)
+      profilesResults.all[[ff]] &lt;- fread(file.path(getwd(), &quot;results&quot;, format(Sys.Date(), &quot;%y%m%d&quot;), results.files[ff]), data.table=T) 
+    }
+    p.r &lt;- rbindlist(profilesResults.all)
     p.e &lt;- subset(as.data.frame(p.r), N.Errors &gt; 0)
     p.n &lt;- subset(as.data.frame(p.r), N.Notices &gt; 0)
     p.w &lt;- subset(as.data.frame(p.r), N.Warnings &gt; 0)
@@ -315,19 +370,64 @@ if (length(results.files) &gt; 0 ) {
     p.n
     p.w
     p.s
+    p.i &lt;- rbind(p.e, p.n, p.w, p.s)
+  dim(p.i)
+  #base::duplicated(p.i)
+  p.i.u &lt;- p.i[!base::duplicated(p.i),]
+  dim(p.i.u)
+  
+     p.r.t &lt;- p.r %&gt;% tidyr::gather(Issue, Freq, N.Errors:N.StrictsStd, na.rm = T)
+     #colnames(p.r.t)
+     #head(p.r.t[,5:length(colnames(p.r.t))]);tail(p.r.t[,5:length(colnames(p.r.t))]);
 
-#     require(tidyr)
-#     p.r.t &lt;- p.r %&gt;% tidyr::gather(Issue, Freq, N.Errors:N.StrictsStd, na.rm = T)
-#     p.r.t
     
 # Some bar chart
 require(rCharts)
 profilesResults.all &lt;- list()
-    n1 &lt;- nPlot(N.Errors ~ N, group = &quot;Version&quot;, data = p.r, type = &quot;multiBarChart&quot;)
+#    n1 &lt;- nPlot(N.Errors ~ N, group = &quot;Version&quot;, data = p.r, type = &quot;multiBarChart&quot;)
+    n1 &lt;- nPlot(N.Errors ~ ProfileName_12.x, group = &quot;Version&quot;, data = p.r, type = &quot;multiBarChart&quot;)
     n1$chart(reduceXTicks = F)
     n1$xAxis(staggerLabels = F)
     n1$xAxis(rotateLabels=-90)
-    n1$save(file.path(getwd(), &quot;results&quot;, format(Sys.Date(), &quot;%y%m%d&quot;), &quot;errors_chart.html&quot;), cdn = F)
+    n1$save(file.path(getwd(), &quot;results&quot;, format(Sys.Date(), &quot;%y%m%d&quot;), &quot;error_chart.html&quot;), cdn = F)
+
+    # Split the tidied dataset by Tiki versions, so that we can plot also one chart per Version 
+    p.r.t$Version &lt;- as.character(p.r.t$Version)
+    p.r.t.12x    &lt;- subset(p.r.t, Version == &quot;12.x&quot;)
+    p.r.t.14x    &lt;- subset(p.r.t, Version == &quot;14.x&quot;)
+    p.r.t.15x    &lt;- subset(p.r.t, Version == &quot;15.x&quot;)
+    p.r.t.trunk  &lt;- subset(p.r.t, Version == &quot;trunk&quot;)
+
+    # First plot a chart with data from all versions analyzed
+    n2.all &lt;- nPlot(Freq ~ ProfileName_12.x, group = &quot;Issue&quot;, data = p.r.t, type = &quot;multiBarChart&quot;)
+    n2.all$chart(reduceXTicks = F)
+    n2.all$xAxis(staggerLabels = F)
+    n2.all$xAxis(rotateLabels=-90)
+    n2.all$save(file.path(getwd(), &quot;results&quot;, format(Sys.Date(), &quot;%y%m%d&quot;), &quot;issue_chart_all.html&quot;), cdn = F)
+
+    n2.12x &lt;- nPlot(Freq ~ ProfileName_12.x, group = &quot;Issue&quot;, data = p.r.t.12x, type = &quot;multiBarChart&quot;)
+    n2.12x$chart(reduceXTicks = F)
+    n2.12x$xAxis(staggerLabels = F)
+    n2.12x$xAxis(rotateLabels=-90)
+    n2.12x$save(file.path(getwd(), &quot;results&quot;, format(Sys.Date(), &quot;%y%m%d&quot;), &quot;issue_chart_tiki12x.html&quot;), cdn = F)
+
+    n2.14x &lt;- nPlot(Freq ~ ProfileName_12.x, group = &quot;Issue&quot;, data = p.r.t.14x, type = &quot;multiBarChart&quot;)
+    n2.14x$chart(reduceXTicks = F)
+    n2.14x$xAxis(staggerLabels = F)
+    n2.14x$xAxis(rotateLabels=-90)
+    n2.14x$save(file.path(getwd(), &quot;results&quot;, format(Sys.Date(), &quot;%y%m%d&quot;), &quot;issue_chart_tiki14x.html&quot;), cdn = F)
+
+    n2.15x &lt;- nPlot(Freq ~ ProfileName_12.x, group = &quot;Issue&quot;, data = p.r.t.15x, type = &quot;multiBarChart&quot;)
+    n2.15x$chart(reduceXTicks = F)
+    n2.15x$xAxis(staggerLabels = F)
+    n2.15x$xAxis(rotateLabels=-90)
+    n2.15x$save(file.path(getwd(), &quot;results&quot;, format(Sys.Date(), &quot;%y%m%d&quot;), &quot;issue_chart_tiki15x.html&quot;), cdn = F)
+
+    n2.trunk &lt;- nPlot(Freq ~ ProfileName_12.x, group = &quot;Issue&quot;, data = p.r.t.trunk, type = &quot;multiBarChart&quot;)
+    n2.trunk$chart(reduceXTicks = F)
+    n2.trunk$xAxis(staggerLabels = F)
+    n2.trunk$xAxis(rotateLabels=-90)
+    n2.trunk$save(file.path(getwd(), &quot;results&quot;, format(Sys.Date(), &quot;%y%m%d&quot;), &quot;issue_chart_tikitrunk.html&quot;), cdn = F)
 
 p.r$N &lt;- as.numeric(p.r$N)
 p.r$N.Errors &lt;- as.numeric(p.r$N.Errors)
@@ -360,20 +460,13 @@ require(DT)
     saveWidget(dt, file.path(getwd(), &quot;results&quot;, format(Sys.Date(), &quot;%y%m%d&quot;),'error_summary.html'))
 
   # Save Rda to disk
-  my.rda.file &lt;- paste0(&quot;my.rda&quot;)
-  save(profilesResults.all,
-     file=my.rda.file)
-
-  }
+  save(p.r,
+       p.r.t,
+       file=my.rda.file)
   
-}</code></pre>
-<pre><code>## Loading required package: rCharts</code></pre>
-<pre><code>## 
-## Attaching package: 'rCharts'</code></pre>
-<pre><code>## The following object is masked from 'package:readr':
-## 
-##     read_file</code></pre>
-<pre class="r"><code># Pending
+}
+
+# Pending
 # GoogleVis chart?</code></pre>
 <p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
 

@@ -1,0 +1,1 @@
+PHP Catchable fatal error:  Object of class Zend\Http\Header\Etag could not be converted to string in /var/www/html/15.x/lib/core/TikiDb/Pdo.php on line 75
