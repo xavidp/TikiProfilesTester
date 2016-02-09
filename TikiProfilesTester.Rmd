@@ -39,6 +39,8 @@ pCRAN <- c("devtools",
            "readr",
            "data.table",
            "tidyr",
+           "foreach",
+           "doParallel",
            "R.utils")
 
 if (!require("DT")) {
@@ -128,6 +130,12 @@ N <- ""
 profilesResults <- ""
 profilesResults.all <- list()
 Versions <- c("12.x", "14.x", "15.x", "trunk")
+
+# Set the number of cores to use
+## number of cores to use from your computer (with doMC or parallel packages)
+nCores <- detectCores(all.tests = FALSE, logical = FALSE) # In case of doubt, use just all -1 core.
+registerDoParallel(cores=nCores-1)
+
 # make log folder if missing
 if (!dir.exists(file.path(getwd(), "log", format(Sys.Date(), "%y%m%d")))) {
   dir.create(file.path(getwd(), "log", format(Sys.Date(), "%y%m%d")), recursive=T)
@@ -321,3 +329,24 @@ require(DT)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+# fix paths to html in cdn
+
+```{r fix paths to html in cdn}
+
+# ---------------------------
+getwd()
+resultsRelDir <- "results"
+filenames <- list.files(path = file.path(resultsRelDir, format(Sys.Date(), "%y%m%d")), pattern = "html")
+#setwd(resultsRelDir)
+## Replace wrong base path in src param
+#foreach( ff in filenames ){
+replaceResult <- foreach (ff = 1:length(filenames)) %dopar% {
+  #ff <- 1
+  xx <- readLines(file.path(resultsRelDir, format(Sys.Date(), "%y%m%d"), filenames[ff]))
+  yy <- gsub( "href=\'//", "href=\'http://", xx )
+  yy <- gsub( "src=\'//", "src=\'http://", xx )
+  cat(yy, file=file.path(resultsRelDir, format(Sys.Date(), "%y%m%d"), filenames[ff]), sep="\n")
+}
+```
+
