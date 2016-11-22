@@ -53,17 +53,17 @@ if( any(!pCRAN %in% rownames(installed.packages())) ){
   install.packages(pCRAN[!pCRAN %in% rownames(installed.packages())], repos = 'http://cran.rstudio.com')
 }
 
-if(!require(rCharts)) install_github('rCharts', 'ramnathv')
-#if(!require(plotly)) devtools::install_github("ropensci/plotly")
-#if(!require(Nozzle.R1)) install.packages( "Nozzle.R1", type="source" );
-# "Nozzle: a report generation toolkit for data analysis pipelines"
-# http://bioinformatics.oxfordjournals.org/content/early/2013/02/17/bioinformatics.btt085
-
 #Load required libraries
 packages <- c(pBIOC, pCRAN)
 for (ii in 1:length(packages)) {
   require(as.character(packages[ii]), character.only=TRUE)
 }
+
+if(!require(rCharts)) install_github('rCharts', 'ramnathv')
+#if(!require(plotly)) devtools::install_github("ropensci/plotly")
+#if(!require(Nozzle.R1)) install.packages( "Nozzle.R1", type="source" );
+# "Nozzle: a report generation toolkit for data analysis pipelines"
+# http://bioinformatics.oxfordjournals.org/content/early/2013/02/17/bioinformatics.btt085
 
 ```
 ```{r load Rda if available, echo=T}
@@ -129,12 +129,13 @@ Revision <- ""
 N <- ""
 profilesResults <- ""
 profilesResults.all <- list()
-Versions <- c("12.x", "14.x", "15.x", "trunk")
+Versions <- c("12.x", "14.x", "15.x", "16.x", "trunk")
 if (Sys.info()["nodename"]=="r.tiki.org") {
   basepath <- "/var/www/tikiprofiletests/"
 } else {
   basepath <- "/var/www/html/"
 }
+
 # Set the number of cores to use
 ## number of cores to use from your computer (with doMC or parallel packages)
 nCores <- detectCores(all.tests = FALSE, logical = FALSE) # In case of doubt, use just all -1 core.
@@ -258,6 +259,7 @@ profilesResults.all <- list()
     p.r.t.12x    <- subset(p.r.t, Version == "12.x")
     p.r.t.14x    <- subset(p.r.t, Version == "14.x")
     p.r.t.15x    <- subset(p.r.t, Version == "15.x")
+    p.r.t.16x    <- subset(p.r.t, Version == "16.x")
     p.r.t.trunk  <- subset(p.r.t, Version == "trunk")
 
     # First plot a chart with data from all versions analyzed
@@ -285,6 +287,12 @@ profilesResults.all <- list()
     n2.15x$xAxis(rotateLabels=-90)
     n2.15x$save(file.path(getwd(), "results", format(Sys.Date(), "%y%m%d"), "issue_chart_tiki15x.html"), cdn = T)
 
+    n2.16x <- nPlot(Freq ~ ProfileName_12.x, group = "Issue", data = p.r.t.16x, type = "multiBarChart")
+    n2.16x$chart(reduceXTicks = F)
+    n2.16x$xAxis(staggerLabels = F)
+    n2.16x$xAxis(rotateLabels=-90)
+    n2.16x$save(file.path(getwd(), "results", format(Sys.Date(), "%y%m%d"), "issue_chart_tiki16x.html"), cdn = T)
+    
     n2.trunk <- nPlot(Freq ~ ProfileName_12.x, group = "Issue", data = p.r.t.trunk, type = "multiBarChart")
     n2.trunk$chart(reduceXTicks = F)
     n2.trunk$xAxis(staggerLabels = F)
