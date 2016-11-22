@@ -77,7 +77,7 @@ if (file.exists(file.path(getwd(), my.rda.file))) {
 ```
 
 Example of output when the profile application failed:
-root@penguinbookpro:/var/www/html/trunk# php console.php d:i --force;php console.php cache:clear --all;php console.php profile:apply Voting_System
+root@penguinbookpro:/var/www/tikiprofiletests/trunk# php console.php d:i --force;php console.php cache:clear --all;php console.php profile:apply Voting_System
 Installation completed.
 Queries executed successfully: 1392
 Clearing all caches
@@ -104,7 +104,7 @@ Added (or modified): tracker_field "Extra Membership 4"
 Added (or modified): tracker_field "Username"
 Added (or modified): tracker_field "Vote #"
 An error occurred: Cannot add user user1 to nonexistent group Group1
-root@penguinbookpro:/var/www/html/trunk# 
+root@penguinbookpro:/var/www/tikiprofiletests/trunk# 
 
 
 ```{r run command to test another profile}
@@ -130,7 +130,11 @@ N <- ""
 profilesResults <- ""
 profilesResults.all <- list()
 Versions <- c("12.x", "14.x", "15.x", "trunk")
-
+if (Sys.info()["nodename"]=="r.tiki.org") {
+  basepath <- "/var/www/tikiprofiletests/"
+} else {
+  basepath <- "/var/www/html/"
+}
 # Set the number of cores to use
 ## number of cores to use from your computer (with doMC or parallel packages)
 nCores <- detectCores(all.tests = FALSE, logical = FALSE) # In case of doubt, use just all -1 core.
@@ -149,7 +153,7 @@ profilesList <- fread("Tiki12_Profiles_List.csv", stringsAsFactors=FALSE, data.t
 for (vv in 1:length(Versions)) {
   
   cat(paste0("\n* Version: ", Versions[vv], " -------------------------------------- \n"))
-  Revision <- system(paste0("cd /var/www/html/", Versions[vv],";svn info | grep Revision"), intern=TRUE)
+  Revision <- system(paste0("cd ", basepath, Versions[vv],";svn info | grep Revision"), intern=TRUE)
   Revision <- sub("Revision: ", "r", Revision, fixed=T)
 
   profilesResults <- cbind(Version, 
@@ -171,7 +175,7 @@ for (vv in 1:length(Versions)) {
   
     # read all profile
     outputFilename[ii] <- paste0(Versions[vv], "_", format(Sys.Date(), "%y%m%d"), "_p", sprintf("%02d", ii), "_output_", profilesList[ii,paste0("ProfileName_", Versions[vv])], ".txt")
-      command <- paste0("cd /var/www/html/", Versions[vv], "/;php console.php d:i --force > \"", file.path(getwd(), "log", format(Sys.Date(), "%y%m%d"), outputFilename[ii]), "\" 2>&1 ;php console.php cache:clear --all >> \"", file.path(getwd(), "log", format(Sys.Date(), "%y%m%d"), outputFilename[ii]), "\" 2>&1;php console.php profile:apply ", profilesList[ii,paste0("ProfileName_", Versions[vv])], " >> \"", file.path(getwd(), "log", format(Sys.Date(), "%y%m%d"), outputFilename[ii]), "\" 2>&1")
+      command <- paste0("cd ", basepath, Versions[vv], "/;php console.php d:i --force > \"", file.path(getwd(), "log", format(Sys.Date(), "%y%m%d"), outputFilename[ii]), "\" 2>&1 ;php console.php cache:clear --all >> \"", file.path(getwd(), "log", format(Sys.Date(), "%y%m%d"), outputFilename[ii]), "\" 2>&1;php console.php profile:apply ", profilesList[ii,paste0("ProfileName_", Versions[vv])], " >> \"", file.path(getwd(), "log", format(Sys.Date(), "%y%m%d"), outputFilename[ii]), "\" 2>&1")
       system(command)  
     output[[ii]] <- read_file(file.path(getwd(), "log", format(Sys.Date(), "%y%m%d"), outputFilename[ii]))
     output.splitted[[ii]] <- splitByPattern(output[[ii]], "\n")
