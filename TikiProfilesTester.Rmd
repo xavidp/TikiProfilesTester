@@ -14,6 +14,11 @@ When you click the **Knit** button a document will be generated that includes bo
 > purl(f, documentation = 0)  # extract R code only
 > purl(f, documentation = 2)  # also include documentation
 
+
+```{rn Extract R code and save on disk, echo=T}
+purl("TikiProfilesTester.Rmd", documentation = 0)
+```
+
 ```{r install and load required packages, echo=FALSE}
 #############################
 # Package dependencies
