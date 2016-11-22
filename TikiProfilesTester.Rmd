@@ -50,7 +50,7 @@ if (!require("DT")) {
 require('DT')
 
 if( any(!pCRAN %in% rownames(installed.packages())) ){
-  install.packages(pCRAN[!pCRAN %in% rownames(installed.packages())])
+  install.packages(pCRAN[!pCRAN %in% rownames(installed.packages())], repos = 'http://cran.rstudio.com')
 }
 
 #Load required libraries
