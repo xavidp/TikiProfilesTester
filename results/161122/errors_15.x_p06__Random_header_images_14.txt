@@ -1,0 +1,1 @@
+PHP Warning:  PDOStatement::execute(): SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'deleteAfter' at row 1 in /var/www/html/15.x/lib/core/TikiDb/Pdo.php on line 77 An error occurred: Incorrect integer value: '' for column 'deleteAfter' at row 1
