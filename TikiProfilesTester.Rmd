@@ -16,6 +16,7 @@ When you click the **Knit** button a document will be generated that includes bo
 
 
 ```{rn Extract R code and save on disk, echo=T}
+library(knitr)
 purl("TikiProfilesTester.Rmd", documentation = 0)
 ```
 
@@ -130,11 +131,11 @@ N.Notices <- ""
 N.Warnings <- ""
 N.StrictsStd <- ""
 Version <- ""
-Revision <- ""
 N <- ""
 profilesResults <- ""
 profilesResults.all <- list()
 Versions <- c("12.x", "14.x", "15.x", "16.x", "trunk")
+Revision <- rep("", length(Versions))
 if (Sys.info()["nodename"]=="r.tiki.org") {
   basepath <- "/var/www/tikiprofiletests/"
 } else {
@@ -159,11 +160,13 @@ profilesList <- fread("Tiki12_Profiles_List.csv", stringsAsFactors=FALSE, data.t
 for (vv in 1:length(Versions)) {
   
   cat(paste0("\n* Version: ", Versions[vv], " -------------------------------------- \n"))
-  Revision <- system(paste0("cd ", basepath, Versions[vv],";svn info | grep Revision"), intern=TRUE)
-  Revision <- sub("Revision: ", "r", Revision, fixed=T)
-
-  profilesResults <- cbind(Version, 
-                         Revision, 
+  Revision_string <- system(paste0("cd ", basepath, Versions[vv],";svn info | grep Revision"), intern=TRUE)
+  Revision[vv] <- sub("Revision: ", "r", Revision_string, fixed=T)
+  phpv <- unlist(strsplit(system(paste0("php -v"), intern=TRUE)[1], "-"))[1]
+  
+  profilesResults <- cbind(Versions[vv], 
+                         Revision[vv], 
+                         phpv, 
                          N, 
                          profilesList["ProfileCategory"],
                          profilesList[paste0("ProfileName_", Versions[vv])],
@@ -181,7 +184,7 @@ for (vv in 1:length(Versions)) {
   
     # read all profile
     outputFilename[ii] <- paste0(Versions[vv], "_", format(Sys.Date(), "%y%m%d"), "_p", sprintf("%02d", ii), "_output_", profilesList[ii,paste0("ProfileName_", Versions[vv])], ".txt")
-      command <- paste0("cd ", basepath, Versions[vv], "/;php console.php d:i --force > \"", file.path(getwd(), "log", format(Sys.Date(), "%y%m%d"), outputFilename[ii]), "\" 2>&1 ;php console.php cache:clear --all >> \"", file.path(getwd(), "log", format(Sys.Date(), "%y%m%d"), outputFilename[ii]), "\" 2>&1;php console.php profile:apply ", profilesList[ii,paste0("ProfileName_", Versions[vv])], " >> \"", file.path(getwd(), "log", format(Sys.Date(), "%y%m%d"), outputFilename[ii]), "\" 2>&1")
+      command <- paste0("cd ", basepath, Versions[vv], "/;php console.php d:i --force > \"", file.path(getwd(), "log", format(Sys.Date(), "%y%m%d"), outputFilename[ii]), "\" 2>&1 ;php console.php cache:clear --all >> \"", file.path(getwd(), "log", format(Sys.Date(), "%y%m%d"), outputFilename[ii]), "\" 2>&1;php console.php profile:apply NextRepo;php console.php profile:apply ", profilesList[ii,paste0("ProfileName_", Versions[vv])], " >> \"", file.path(getwd(), "log", format(Sys.Date(), "%y%m%d"), outputFilename[ii]), "\" 2>&1")
       system(command)  
     output[[ii]] <- read_file(file.path(getwd(), "log", format(Sys.Date(), "%y%m%d"), outputFilename[ii]))
     output.splitted[[ii]] <- splitByPattern(output[[ii]], "\n")
@@ -196,7 +199,8 @@ for (vv in 1:length(Versions)) {
     stricstd.idx  <- grep("Strict Standards", output.splitted[[ii]], fixed=TRUE, value=F)
     stricstd[[ii]] <- output.splitted[[ii]][stricstd.idx]
     profilesResults[ii,] <- c(Versions[vv], 
-                               Revision, 
+                               Revision[vv], 
+                               phpv,
                                sprintf("%02d", ii),
                                profilesList[ii,1],
                                profilesList[ii, paste0("ProfileName_", Versions[vv])],
