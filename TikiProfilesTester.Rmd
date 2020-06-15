@@ -39,35 +39,6 @@ if (file.exists(file.path(getwd(), my.rda.file))) {
 
 ```
 
-Example of output when the profile application failed:
-root@penguinbookpro:/var/www/tikiprofiletests/trunk# php console.php d:i --force;php console.php cache:clear --all;php console.php profile:apply Voting_System
-Installation completed.
-Queries executed successfully: 1392
-Clearing all caches
-Installation failed:
-Applying profile: Voting_System
-Preference set: feature_trackers=y
-Preference set: feature_wiki_argvariable=y
-Preference set: useGroupHome=y
-Preference set: limitedGoGroupHome=y
-Preference set: trackerfield_autoincrement=y
-Preference set: trackerfield_dropdownother=y
-Preference set: wikiplugin_jq=y
-Preference set: instructions=Profile_Voting_System_voting_page
-Added (or modified): tracker "Tracker for the Voting System"
-Added (or modified): tracker_field "Note from the Voting System"
-Added (or modified): tracker_field "Presidency"
-Added (or modified): tracker_field "Vicepresidency"
-Added (or modified): tracker_field "Secretarial"
-Added (or modified): tracker_field "Treasury"
-Added (or modified): tracker_field "Extra Membership 1"
-Added (or modified): tracker_field "Extra Membership 2"
-Added (or modified): tracker_field "Extra Membership 3"
-Added (or modified): tracker_field "Extra Membership 4"
-Added (or modified): tracker_field "Username"
-Added (or modified): tracker_field "Vote #"
-An error occurred: Cannot add user user1 to nonexistent group Group1
-root@penguinbookpro:/var/www/tikiprofiletests/trunk# 
 
 
 ```{r run command to test another profile}
