@@ -140,7 +140,7 @@ for (vv in 1:length(Versions)) {
   for (ii in 1:dim(profilesList)[1]) { # ii counter of profile ID number
 #    for (ii in 1:2) {
     #vv <- 1;ii <- 1;
-  cat(paste0("** Profile (", ii, "/", dim(profilesList)[1],"): ", profilesList[ii,paste0("ProfileName_", Versions[vv])], "\n"))
+  cat(paste0("\n** Profile (", ii, "/", dim(profilesList)[1],"): ", profilesList[ii,paste0("ProfileName_", Versions[vv])], "\n"))
   
     # read all profile
     outputFilename[ii] <- paste0(Versions[vv], "_", format(Sys.Date(), "%y%m%d"), "_p", sprintf("%02d", ii), "_output_", profilesList[ii,paste0("ProfileName_", Versions[vv])], ".txt")
