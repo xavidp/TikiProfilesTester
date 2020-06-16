@@ -1,0 +1,1604 @@
+Installation completed.
+Queries executed successfully: 1412
+PHP Notice:  Array to string conversion in /var/www/html/trunk/lib/prefslib.php on line 620
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->indexPreference() /var/www/html/trunk/lib/prefslib.php:515
+PHP   9. implode() /var/www/html/trunk/lib/prefslib.php:620
+
+Notice: Array to string conversion in /var/www/html/trunk/lib/prefslib.php on line 620
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   15.2750   55685928   8. PreferencesLib->indexPreference() /var/www/html/trunk/lib/prefslib.php:515
+   15.2750   55687272   9. implode() /var/www/html/trunk/lib/prefslib.php:620
+
+PHP Warning:  Missing default for preference “feature_score_expday” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “feature_score_expday” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   15.3828   55963656   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   15.3832   56263064   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  implode(): Invalid arguments passed in /var/www/html/trunk/lib/prefslib.php on line 621
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->indexPreference() /var/www/html/trunk/lib/prefslib.php:515
+PHP   9. implode() /var/www/html/trunk/lib/prefslib.php:621
+
+Warning: implode(): Invalid arguments passed in /var/www/html/trunk/lib/prefslib.php on line 621
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   15.8452   56503872   8. PreferencesLib->indexPreference() /var/www/html/trunk/lib/prefslib.php:515
+   15.8452   56505776   9. implode() /var/www/html/trunk/lib/prefslib.php:621
+
+PHP Warning:  Missing default for preference “saml_idp_entityid” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_idp_entityid” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   16.2189   58834696   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   16.2194   59132552   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_idp_sso” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_idp_sso” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   16.2199   58835080   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   16.2203   59133008   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_idp_slo” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_idp_slo” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   16.2206   58835768   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   16.2210   59133608   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_idp_x509cert” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_idp_x509cert” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   16.2213   58836288   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   16.2217   59134152   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_options_autocreate” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_options_autocreate” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   16.2220   58836744   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   16.2224   59134672   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_options_sync_group” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_options_sync_group” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   16.2228   58837384   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   16.2232   59135288   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_options_slo” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_options_slo” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   16.2235   58837760   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   16.2239   59135656   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_options_skip_admin” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_options_skip_admin” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   16.2242   58838416   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   16.2247   59136280   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_attrmap_username” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_attrmap_username” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   16.2262   58840552   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   16.2266   59138536   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_attrmap_mail” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_attrmap_mail” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   16.2270   58841112   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   16.2274   59139152   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_attrmap_group” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_attrmap_group” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   16.2277   58841648   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   16.2282   59139632   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_groupmap_admins” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_groupmap_admins” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   16.2285   58842192   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   16.2288   59140208   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_groupmap_registered” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_groupmap_registered” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   16.2291   58842752   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   16.2295   59140904   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_debug” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_debug” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   16.2299   58843264   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   16.2303   59141520   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_strict” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_strict” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   16.2305   58843808   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   16.2310   59141832   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_sp_entity_id” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_sp_entity_id” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   16.2313   58844768   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   16.2317   59142808   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_requestedauthncontext” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_requestedauthncontext” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   16.2324   58846504   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   16.2328   59144488   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_idp_lowercase_url_encoding” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_idp_lowercase_url_encoding” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   16.2331   58847424   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   16.2335   59145536   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_nameid_encrypted” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_nameid_encrypted” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   16.2338   58848296   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   16.2342   59146456   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_authn_request_signed” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_authn_request_signed” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   16.2345   58848544   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   16.2349   59146672   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_logout_request_signed” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_logout_request_signed” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   16.2352   58849296   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   16.2356   59147304   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_logout_response_signed” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_logout_response_signed” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   16.2360   58849840   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   16.2364   59147808   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_metadata_signed” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_metadata_signed” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   16.2367   58850352   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   16.2371   59148488   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_want_message_signed” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_want_message_signed” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   16.2374   58850880   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   16.2378   59148864   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_want_assertion_signed” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_want_assertion_signed” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   16.2381   58851520   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   16.2385   59149608   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_want_assertion_encrypted” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_want_assertion_encrypted” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   16.2389   58852016   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   16.2393   59150024   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_retrieve_parameters_from_server” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_retrieve_parameters_from_server” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   16.2396   58852624   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   16.2400   59150576   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_sp_x509cert” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_sp_x509cert” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   16.2403   58853648   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   16.2407   59151760   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_sp_privatekey” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_sp_privatekey” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.2354   19265096   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.2372   19496464   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.2373   19497384   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.2373   19497856   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.2375   19502656   6. Tiki\Command\InstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+   12.2811   34163000   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/InstallCommand.php:54
+   16.2410   58853824   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+   16.2414   59151944   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Clearing all caches
+PHP Notice:  Array to string conversion in /var/www/html/trunk/lib/prefslib.php on line 620
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->indexPreference() /var/www/html/trunk/lib/prefslib.php:515
+PHP   9. implode() /var/www/html/trunk/lib/prefslib.php:620
+
+Notice: Array to string conversion in /var/www/html/trunk/lib/prefslib.php on line 620
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    3.4709   45026200   8. PreferencesLib->indexPreference() /var/www/html/trunk/lib/prefslib.php:515
+    3.4709   45027576   9. implode() /var/www/html/trunk/lib/prefslib.php:620
+
+PHP Warning:  Missing default for preference “feature_score_expday” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “feature_score_expday” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    3.6523   46863712   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    3.6529   47166616   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  implode(): Invalid arguments passed in /var/www/html/trunk/lib/prefslib.php on line 621
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->indexPreference() /var/www/html/trunk/lib/prefslib.php:515
+PHP   9. implode() /var/www/html/trunk/lib/prefslib.php:621
+
+Warning: implode(): Invalid arguments passed in /var/www/html/trunk/lib/prefslib.php on line 621
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.1721   48007048   8. PreferencesLib->indexPreference() /var/www/html/trunk/lib/prefslib.php:515
+    4.1721   48008928   9. implode() /var/www/html/trunk/lib/prefslib.php:621
+
+PHP Warning:  Missing default for preference “saml_idp_entityid” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_idp_entityid” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.6292   50997392   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    4.6296   51299992   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_idp_sso” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_idp_sso” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.6300   50997720   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    4.6303   51300344   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_idp_slo” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_idp_slo” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.6306   50998480   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    4.6310   51301144   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_idp_x509cert” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_idp_x509cert” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.6313   50998992   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    4.6317   51301528   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_options_autocreate” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_options_autocreate” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.6320   50999368   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    4.6324   51301992   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_options_sync_group” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_options_sync_group” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.6327   51000032   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    4.6331   51302592   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_options_slo” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_options_slo” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.6334   51000464   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    4.6338   51303200   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_options_skip_admin” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_options_skip_admin” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.6341   51001184   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    4.6345   51303928   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_attrmap_username” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_attrmap_username” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.6360   51003224   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    4.6364   51305904   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_attrmap_mail” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_attrmap_mail” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.6367   51003760   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    4.6371   51306344   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_attrmap_group” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_attrmap_group” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.6374   51004352   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    4.6378   51307064   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_groupmap_admins” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_groupmap_admins” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.6381   51004888   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    4.6385   51307472   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_groupmap_registered” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_groupmap_registered” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.6388   51005432   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    4.6392   51308240   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_debug” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_debug” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.6395   51005928   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    4.6399   51308504   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_strict” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_strict” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.6402   51006448   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    4.6406   51309240   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_sp_entity_id” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_sp_entity_id” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.6409   51007352   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    4.6413   51310112   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_requestedauthncontext” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_requestedauthncontext” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.6420   51009136   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    4.6424   51311824   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_idp_lowercase_url_encoding” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_idp_lowercase_url_encoding” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.6427   51010088   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    4.6431   51312696   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_nameid_encrypted” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_nameid_encrypted” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.6434   51011016   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    4.6439   51313784   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_authn_request_signed” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_authn_request_signed” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.6441   51011152   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    4.6445   51313904   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_logout_request_signed” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_logout_request_signed” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.6449   51011904   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    4.6453   51314648   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_logout_response_signed” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_logout_response_signed” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.6455   51012456   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    4.6460   51315240   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_metadata_signed” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_metadata_signed” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.6463   51013024   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    4.6467   51316024   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_want_message_signed” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_want_message_signed” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.6470   51013576   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    4.6474   51316240   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_want_assertion_signed” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_want_assertion_signed” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.6477   51014200   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    4.6481   51316880   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_want_assertion_encrypted” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_want_assertion_encrypted” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.6485   51014664   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    4.6489   51317432   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_retrieve_parameters_from_server” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_retrieve_parameters_from_server” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.6492   51015280   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    4.6496   51318128   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_sp_x509cert” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_sp_x509cert” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.6500   51016376   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    4.6504   51319184   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+PHP Warning:  Missing default for preference “saml_advanced_sp_privatekey” in /var/www/html/trunk/lib/prefslib.php on line 112
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+PHP   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Warning: Missing default for preference “saml_advanced_sp_privatekey” in /var/www/html/trunk/lib/prefslib.php on line 112
+
+Call Stack:
+    0.0006     348872   1. {main}() /var/www/html/trunk/console.php:0
+    0.4197   21327256   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:192
+    0.4219   21558568   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+    0.4221   21559488   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+    0.4221   21559960   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+    0.4224   21564688   6. Tiki\Command\CacheClearCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+    0.4288   21654360   7. PreferencesLib->rebuildIndex() /var/www/html/trunk/lib/core/Tiki/Command/CacheClearCommand.php:49
+    4.6507   51016600   8. PreferencesLib->getPreference() /var/www/html/trunk/lib/prefslib.php:514
+    4.6511   51319184   9. trigger_error() /var/www/html/trunk/lib/prefslib.php:112
+
+Profile not found.

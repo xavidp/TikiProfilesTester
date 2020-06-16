@@ -1,0 +1,30 @@
+Installation completed.
+Queries executed successfully: 1407
+Clearing all caches
+PHP Notice:  Undefined index: value in /var/www/html/15.x/lib/trackers/trackerlib.php on line 1687
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/15.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/15.x/console.php:178
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/15.x/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/15.x/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/15.x/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/15.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/15.x/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/15.x/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/15.x/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_TrackerItem->_install() /var/www/html/15.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TrackerLib->replace_item() /var/www/html/15.x/lib/core/Tiki/Profile/InstallHandler/TrackerItem.php:117
+PHP Notice:  Undefined index: value in /var/www/html/15.x/lib/trackers/trackerlib.php on line 1687
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/15.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/15.x/console.php:178
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/15.x/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/15.x/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/15.x/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/15.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/15.x/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/15.x/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/15.x/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_TrackerItem->_install() /var/www/html/15.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TrackerLib->replace_item() /var/www/html/15.x/lib/core/Tiki/Profile/InstallHandler/TrackerItem.php:117
+Profile applied.

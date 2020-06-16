@@ -1,0 +1,14 @@
+Installation completed.
+Queries executed successfully: 1407
+Clearing all caches
+
+
+                       
+  [RuntimeException]   
+  Too many arguments.  
+                       
+
+
+profile:apply [--force] profile [repository]
+
+

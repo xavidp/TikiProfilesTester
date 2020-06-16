@@ -1,0 +1,268 @@
+Installation completed.
+Queries executed successfully: 928
+Clearing all caches
+PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /opt/html_git/18.x/lib/parser/parserlib.php on line 252
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand($command = *uninitialized*, $input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\ProfileInstallCommand->run($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\ProfileInstallCommand->execute($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. Tiki_Profile_Installer->install($profile = *uninitialized*, $empty_cache = *uninitialized*, $dryRun = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Command/ProfileInstallCommand.php:79
+PHP   8. Tiki_Profile_Installer->doInstall($profile = *uninitialized*, $dryRun = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:430
+PHP   9. Tiki_Profile_InstallHandler_WikiPage->install() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:511
+PHP  10. Tiki_Profile_InstallHandler_WikiPage->_install() /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TikiLib->create_page($name = *uninitialized*, $hits = *uninitialized*, $data = *uninitialized*, $lastModif = *uninitialized*, $comment = *uninitialized*, $user = *uninitialized*, $ip = *uninitialized*, $description = *uninitialized*, $lang = *uninitialized*, $is_html = *uninitialized*, $hash = *uninitialized*, $wysiwyg = *uninitialized*, $wiki_authors_style = *uninitialized*, $minor = *uninitialized*, $created = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler/WikiPage.php:181
+PHP  12. Tiki_Event_Manager->trigger($eventName = *uninitialized*, $arguments = *uninitialized*) /opt/html_git/18.x/lib/tikilib.php:4255
+PHP  13. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:66
+PHP  14. Tiki_Event_Chain->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  15. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Chain.php:21
+PHP  16. Tiki_Event_Chain->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  17. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Chain.php:21
+PHP  18. Tiki_Event_Lib->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  19. FileGalLib->save_sync_file_backlinks($args = *uninitialized*, *uninitialized*, *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Lib.php:26
+PHP  20. FileGalLib->syncFileBacklinks($data = *uninitialized*, $context = *uninitialized*) /opt/html_git/18.x/lib/filegals/filegallib.php:2444
+PHP  21. ParserLib->getPlugins($data = *uninitialized*, $only = *uninitialized*) /opt/html_git/18.x/lib/filegals/filegallib.php:2395
+PHP  22. ParserLib->plugin_match($data = *uninitialized*, $plugins = *uninitialized*) /opt/html_git/18.x/lib/parser/parserlib.php:349
+PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /opt/html_git/18.x/lib/parser/parserlib.php on line 252
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand($command = *uninitialized*, $input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\ProfileInstallCommand->run($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\ProfileInstallCommand->execute($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. Tiki_Profile_Installer->install($profile = *uninitialized*, $empty_cache = *uninitialized*, $dryRun = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Command/ProfileInstallCommand.php:79
+PHP   8. Tiki_Profile_Installer->doInstall($profile = *uninitialized*, $dryRun = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:430
+PHP   9. Tiki_Profile_InstallHandler_WikiPage->install() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:511
+PHP  10. Tiki_Profile_InstallHandler_WikiPage->_install() /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TikiLib->create_page($name = *uninitialized*, $hits = *uninitialized*, $data = *uninitialized*, $lastModif = *uninitialized*, $comment = *uninitialized*, $user = *uninitialized*, $ip = *uninitialized*, $description = *uninitialized*, $lang = *uninitialized*, $is_html = *uninitialized*, $hash = *uninitialized*, $wysiwyg = *uninitialized*, $wiki_authors_style = *uninitialized*, $minor = *uninitialized*, $created = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler/WikiPage.php:181
+PHP  12. Tiki_Event_Manager->trigger($eventName = *uninitialized*, $arguments = *uninitialized*) /opt/html_git/18.x/lib/tikilib.php:4255
+PHP  13. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:66
+PHP  14. Tiki_Event_Chain->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  15. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Chain.php:21
+PHP  16. Tiki_Event_Chain->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  17. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Chain.php:21
+PHP  18. Tiki_Event_Lib->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  19. FileGalLib->save_sync_file_backlinks($args = *uninitialized*, *uninitialized*, *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Lib.php:26
+PHP  20. FileGalLib->syncFileBacklinks($data = *uninitialized*, $context = *uninitialized*) /opt/html_git/18.x/lib/filegals/filegallib.php:2444
+PHP  21. ParserLib->getPlugins($data = *uninitialized*, $only = *uninitialized*) /opt/html_git/18.x/lib/filegals/filegallib.php:2395
+PHP  22. ParserLib->plugin_match($data = *uninitialized*, $plugins = *uninitialized*) /opt/html_git/18.x/lib/parser/parserlib.php:349
+PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /opt/html_git/18.x/lib/parser/parserlib.php on line 252
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand($command = *uninitialized*, $input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\ProfileInstallCommand->run($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\ProfileInstallCommand->execute($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. Tiki_Profile_Installer->install($profile = *uninitialized*, $empty_cache = *uninitialized*, $dryRun = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Command/ProfileInstallCommand.php:79
+PHP   8. Tiki_Profile_Installer->doInstall($profile = *uninitialized*, $dryRun = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:430
+PHP   9. Tiki_Profile_InstallHandler_WikiPage->install() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:511
+PHP  10. Tiki_Profile_InstallHandler_WikiPage->_install() /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TikiLib->create_page($name = *uninitialized*, $hits = *uninitialized*, $data = *uninitialized*, $lastModif = *uninitialized*, $comment = *uninitialized*, $user = *uninitialized*, $ip = *uninitialized*, $description = *uninitialized*, $lang = *uninitialized*, $is_html = *uninitialized*, $hash = *uninitialized*, $wysiwyg = *uninitialized*, $wiki_authors_style = *uninitialized*, $minor = *uninitialized*, $created = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler/WikiPage.php:181
+PHP  12. Tiki_Event_Manager->trigger($eventName = *uninitialized*, $arguments = *uninitialized*) /opt/html_git/18.x/lib/tikilib.php:4255
+PHP  13. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:66
+PHP  14. Tiki_Event_Chain->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  15. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Chain.php:21
+PHP  16. Tiki_Event_Chain->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  17. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Chain.php:21
+PHP  18. Tiki_Event_Lib->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  19. FileGalLib->save_sync_file_backlinks($args = *uninitialized*, *uninitialized*, *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Lib.php:26
+PHP  20. FileGalLib->syncFileBacklinks($data = *uninitialized*, $context = *uninitialized*) /opt/html_git/18.x/lib/filegals/filegallib.php:2444
+PHP  21. ParserLib->getPlugins($data = *uninitialized*, $only = *uninitialized*) /opt/html_git/18.x/lib/filegals/filegallib.php:2395
+PHP  22. ParserLib->plugin_match($data = *uninitialized*, $plugins = *uninitialized*) /opt/html_git/18.x/lib/parser/parserlib.php:349
+PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /opt/html_git/18.x/lib/parser/parserlib.php on line 252
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand($command = *uninitialized*, $input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\ProfileInstallCommand->run($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\ProfileInstallCommand->execute($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. Tiki_Profile_Installer->install($profile = *uninitialized*, $empty_cache = *uninitialized*, $dryRun = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Command/ProfileInstallCommand.php:79
+PHP   8. Tiki_Profile_Installer->doInstall($profile = *uninitialized*, $dryRun = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:430
+PHP   9. Tiki_Profile_InstallHandler_WikiPage->install() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:511
+PHP  10. Tiki_Profile_InstallHandler_WikiPage->_install() /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TikiLib->create_page($name = *uninitialized*, $hits = *uninitialized*, $data = *uninitialized*, $lastModif = *uninitialized*, $comment = *uninitialized*, $user = *uninitialized*, $ip = *uninitialized*, $description = *uninitialized*, $lang = *uninitialized*, $is_html = *uninitialized*, $hash = *uninitialized*, $wysiwyg = *uninitialized*, $wiki_authors_style = *uninitialized*, $minor = *uninitialized*, $created = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler/WikiPage.php:181
+PHP  12. Tiki_Event_Manager->trigger($eventName = *uninitialized*, $arguments = *uninitialized*) /opt/html_git/18.x/lib/tikilib.php:4255
+PHP  13. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:66
+PHP  14. Tiki_Event_Chain->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  15. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Chain.php:21
+PHP  16. Tiki_Event_Chain->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  17. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Chain.php:21
+PHP  18. Tiki_Event_Lib->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  19. FileGalLib->save_sync_file_backlinks($args = *uninitialized*, *uninitialized*, *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Lib.php:26
+PHP  20. FileGalLib->syncFileBacklinks($data = *uninitialized*, $context = *uninitialized*) /opt/html_git/18.x/lib/filegals/filegallib.php:2444
+PHP  21. ParserLib->getPlugins($data = *uninitialized*, $only = *uninitialized*) /opt/html_git/18.x/lib/filegals/filegallib.php:2395
+PHP  22. ParserLib->plugin_match($data = *uninitialized*, $plugins = *uninitialized*) /opt/html_git/18.x/lib/parser/parserlib.php:349
+PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /opt/html_git/18.x/lib/parser/parserlib.php on line 252
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand($command = *uninitialized*, $input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\ProfileInstallCommand->run($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\ProfileInstallCommand->execute($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. Tiki_Profile_Installer->install($profile = *uninitialized*, $empty_cache = *uninitialized*, $dryRun = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Command/ProfileInstallCommand.php:79
+PHP   8. Tiki_Profile_Installer->doInstall($profile = *uninitialized*, $dryRun = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:430
+PHP   9. Tiki_Profile_InstallHandler_WikiPage->install() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:511
+PHP  10. Tiki_Profile_InstallHandler_WikiPage->_install() /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TikiLib->create_page($name = *uninitialized*, $hits = *uninitialized*, $data = *uninitialized*, $lastModif = *uninitialized*, $comment = *uninitialized*, $user = *uninitialized*, $ip = *uninitialized*, $description = *uninitialized*, $lang = *uninitialized*, $is_html = *uninitialized*, $hash = *uninitialized*, $wysiwyg = *uninitialized*, $wiki_authors_style = *uninitialized*, $minor = *uninitialized*, $created = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler/WikiPage.php:181
+PHP  12. Tiki_Event_Manager->trigger($eventName = *uninitialized*, $arguments = *uninitialized*) /opt/html_git/18.x/lib/tikilib.php:4255
+PHP  13. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:66
+PHP  14. Tiki_Event_Chain->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  15. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Chain.php:21
+PHP  16. Tiki_Event_Chain->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  17. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Chain.php:21
+PHP  18. Tiki_Event_Lib->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  19. FileGalLib->save_sync_file_backlinks($args = *uninitialized*, *uninitialized*, *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Lib.php:26
+PHP  20. FileGalLib->syncFileBacklinks($data = *uninitialized*, $context = *uninitialized*) /opt/html_git/18.x/lib/filegals/filegallib.php:2444
+PHP  21. ParserLib->getPlugins($data = *uninitialized*, $only = *uninitialized*) /opt/html_git/18.x/lib/filegals/filegallib.php:2395
+PHP  22. ParserLib->plugin_match($data = *uninitialized*, $plugins = *uninitialized*) /opt/html_git/18.x/lib/parser/parserlib.php:349
+PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /opt/html_git/18.x/lib/parser/parserlib.php on line 252
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand($command = *uninitialized*, $input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\ProfileInstallCommand->run($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\ProfileInstallCommand->execute($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. Tiki_Profile_Installer->install($profile = *uninitialized*, $empty_cache = *uninitialized*, $dryRun = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Command/ProfileInstallCommand.php:79
+PHP   8. Tiki_Profile_Installer->doInstall($profile = *uninitialized*, $dryRun = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:430
+PHP   9. Tiki_Profile_InstallHandler_WikiPage->install() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:511
+PHP  10. Tiki_Profile_InstallHandler_WikiPage->_install() /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TikiLib->create_page($name = *uninitialized*, $hits = *uninitialized*, $data = *uninitialized*, $lastModif = *uninitialized*, $comment = *uninitialized*, $user = *uninitialized*, $ip = *uninitialized*, $description = *uninitialized*, $lang = *uninitialized*, $is_html = *uninitialized*, $hash = *uninitialized*, $wysiwyg = *uninitialized*, $wiki_authors_style = *uninitialized*, $minor = *uninitialized*, $created = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler/WikiPage.php:181
+PHP  12. Tiki_Event_Manager->trigger($eventName = *uninitialized*, $arguments = *uninitialized*) /opt/html_git/18.x/lib/tikilib.php:4255
+PHP  13. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:66
+PHP  14. Tiki_Event_Chain->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  15. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Chain.php:21
+PHP  16. Tiki_Event_Chain->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  17. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Chain.php:21
+PHP  18. Tiki_Event_Lib->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  19. FileGalLib->save_sync_file_backlinks($args = *uninitialized*, *uninitialized*, *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Lib.php:26
+PHP  20. FileGalLib->syncFileBacklinks($data = *uninitialized*, $context = *uninitialized*) /opt/html_git/18.x/lib/filegals/filegallib.php:2444
+PHP  21. ParserLib->getPlugins($data = *uninitialized*, $only = *uninitialized*) /opt/html_git/18.x/lib/filegals/filegallib.php:2395
+PHP  22. ParserLib->plugin_match($data = *uninitialized*, $plugins = *uninitialized*) /opt/html_git/18.x/lib/parser/parserlib.php:349
+PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /opt/html_git/18.x/lib/parser/parserlib.php on line 252
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand($command = *uninitialized*, $input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\ProfileInstallCommand->run($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\ProfileInstallCommand->execute($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. Tiki_Profile_Installer->install($profile = *uninitialized*, $empty_cache = *uninitialized*, $dryRun = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Command/ProfileInstallCommand.php:79
+PHP   8. Tiki_Profile_Installer->doInstall($profile = *uninitialized*, $dryRun = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:430
+PHP   9. Tiki_Profile_InstallHandler_WikiPage->install() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:511
+PHP  10. Tiki_Profile_InstallHandler_WikiPage->_install() /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TikiLib->create_page($name = *uninitialized*, $hits = *uninitialized*, $data = *uninitialized*, $lastModif = *uninitialized*, $comment = *uninitialized*, $user = *uninitialized*, $ip = *uninitialized*, $description = *uninitialized*, $lang = *uninitialized*, $is_html = *uninitialized*, $hash = *uninitialized*, $wysiwyg = *uninitialized*, $wiki_authors_style = *uninitialized*, $minor = *uninitialized*, $created = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler/WikiPage.php:181
+PHP  12. Tiki_Event_Manager->trigger($eventName = *uninitialized*, $arguments = *uninitialized*) /opt/html_git/18.x/lib/tikilib.php:4255
+PHP  13. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:66
+PHP  14. Tiki_Event_Chain->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  15. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Chain.php:21
+PHP  16. Tiki_Event_Chain->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  17. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Chain.php:21
+PHP  18. Tiki_Event_Lib->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  19. FileGalLib->save_sync_file_backlinks($args = *uninitialized*, *uninitialized*, *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Lib.php:26
+PHP  20. FileGalLib->syncFileBacklinks($data = *uninitialized*, $context = *uninitialized*) /opt/html_git/18.x/lib/filegals/filegallib.php:2444
+PHP  21. ParserLib->getPlugins($data = *uninitialized*, $only = *uninitialized*) /opt/html_git/18.x/lib/filegals/filegallib.php:2395
+PHP  22. ParserLib->plugin_match($data = *uninitialized*, $plugins = *uninitialized*) /opt/html_git/18.x/lib/parser/parserlib.php:349
+PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /opt/html_git/18.x/lib/parser/parserlib.php on line 252
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand($command = *uninitialized*, $input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\ProfileInstallCommand->run($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\ProfileInstallCommand->execute($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. Tiki_Profile_Installer->install($profile = *uninitialized*, $empty_cache = *uninitialized*, $dryRun = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Command/ProfileInstallCommand.php:79
+PHP   8. Tiki_Profile_Installer->doInstall($profile = *uninitialized*, $dryRun = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:430
+PHP   9. Tiki_Profile_InstallHandler_WikiPage->install() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:511
+PHP  10. Tiki_Profile_InstallHandler_WikiPage->_install() /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TikiLib->create_page($name = *uninitialized*, $hits = *uninitialized*, $data = *uninitialized*, $lastModif = *uninitialized*, $comment = *uninitialized*, $user = *uninitialized*, $ip = *uninitialized*, $description = *uninitialized*, $lang = *uninitialized*, $is_html = *uninitialized*, $hash = *uninitialized*, $wysiwyg = *uninitialized*, $wiki_authors_style = *uninitialized*, $minor = *uninitialized*, $created = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler/WikiPage.php:181
+PHP  12. Tiki_Event_Manager->trigger($eventName = *uninitialized*, $arguments = *uninitialized*) /opt/html_git/18.x/lib/tikilib.php:4255
+PHP  13. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:66
+PHP  14. Tiki_Event_Chain->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  15. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Chain.php:21
+PHP  16. Tiki_Event_Chain->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  17. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Chain.php:21
+PHP  18. Tiki_Event_Lib->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  19. FileGalLib->save_sync_file_backlinks($args = *uninitialized*, *uninitialized*, *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Lib.php:26
+PHP  20. FileGalLib->syncFileBacklinks($data = *uninitialized*, $context = *uninitialized*) /opt/html_git/18.x/lib/filegals/filegallib.php:2444
+PHP  21. ParserLib->getPlugins($data = *uninitialized*, $only = *uninitialized*) /opt/html_git/18.x/lib/filegals/filegallib.php:2395
+PHP  22. ParserLib->plugin_match($data = *uninitialized*, $plugins = *uninitialized*) /opt/html_git/18.x/lib/parser/parserlib.php:349
+PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /opt/html_git/18.x/lib/parser/parserlib.php on line 252
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand($command = *uninitialized*, $input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\ProfileInstallCommand->run($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\ProfileInstallCommand->execute($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. Tiki_Profile_Installer->install($profile = *uninitialized*, $empty_cache = *uninitialized*, $dryRun = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Command/ProfileInstallCommand.php:79
+PHP   8. Tiki_Profile_Installer->doInstall($profile = *uninitialized*, $dryRun = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:430
+PHP   9. Tiki_Profile_InstallHandler_WikiPage->install() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:511
+PHP  10. Tiki_Profile_InstallHandler_WikiPage->_install() /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TikiLib->create_page($name = *uninitialized*, $hits = *uninitialized*, $data = *uninitialized*, $lastModif = *uninitialized*, $comment = *uninitialized*, $user = *uninitialized*, $ip = *uninitialized*, $description = *uninitialized*, $lang = *uninitialized*, $is_html = *uninitialized*, $hash = *uninitialized*, $wysiwyg = *uninitialized*, $wiki_authors_style = *uninitialized*, $minor = *uninitialized*, $created = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler/WikiPage.php:181
+PHP  12. Tiki_Event_Manager->trigger($eventName = *uninitialized*, $arguments = *uninitialized*) /opt/html_git/18.x/lib/tikilib.php:4255
+PHP  13. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:66
+PHP  14. Tiki_Event_Chain->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  15. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Chain.php:21
+PHP  16. Tiki_Event_Chain->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  17. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Chain.php:21
+PHP  18. Tiki_Event_Lib->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  19. FileGalLib->save_sync_file_backlinks($args = *uninitialized*, *uninitialized*, *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Lib.php:26
+PHP  20. FileGalLib->syncFileBacklinks($data = *uninitialized*, $context = *uninitialized*) /opt/html_git/18.x/lib/filegals/filegallib.php:2444
+PHP  21. ParserLib->getPlugins($data = *uninitialized*, $only = *uninitialized*) /opt/html_git/18.x/lib/filegals/filegallib.php:2395
+PHP  22. ParserLib->plugin_match($data = *uninitialized*, $plugins = *uninitialized*) /opt/html_git/18.x/lib/parser/parserlib.php:349
+PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /opt/html_git/18.x/lib/parser/parserlib.php on line 252
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand($command = *uninitialized*, $input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\ProfileInstallCommand->run($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\ProfileInstallCommand->execute($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. Tiki_Profile_Installer->install($profile = *uninitialized*, $empty_cache = *uninitialized*, $dryRun = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Command/ProfileInstallCommand.php:79
+PHP   8. Tiki_Profile_Installer->doInstall($profile = *uninitialized*, $dryRun = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:430
+PHP   9. Tiki_Profile_InstallHandler_WikiPage->install() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:511
+PHP  10. Tiki_Profile_InstallHandler_WikiPage->_install() /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TikiLib->create_page($name = *uninitialized*, $hits = *uninitialized*, $data = *uninitialized*, $lastModif = *uninitialized*, $comment = *uninitialized*, $user = *uninitialized*, $ip = *uninitialized*, $description = *uninitialized*, $lang = *uninitialized*, $is_html = *uninitialized*, $hash = *uninitialized*, $wysiwyg = *uninitialized*, $wiki_authors_style = *uninitialized*, $minor = *uninitialized*, $created = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler/WikiPage.php:181
+PHP  12. Tiki_Event_Manager->trigger($eventName = *uninitialized*, $arguments = *uninitialized*) /opt/html_git/18.x/lib/tikilib.php:4255
+PHP  13. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:66
+PHP  14. Tiki_Event_Chain->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  15. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Chain.php:21
+PHP  16. Tiki_Event_Chain->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  17. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Chain.php:21
+PHP  18. Tiki_Event_Lib->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  19. FileGalLib->save_sync_file_backlinks($args = *uninitialized*, *uninitialized*, *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Lib.php:26
+PHP  20. FileGalLib->syncFileBacklinks($data = *uninitialized*, $context = *uninitialized*) /opt/html_git/18.x/lib/filegals/filegallib.php:2444
+PHP  21. ParserLib->getPlugins($data = *uninitialized*, $only = *uninitialized*) /opt/html_git/18.x/lib/filegals/filegallib.php:2395
+PHP  22. ParserLib->plugin_match($data = *uninitialized*, $plugins = *uninitialized*) /opt/html_git/18.x/lib/parser/parserlib.php:349
+PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /opt/html_git/18.x/lib/parser/parserlib.php on line 252
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand($command = *uninitialized*, $input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\ProfileInstallCommand->run($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\ProfileInstallCommand->execute($input = *uninitialized*, $output = *uninitialized*) /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. Tiki_Profile_Installer->install($profile = *uninitialized*, $empty_cache = *uninitialized*, $dryRun = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Command/ProfileInstallCommand.php:79
+PHP   8. Tiki_Profile_Installer->doInstall($profile = *uninitialized*, $dryRun = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:430
+PHP   9. Tiki_Profile_InstallHandler_WikiPage->install() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:511
+PHP  10. Tiki_Profile_InstallHandler_WikiPage->_install() /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TikiLib->create_page($name = *uninitialized*, $hits = *uninitialized*, $data = *uninitialized*, $lastModif = *uninitialized*, $comment = *uninitialized*, $user = *uninitialized*, $ip = *uninitialized*, $description = *uninitialized*, $lang = *uninitialized*, $is_html = *uninitialized*, $hash = *uninitialized*, $wysiwyg = *uninitialized*, $wiki_authors_style = *uninitialized*, $minor = *uninitialized*, $created = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler/WikiPage.php:181
+PHP  12. Tiki_Event_Manager->trigger($eventName = *uninitialized*, $arguments = *uninitialized*) /opt/html_git/18.x/lib/tikilib.php:4255
+PHP  13. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:66
+PHP  14. Tiki_Event_Chain->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  15. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Chain.php:21
+PHP  16. Tiki_Event_Chain->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  17. Tiki_Event_Manager->internalTrigger($eventName = *uninitialized*, $arguments = *uninitialized*, $priority = *uninitialized*, $originalEvent = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Chain.php:21
+PHP  18. Tiki_Event_Lib->__invoke($arguments = *uninitialized*, $eventName = *uninitialized*, $priority = *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  19. FileGalLib->save_sync_file_backlinks($args = *uninitialized*, *uninitialized*, *uninitialized*) /opt/html_git/18.x/lib/core/Tiki/Event/Lib.php:26
+PHP  20. FileGalLib->syncFileBacklinks($data = *uninitialized*, $context = *uninitialized*) /opt/html_git/18.x/lib/filegals/filegallib.php:2444
+PHP  21. ParserLib->getPlugins($data = *uninitialized*, $only = *uninitialized*) /opt/html_git/18.x/lib/filegals/filegallib.php:2395
+PHP  22. ParserLib->plugin_match($data = *uninitialized*, $plugins = *uninitialized*) /opt/html_git/18.x/lib/parser/parserlib.php:349
+Profile applied.

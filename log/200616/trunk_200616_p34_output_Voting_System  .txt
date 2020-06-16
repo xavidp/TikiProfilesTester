@@ -1,0 +1,11 @@
+Installation completed.
+Queries executed successfully: 1551
+Array to string conversion on line 299 of /opt/html_git/trunk/lib/search/searchlib-unified.php
+Array to string conversion on line 299 of /opt/html_git/trunk/lib/search/searchlib-unified.php
+error: <a title="Rebuild search index" href="tiki-admin.php?page=search&rebuild=now">Click here to rebuild index</a>
+
+
+Clearing all caches
+
+A error was encountered while running a command
+Call to a member function renderOutput() on boolean on line 3814 of /opt/html_git/trunk/lib/trackers/trackerlib.php

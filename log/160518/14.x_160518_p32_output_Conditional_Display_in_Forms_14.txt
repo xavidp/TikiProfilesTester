@@ -1,0 +1,295 @@
+Installation completed.
+Queries executed successfully: 1414
+Clearing all caches
+PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; WikipluginDBReportToken has a deprecated constructor in /var/www/html/14.x/lib/wiki-plugins/wikiplugin_dbreport.php on line 13
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/14.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/14.x/console.php:168
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/14.x/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:364
+PHP   9. Tiki_Profile_Installer->applyPreferences() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:425
+PHP  10. PreferencesLib->getPreference() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:464
+PHP  11. PreferencesLib->loadData() /var/www/html/14.x/lib/prefslib.php:23
+PHP  12. PreferencesLib->getFileData() /var/www/html/14.x/lib/prefslib.php:429
+PHP  13. PreferencesLib->realLoad() /var/www/html/14.x/lib/prefslib.php:435
+PHP  14. prefs_wikiplugin_list() /var/www/html/14.x/lib/prefslib.php:462
+PHP  15. ParserLib->plugin_info() /var/www/html/14.x/lib/prefs/wikiplugin.php:127
+PHP  16. ParserLib->plugin_exists() /var/www/html/14.x/lib/parser/parserlib.php:641
+PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; WikipluginDBReportField has a deprecated constructor in /var/www/html/14.x/lib/wiki-plugins/wikiplugin_dbreport.php on line 49
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/14.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/14.x/console.php:168
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/14.x/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:364
+PHP   9. Tiki_Profile_Installer->applyPreferences() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:425
+PHP  10. PreferencesLib->getPreference() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:464
+PHP  11. PreferencesLib->loadData() /var/www/html/14.x/lib/prefslib.php:23
+PHP  12. PreferencesLib->getFileData() /var/www/html/14.x/lib/prefslib.php:429
+PHP  13. PreferencesLib->realLoad() /var/www/html/14.x/lib/prefslib.php:435
+PHP  14. prefs_wikiplugin_list() /var/www/html/14.x/lib/prefslib.php:462
+PHP  15. ParserLib->plugin_info() /var/www/html/14.x/lib/prefs/wikiplugin.php:127
+PHP  16. ParserLib->plugin_exists() /var/www/html/14.x/lib/parser/parserlib.php:641
+PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; WikipluginDBReportString has a deprecated constructor in /var/www/html/14.x/lib/wiki-plugins/wikiplugin_dbreport.php on line 105
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/14.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/14.x/console.php:168
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/14.x/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:364
+PHP   9. Tiki_Profile_Installer->applyPreferences() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:425
+PHP  10. PreferencesLib->getPreference() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:464
+PHP  11. PreferencesLib->loadData() /var/www/html/14.x/lib/prefslib.php:23
+PHP  12. PreferencesLib->getFileData() /var/www/html/14.x/lib/prefslib.php:429
+PHP  13. PreferencesLib->realLoad() /var/www/html/14.x/lib/prefslib.php:435
+PHP  14. prefs_wikiplugin_list() /var/www/html/14.x/lib/prefslib.php:462
+PHP  15. ParserLib->plugin_info() /var/www/html/14.x/lib/prefs/wikiplugin.php:127
+PHP  16. ParserLib->plugin_exists() /var/www/html/14.x/lib/parser/parserlib.php:641
+PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; WikipluginDBReportContent has a deprecated constructor in /var/www/html/14.x/lib/wiki-plugins/wikiplugin_dbreport.php on line 130
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/14.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/14.x/console.php:168
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/14.x/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:364
+PHP   9. Tiki_Profile_Installer->applyPreferences() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:425
+PHP  10. PreferencesLib->getPreference() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:464
+PHP  11. PreferencesLib->loadData() /var/www/html/14.x/lib/prefslib.php:23
+PHP  12. PreferencesLib->getFileData() /var/www/html/14.x/lib/prefslib.php:429
+PHP  13. PreferencesLib->realLoad() /var/www/html/14.x/lib/prefslib.php:435
+PHP  14. prefs_wikiplugin_list() /var/www/html/14.x/lib/prefslib.php:462
+PHP  15. ParserLib->plugin_info() /var/www/html/14.x/lib/prefs/wikiplugin.php:127
+PHP  16. ParserLib->plugin_exists() /var/www/html/14.x/lib/parser/parserlib.php:641
+PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; WikipluginDBReportStyle has a deprecated constructor in /var/www/html/14.x/lib/wiki-plugins/wikiplugin_dbreport.php on line 309
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/14.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/14.x/console.php:168
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/14.x/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:364
+PHP   9. Tiki_Profile_Installer->applyPreferences() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:425
+PHP  10. PreferencesLib->getPreference() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:464
+PHP  11. PreferencesLib->loadData() /var/www/html/14.x/lib/prefslib.php:23
+PHP  12. PreferencesLib->getFileData() /var/www/html/14.x/lib/prefslib.php:429
+PHP  13. PreferencesLib->realLoad() /var/www/html/14.x/lib/prefslib.php:435
+PHP  14. prefs_wikiplugin_list() /var/www/html/14.x/lib/prefslib.php:462
+PHP  15. ParserLib->plugin_info() /var/www/html/14.x/lib/prefs/wikiplugin.php:127
+PHP  16. ParserLib->plugin_exists() /var/www/html/14.x/lib/parser/parserlib.php:641
+PHP Notice:  Undefined index: value in /var/www/html/14.x/lib/trackers/trackerlib.php on line 1635
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/14.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/14.x/console.php:168
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/14.x/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:364
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:431
+PHP  10. Tiki_Profile_InstallHandler_TrackerItem->_install() /var/www/html/14.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TrackerLib->replace_item() /var/www/html/14.x/lib/core/Tiki/Profile/InstallHandler/TrackerItem.php:117
+PHP Notice:  Undefined index: value in /var/www/html/14.x/lib/trackers/trackerlib.php on line 1635
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/14.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/14.x/console.php:168
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/14.x/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:364
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:431
+PHP  10. Tiki_Profile_InstallHandler_TrackerItem->_install() /var/www/html/14.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TrackerLib->replace_item() /var/www/html/14.x/lib/core/Tiki/Profile/InstallHandler/TrackerItem.php:117
+PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; Memcachelib has a deprecated constructor in /var/www/html/14.x/lib/cache/memcachelib.php on line 20
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/14.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/14.x/console.php:168
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/14.x/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:364
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:431
+PHP  10. Tiki_Profile_InstallHandler_WikiPage->_install() /var/www/html/14.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TikiLib->create_page() /var/www/html/14.x/lib/core/Tiki/Profile/InstallHandler/WikiPage.php:151
+PHP  12. TikiLib->invalidate_cache() /var/www/html/14.x/lib/tikilib.php:4210
+PHP  13. Tiki_PageCache->invalidate() /var/www/html/14.x/lib/tikilib.php:4509
+PHP  14. TikiLib::lib() /var/www/html/14.x/lib/core/Tiki/PageCache.php:199
+PHP  15. Symfony\Component\DependencyInjection\ContainerBuilder->get() /var/www/html/14.x/lib/tikilib.php:61
+PHP  16. Symfony\Component\DependencyInjection\ContainerBuilder->createService() /var/www/html/14.x/vendor/symfony/dependency-injection/Symfony/Component/DependencyInjection/ContainerBuilder.php:490
+PHP Notice:  Undefined index: value in /var/www/html/14.x/lib/trackers/trackerlib.php on line 1635
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/14.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/14.x/console.php:168
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/14.x/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:364
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:431
+PHP  10. Tiki_Profile_InstallHandler_TrackerItem->_install() /var/www/html/14.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TrackerLib->replace_item() /var/www/html/14.x/lib/core/Tiki/Profile/InstallHandler/TrackerItem.php:117
+PHP Notice:  Undefined index: value in /var/www/html/14.x/lib/trackers/trackerlib.php on line 1635
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/14.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/14.x/console.php:168
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/14.x/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:364
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:431
+PHP  10. Tiki_Profile_InstallHandler_TrackerItem->_install() /var/www/html/14.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TrackerLib->replace_item() /var/www/html/14.x/lib/core/Tiki/Profile/InstallHandler/TrackerItem.php:117
+PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; Text_Diff has a deprecated constructor in /var/www/html/14.x/lib/diff/Diff.php on line 16
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/14.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/14.x/console.php:168
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/14.x/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:364
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:431
+PHP  10. Tiki_Profile_InstallHandler_WikiPage->_install() /var/www/html/14.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TikiLib->update_page() /var/www/html/14.x/lib/core/Tiki/Profile/InstallHandler/WikiPage.php:186
+PHP  12. include_once() /var/www/html/14.x/lib/tikilib.php:4690
+PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; Text_MappedDiff has a deprecated constructor in /var/www/html/14.x/lib/diff/Diff.php on line 205
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/14.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/14.x/console.php:168
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/14.x/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:364
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:431
+PHP  10. Tiki_Profile_InstallHandler_WikiPage->_install() /var/www/html/14.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TikiLib->update_page() /var/www/html/14.x/lib/core/Tiki/Profile/InstallHandler/WikiPage.php:186
+PHP  12. include_once() /var/www/html/14.x/lib/tikilib.php:4690
+PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; Text_Diff_Op_copy has a deprecated constructor in /var/www/html/14.x/lib/diff/Diff.php on line 763
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/14.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/14.x/console.php:168
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/14.x/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:364
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:431
+PHP  10. Tiki_Profile_InstallHandler_WikiPage->_install() /var/www/html/14.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TikiLib->update_page() /var/www/html/14.x/lib/core/Tiki/Profile/InstallHandler/WikiPage.php:186
+PHP  12. include_once() /var/www/html/14.x/lib/tikilib.php:4690
+PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; Text_Diff_Op_delete has a deprecated constructor in /var/www/html/14.x/lib/diff/Diff.php on line 786
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/14.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/14.x/console.php:168
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/14.x/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:364
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:431
+PHP  10. Tiki_Profile_InstallHandler_WikiPage->_install() /var/www/html/14.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TikiLib->update_page() /var/www/html/14.x/lib/core/Tiki/Profile/InstallHandler/WikiPage.php:186
+PHP  12. include_once() /var/www/html/14.x/lib/tikilib.php:4690
+PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; Text_Diff_Op_add has a deprecated constructor in /var/www/html/14.x/lib/diff/Diff.php on line 806
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/14.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/14.x/console.php:168
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/14.x/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:364
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:431
+PHP  10. Tiki_Profile_InstallHandler_WikiPage->_install() /var/www/html/14.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TikiLib->update_page() /var/www/html/14.x/lib/core/Tiki/Profile/InstallHandler/WikiPage.php:186
+PHP  12. include_once() /var/www/html/14.x/lib/tikilib.php:4690
+PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; Text_Diff_Op_change has a deprecated constructor in /var/www/html/14.x/lib/diff/Diff.php on line 826
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/14.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/14.x/console.php:168
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/14.x/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:364
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:431
+PHP  10. Tiki_Profile_InstallHandler_WikiPage->_install() /var/www/html/14.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TikiLib->update_page() /var/www/html/14.x/lib/core/Tiki/Profile/InstallHandler/WikiPage.php:186
+PHP  12. include_once() /var/www/html/14.x/lib/tikilib.php:4690
+PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; Text_Diff_Renderer has a deprecated constructor in /var/www/html/14.x/lib/diff/Renderer.php on line 12
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/14.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/14.x/console.php:168
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/14.x/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:364
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:431
+PHP  10. Tiki_Profile_InstallHandler_WikiPage->_install() /var/www/html/14.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TikiLib->update_page() /var/www/html/14.x/lib/core/Tiki/Profile/InstallHandler/WikiPage.php:186
+PHP  12. include_once() /var/www/html/14.x/lib/tikilib.php:4690
+PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; Text_Diff_Renderer_unified has a deprecated constructor in /var/www/html/14.x/lib/diff/renderer_unified.php on line 23
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/14.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/14.x/console.php:168
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/14.x/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:364
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:431
+PHP  10. Tiki_Profile_InstallHandler_WikiPage->_install() /var/www/html/14.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TikiLib->update_page() /var/www/html/14.x/lib/core/Tiki/Profile/InstallHandler/WikiPage.php:186
+PHP  12. diff2() /var/www/html/14.x/lib/tikilib.php:4713
+PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; Text_Diff_Renderer_character has a deprecated constructor in /var/www/html/14.x/lib/diff/renderer_character.php on line 15
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/14.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/14.x/console.php:168
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/14.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/14.x/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:364
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/14.x/lib/core/Tiki/Profile/Installer.php:431
+PHP  10. Tiki_Profile_InstallHandler_WikiPage->_install() /var/www/html/14.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TikiLib->update_page() /var/www/html/14.x/lib/core/Tiki/Profile/InstallHandler/WikiPage.php:186
+PHP  12. diff2() /var/www/html/14.x/lib/tikilib.php:4713
+PHP  13. Tiki_Text_Diff_Renderer->render() /var/www/html/14.x/lib/diff/difflib.php:132
+PHP  14. Text_Diff_Renderer->_block() /var/www/html/14.x/lib/diff/difflib.php:49
+PHP  15. Text_Diff_Renderer_unified->_changed() /var/www/html/14.x/lib/diff/Renderer.php:126
+PHP  16. diffChar() /var/www/html/14.x/lib/diff/renderer_unified.php:65
+PHP  17. compileRendererClass() /var/www/html/14.x/lib/diff/difflib.php:161
+Profile applied.

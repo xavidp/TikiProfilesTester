@@ -1,0 +1,208 @@
+Installation completed.
+Queries executed successfully: 1389
+PHP Fatal error:  Uncaught Search_MySql_LimitReachedException: Could not perform index modification: Incorrect datetime value: '0000-00-00 00:00:00' for column 'creation_date' at row 1 in /var/www/html/trunk/lib/core/Search/MySql/QueryBuffer.php:55
+Stack trace:
+#0 /var/www/html/trunk/lib/core/Search/MySql/QueryBuffer.php(37): Search_MySql_QueryBuffer->realFlush()
+#1 /var/www/html/trunk/lib/core/Search/MySql/Table.php(195): Search_MySql_QueryBuffer->flush()
+#2 /var/www/html/trunk/lib/core/Search/MySql/Table.php(28): Search_MySql_Table->flush()
+#3 [internal function]: Search_MySql_Table->__destruct()
+#4 {main}
+  thrown in /var/www/html/trunk/lib/core/Search/MySql/QueryBuffer.php on line 55
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+Clearing all caches
+PHP Notice:  Undefined index: use_items_icons in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php on line 130
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Menu->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Notice:  Undefined index: parse in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php on line 133
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Menu->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Notice:  Only variables should be passed by reference in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php on line 139
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Menu->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Notice:  Undefined index: icon in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php on line 142
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Menu->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Notice:  Undefined index: icon in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php on line 142
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Menu->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Notice:  Undefined index: icon in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php on line 142
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Menu->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Notice:  Undefined index: icon in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php on line 142
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Menu->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Notice:  Undefined index: icon in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php on line 142
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Menu->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Notice:  Undefined index: icon in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php on line 142
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Menu->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Notice:  Undefined index: icon in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php on line 142
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Menu->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Notice:  Undefined index: icon in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php on line 142
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Menu->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Notice:  Undefined index: icon in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php on line 142
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Menu->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Notice:  Undefined index: position in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php on line 153
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Menu->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Notice:  Undefined index: mail in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Forum.php on line 123
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Forum->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Notice:  Undefined index: list_att_nb in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Forum.php on line 169
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Forum->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Notice:  Undefined variable: oldData in /var/www/html/trunk/lib/comments/commentslib.php on line 1149
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Forum->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. Comments->replace_forum() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Forum.php:173
+Profile applied.

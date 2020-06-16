@@ -1,0 +1,439 @@
+Installation completed.
+Queries executed successfully: 1389
+PHP Fatal error:  Uncaught exception 'Search_MySql_LimitReachedException' with message 'Could not perform index modification: Incorrect datetime value: '0000-00-00 00:00:00' for column 'creation_date' at row 1' in /var/www/html/trunk/lib/core/Search/MySql/QueryBuffer.php:55
+Stack trace:
+#0 /var/www/html/trunk/lib/core/Search/MySql/QueryBuffer.php(37): Search_MySql_QueryBuffer->realFlush()
+#1 /var/www/html/trunk/lib/core/Search/MySql/Table.php(195): Search_MySql_QueryBuffer->flush()
+#2 /var/www/html/trunk/lib/core/Search/MySql/Table.php(28): Search_MySql_Table->flush()
+#3 [internal function]: Search_MySql_Table->__destruct()
+#4 {main}
+  thrown in /var/www/html/trunk/lib/core/Search/MySql/QueryBuffer.php on line 55
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+Clearing all caches
+PHP Notice:  Undefined index: use_items_icons in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php on line 130
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Menu->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Notice:  Undefined index: parse in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php on line 133
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Menu->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Strict standards:  Only variables should be passed by reference in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php on line 139
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Menu->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Notice:  Undefined index: icon in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php on line 142
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Menu->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Notice:  Undefined index: icon in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php on line 142
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Menu->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Notice:  Undefined index: icon in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php on line 142
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Menu->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Notice:  Undefined index: icon in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php on line 142
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Menu->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Notice:  Undefined index: icon in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php on line 142
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Menu->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Notice:  Undefined index: icon in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php on line 142
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Menu->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Notice:  Undefined index: icon in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php on line 142
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Menu->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Notice:  Undefined index: icon in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php on line 142
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Menu->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Notice:  Undefined index: icon in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php on line 142
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Menu->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Notice:  Undefined index: position in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php on line 153
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Menu->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Warning:  Missing argument 1 for ScoreLib::table(), called in /var/www/html/trunk/lib/score/scorelib.php on line 275 and defined in /var/www/html/trunk/lib/score/scorelib.php on line 336
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_WikiPage->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TikiLib->create_page() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/WikiPage.php:151
+PHP  12. Tiki_Event_Manager->trigger() /var/www/html/trunk/lib/tikilib.php:4165
+PHP  13. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:66
+PHP  14. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  15. Tiki_Event_Lib->__invoke() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  16. ScoreLib->assignPoints() /var/www/html/trunk/lib/core/Tiki/Event/Lib.php:26
+PHP  17. ScoreLib->table() /var/www/html/trunk/lib/score/scorelib.php:275
+PHP Warning:  Missing argument 1 for ScoreLib::table(), called in /var/www/html/trunk/lib/score/scorelib.php on line 275 and defined in /var/www/html/trunk/lib/score/scorelib.php on line 336
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_WikiPage->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TikiLib->create_page() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/WikiPage.php:151
+PHP  12. Tiki_Event_Manager->trigger() /var/www/html/trunk/lib/tikilib.php:4165
+PHP  13. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:66
+PHP  14. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  15. Tiki_Event_Lib->__invoke() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  16. ScoreLib->assignPoints() /var/www/html/trunk/lib/core/Tiki/Event/Lib.php:26
+PHP  17. ScoreLib->table() /var/www/html/trunk/lib/score/scorelib.php:275
+PHP Warning:  Missing argument 1 for ScoreLib::table(), called in /var/www/html/trunk/lib/score/scorelib.php on line 275 and defined in /var/www/html/trunk/lib/score/scorelib.php on line 336
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_WikiPage->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TikiLib->create_page() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/WikiPage.php:151
+PHP  12. Tiki_Event_Manager->trigger() /var/www/html/trunk/lib/tikilib.php:4165
+PHP  13. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:66
+PHP  14. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  15. Tiki_Event_Lib->__invoke() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  16. ScoreLib->assignPoints() /var/www/html/trunk/lib/core/Tiki/Event/Lib.php:26
+PHP  17. ScoreLib->table() /var/www/html/trunk/lib/score/scorelib.php:275
+PHP Warning:  Missing argument 1 for ScoreLib::table(), called in /var/www/html/trunk/lib/score/scorelib.php on line 275 and defined in /var/www/html/trunk/lib/score/scorelib.php on line 336
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_WikiPage->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TikiLib->create_page() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/WikiPage.php:151
+PHP  12. Tiki_Event_Manager->trigger() /var/www/html/trunk/lib/tikilib.php:4165
+PHP  13. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:66
+PHP  14. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  15. Tiki_Event_Lib->__invoke() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  16. ScoreLib->assignPoints() /var/www/html/trunk/lib/core/Tiki/Event/Lib.php:26
+PHP  17. ScoreLib->table() /var/www/html/trunk/lib/score/scorelib.php:275
+PHP Warning:  Missing argument 1 for ScoreLib::table(), called in /var/www/html/trunk/lib/score/scorelib.php on line 275 and defined in /var/www/html/trunk/lib/score/scorelib.php on line 336
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_WikiPage->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TikiLib->create_page() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/WikiPage.php:151
+PHP  12. Tiki_Event_Manager->trigger() /var/www/html/trunk/lib/tikilib.php:4165
+PHP  13. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:66
+PHP  14. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  15. Tiki_Event_Lib->__invoke() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  16. ScoreLib->assignPoints() /var/www/html/trunk/lib/core/Tiki/Event/Lib.php:26
+PHP  17. ScoreLib->table() /var/www/html/trunk/lib/score/scorelib.php:275
+PHP Warning:  Missing argument 1 for ScoreLib::table(), called in /var/www/html/trunk/lib/score/scorelib.php on line 275 and defined in /var/www/html/trunk/lib/score/scorelib.php on line 336
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_FileGallery->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. FileGalLib->replace_file_gallery() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/FileGallery.php:153
+PHP  12. Tiki_Event_Manager->trigger() /var/www/html/trunk/lib/filegals/filegallib.php:859
+PHP  13. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:66
+PHP  14. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  15. Tiki_Event_Lib->__invoke() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  16. ScoreLib->assignPoints() /var/www/html/trunk/lib/core/Tiki/Event/Lib.php:26
+PHP  17. ScoreLib->table() /var/www/html/trunk/lib/score/scorelib.php:275
+PHP Notice:  Undefined index: mail in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Forum.php on line 123
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Forum->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Notice:  Undefined index: list_att_nb in /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Forum.php on line 169
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Forum->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Notice:  Undefined variable: oldData in /var/www/html/trunk/lib/comments/commentslib.php on line 1149
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_Forum->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. Comments->replace_forum() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/Forum.php:174
+PHP Notice:  Array to string conversion in /var/www/html/trunk/lib/core/TikiDb/Pdo.php on line 75
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_TrackerField->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TrackerLib->replace_tracker_field() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/TrackerField.php:206
+PHP  12. TikiDb_Table->insert() /var/www/html/trunk/lib/trackers/trackerlib.php:2834
+PHP  13. TikiDb->queryException() /var/www/html/trunk/lib/core/TikiDb/Table.php:40
+PHP  14. TikiDb_Pdo->query() /var/www/html/trunk/lib/core/TikiDb.php:72
+PHP  15. TikiDb_Pdo->_query() /var/www/html/trunk/lib/core/TikiDb/Pdo.php:116
+PHP  16. PDOStatement->execute() /var/www/html/trunk/lib/core/TikiDb/Pdo.php:75
+PHP Warning:  PDOStatement::execute(): SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'isHidden' at row 1 in /var/www/html/trunk/lib/core/TikiDb/Pdo.php on line 75
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_TrackerField->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TrackerLib->replace_tracker_field() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/TrackerField.php:206
+PHP  12. TikiDb_Table->insert() /var/www/html/trunk/lib/trackers/trackerlib.php:2834
+PHP  13. TikiDb->queryException() /var/www/html/trunk/lib/core/TikiDb/Table.php:40
+PHP  14. TikiDb_Pdo->query() /var/www/html/trunk/lib/core/TikiDb.php:72
+PHP  15. TikiDb_Pdo->_query() /var/www/html/trunk/lib/core/TikiDb/Pdo.php:116
+PHP  16. PDOStatement->execute() /var/www/html/trunk/lib/core/TikiDb/Pdo.php:75
+Installation failed:
+Applying profile: Barter_Market
+Preference set: allowRegister=y
+Preference set: browsertitle=Our barter community
+Preference set: feature_categories=y
+Preference set: feature_display_my_to_others=y
+Preference set: feature_file_galleries_author=y
+Preference set: feature_freetags=y
+Preference set: feature_group_watches=y
+Preference set: feature_lang_use_db=y
+Preference set: feature_messages=y
+Preference set: feature_multilingual=y
+Preference set: feature_mytiki=y
+Preference set: feature_score=y
+Preference set: feature_search_fulltext=y
+Preference set: feature_site_send_link=y
+Preference set: feature_trackers=y
+Preference set: feature_userPreferences=y
+Preference set: feature_user_watches=y
+Preference set: feature_wiki_argvariable=y
+Preference set: feature_jquery_tablesorter=y
+Preference set: jquery_ui_chosen=y
+Preference set: log_mail=y
+Preference set: sitemycode_publish=y
+Preference set: sitesubtitle=Join us
+Preference set: sitetitle=Our Barter Market
+Preference set: trackerfield_autoincrement=y
+Preference set: trackerfield_itemslist=y
+Preference set: trackerfield_image=y
+Preference set: userTracker=y
+Preference set: wiki_creator_admin=y
+Preference set: wiki_watch_author=y
+Preference set: wiki_watch_editor=y
+Preference set: feature_sitemenu=y
+Preference set: feature_top_bar=y
+Preference set: wikiplugin_addtocart=y
+Preference set: wikiplugin_tr=y
+Preference set: wikiplugin_perm=y
+Preference set: wikiplugin_inline_addtocart=n
+Preference set: wikiplugin_inline_cclite=n
+Preference set: wikiplugin_inline_trackerfilter=n
+Preference set: wikiplugin_inline_trackerlist=n
+Preference set: wikiplugin_inline_trade=n
+Preference set: wikiplugin_inline_tr=n
+Preference set: wikiplugin_inline_perm=n
+Added (or modified): menu "My Menu"
+Added (or modified): module "breadcrumb"
+Added (or modified): wiki_page "Welcome"
+Added (or modified): wiki_page "Registered HomePage"
+Added (or modified): wiki_page "Instructions"
+Added (or modified): wiki_page "Community"
+Added (or modified): wiki_page "Wiki Help"
+Added (or modified): file_gallery "General"
+Added (or modified): forum "Discussion forum"
+Added (or modified): category "Offers"
+Added (or modified): category "Objects"
+Added (or modified): category "Knowledge"
+Added (or modified): category "Services (time based)"
+Added (or modified): tracker "Offers"
+Added (or modified): tracker_field "Offer Code"
+Added (or modified): tracker_field "Title"
+Added (or modified): tracker_field "Description"
+Added (or modified): tracker_field "Category"
+Added (or modified): tracker_field "Weight"
+Added (or modified): tracker_field "Image"
+Added (or modified): tracker_field "Person who offers it"
+Added (or modified): tracker_field "Since"
+Added (or modified): tracker "Wants"
+Added (or modified): tracker_field "Want Code"
+Added (or modified): tracker_field "Title"
+Added (or modified): tracker_field "Description"
+Added (or modified): tracker_field "Category"
+Added (or modified): tracker_field "Weight"
+Added (or modified): tracker_field "Image"
+Added (or modified): tracker_field "Person who wants it"
+Added (or modified): tracker_field "Offers of the same person"
+Added (or modified): tracker_field "Since"
+Added (or modified): tracker "People"
+Added (or modified): tracker_field "login"
+Added (or modified): tracker_field "Name"
+Added (or modified): tracker_field "Business Name"
+An error occurred: Data too long for column 'isHidden' at row 1

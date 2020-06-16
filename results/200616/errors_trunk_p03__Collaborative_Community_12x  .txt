@@ -1,0 +1,1 @@
+error: <a title="Rebuild search index" href="tiki-admin.php?page=search&rebuild=now">Click here to rebuild index</a> An error occurred: Duplicate entry found (profiles.tiki.org-Collaborative_Community_12x  -module_since_las) for key 'PRIMARY'

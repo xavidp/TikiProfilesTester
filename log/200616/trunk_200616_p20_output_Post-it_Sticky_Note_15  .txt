@@ -1,0 +1,11 @@
+Installation completed.
+Queries executed successfully: 1551
+Array to string conversion on line 299 of /opt/html_git/trunk/lib/search/searchlib-unified.php
+Array to string conversion on line 299 of /opt/html_git/trunk/lib/search/searchlib-unified.php
+error: <a title="Rebuild search index" href="tiki-admin.php?page=search&rebuild=now">Click here to rebuild index</a>
+
+
+Clearing all caches
+
+Some of the named object references in the profile are invalid
+

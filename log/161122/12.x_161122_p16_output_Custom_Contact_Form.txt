@@ -1,0 +1,181 @@
+Installation completed.
+Queries executed successfully: 1381
+PHP Notice:  Undefined index: country in /var/www/html/12.x/lib/core/Search/ContentSource/UserSource.php on line 56
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/12.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/12.x/console.php:123
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Application.php:121
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Application.php:191
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Application.php:881
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:241
+PHP   7. UnifiedSearchLib->rebuild() /var/www/html/12.x/lib/core/Tiki/Command/InstallCommand.php:53
+PHP   8. TikiLib->allocate_extra() /var/www/html/12.x/lib/search/searchlib-unified.php:220
+PHP   9. call_user_func:{/var/www/html/12.x/lib/tikilib.php:416}() /var/www/html/12.x/lib/tikilib.php:416
+PHP  10. UnifiedSearchLib->{closure:/var/www/html/12.x/lib/search/searchlib-unified.php:217-219}() /var/www/html/12.x/lib/tikilib.php:416
+PHP  11. Search_Indexer->rebuild() /var/www/html/12.x/lib/search/searchlib-unified.php:218
+PHP  12. Search_Indexer->addDocument() /var/www/html/12.x/lib/core/Search/Indexer.php:64
+PHP  13. Search_Indexer->getDocuments() /var/www/html/12.x/lib/core/Search/Indexer.php:90
+PHP  14. Search_ContentSource_UserSource->getDocument() /var/www/html/12.x/lib/core/Search/Indexer.php:115
+PHP Deprecated:  iconv_set_encoding(): Use of iconv.internal_encoding is deprecated in /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Validate/Hostname.php on line 553
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/12.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/12.x/console.php:123
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Application.php:121
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Application.php:191
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Application.php:881
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:241
+PHP   7. Tiki_Profile::fromNames() /var/www/html/12.x/lib/core/Tiki/Command/ProfileInstallCommand.php:48
+PHP   8. Tiki_Profile::fromUrl() /var/www/html/12.x/lib/core/Tiki/Profile.php:208
+PHP   9. TikiLib->httprequest() /var/www/html/12.x/lib/core/Tiki/Profile.php:163
+PHP  10. TikiLib->get_http_client() /var/www/html/12.x/lib/tikilib.php:649
+PHP  11. Zend_Http_Client->setUri() /var/www/html/12.x/lib/tikilib.php:448
+PHP  12. Zend_Uri::factory() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Http/Client.php:305
+PHP  13. Zend_Uri_Http->__construct() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Uri.php:143
+PHP  14. Zend_Uri_Http->valid() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Uri/Http.php:154
+PHP  15. Zend_Uri_Http->validateHost() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Uri/Http.php:277
+PHP  16. Zend_Validate_Hostname->isValid() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Uri/Http.php:445
+PHP  17. iconv_set_encoding() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Validate/Hostname.php:553
+PHP Deprecated:  iconv_set_encoding(): Use of iconv.internal_encoding is deprecated in /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Validate/Hostname.php on line 649
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/12.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/12.x/console.php:123
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Application.php:121
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Application.php:191
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Application.php:881
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:241
+PHP   7. Tiki_Profile::fromNames() /var/www/html/12.x/lib/core/Tiki/Command/ProfileInstallCommand.php:48
+PHP   8. Tiki_Profile::fromUrl() /var/www/html/12.x/lib/core/Tiki/Profile.php:208
+PHP   9. TikiLib->httprequest() /var/www/html/12.x/lib/core/Tiki/Profile.php:163
+PHP  10. TikiLib->get_http_client() /var/www/html/12.x/lib/tikilib.php:649
+PHP  11. Zend_Http_Client->setUri() /var/www/html/12.x/lib/tikilib.php:448
+PHP  12. Zend_Uri::factory() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Http/Client.php:305
+PHP  13. Zend_Uri_Http->__construct() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Uri.php:143
+PHP  14. Zend_Uri_Http->valid() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Uri/Http.php:154
+PHP  15. Zend_Uri_Http->validateHost() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Uri/Http.php:277
+PHP  16. Zend_Validate_Hostname->isValid() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Uri/Http.php:445
+PHP  17. iconv_set_encoding() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Validate/Hostname.php:649
+PHP Deprecated:  iconv_set_encoding(): Use of iconv.internal_encoding is deprecated in /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Validate/Hostname.php on line 553
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/12.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/12.x/console.php:123
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Application.php:121
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Application.php:191
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Application.php:881
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:241
+PHP   7. Tiki_Profile::fromNames() /var/www/html/12.x/lib/core/Tiki/Command/ProfileInstallCommand.php:48
+PHP   8. Tiki_Profile::fromUrl() /var/www/html/12.x/lib/core/Tiki/Profile.php:208
+PHP   9. Tiki_Profile->loadYaml() /var/www/html/12.x/lib/core/Tiki/Profile.php:179
+PHP  10. Tiki_Profile->fetchExternals() /var/www/html/12.x/lib/core/Tiki/Profile.php:351
+PHP  11. Tiki_Profile->traverseForExternals() /var/www/html/12.x/lib/core/Tiki/Profile.php:357
+PHP  12. Tiki_Profile->traverseForExternals() /var/www/html/12.x/lib/core/Tiki/Profile.php:364
+PHP  13. Tiki_Profile->traverseForExternals() /var/www/html/12.x/lib/core/Tiki/Profile.php:364
+PHP  14. Tiki_Profile->traverseForExternals() /var/www/html/12.x/lib/core/Tiki/Profile.php:364
+PHP  15. Tiki_Profile->traverseForExternals() /var/www/html/12.x/lib/core/Tiki/Profile.php:364
+PHP  16. Tiki_Profile->getPageContent() /var/www/html/12.x/lib/core/Tiki/Profile.php:368
+PHP  17. Tiki_Profile_Transport_Repository->getPageContent() /var/www/html/12.x/lib/core/Tiki/Profile.php:377
+PHP  18. TikiLib->httprequest() /var/www/html/12.x/lib/core/Tiki/Profile/Transport/Repository.php:22
+PHP  19. TikiLib->get_http_client() /var/www/html/12.x/lib/tikilib.php:649
+PHP  20. Zend_Http_Client->setUri() /var/www/html/12.x/lib/tikilib.php:448
+PHP  21. Zend_Uri::factory() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Http/Client.php:305
+PHP  22. Zend_Uri_Http->__construct() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Uri.php:143
+PHP  23. Zend_Uri_Http->valid() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Uri/Http.php:154
+PHP  24. Zend_Uri_Http->validateHost() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Uri/Http.php:277
+PHP  25. Zend_Validate_Hostname->isValid() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Uri/Http.php:445
+PHP  26. iconv_set_encoding() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Validate/Hostname.php:553
+PHP Deprecated:  iconv_set_encoding(): Use of iconv.internal_encoding is deprecated in /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Validate/Hostname.php on line 649
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/12.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/12.x/console.php:123
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Application.php:121
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Application.php:191
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Application.php:881
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:241
+PHP   7. Tiki_Profile::fromNames() /var/www/html/12.x/lib/core/Tiki/Command/ProfileInstallCommand.php:48
+PHP   8. Tiki_Profile::fromUrl() /var/www/html/12.x/lib/core/Tiki/Profile.php:208
+PHP   9. Tiki_Profile->loadYaml() /var/www/html/12.x/lib/core/Tiki/Profile.php:179
+PHP  10. Tiki_Profile->fetchExternals() /var/www/html/12.x/lib/core/Tiki/Profile.php:351
+PHP  11. Tiki_Profile->traverseForExternals() /var/www/html/12.x/lib/core/Tiki/Profile.php:357
+PHP  12. Tiki_Profile->traverseForExternals() /var/www/html/12.x/lib/core/Tiki/Profile.php:364
+PHP  13. Tiki_Profile->traverseForExternals() /var/www/html/12.x/lib/core/Tiki/Profile.php:364
+PHP  14. Tiki_Profile->traverseForExternals() /var/www/html/12.x/lib/core/Tiki/Profile.php:364
+PHP  15. Tiki_Profile->traverseForExternals() /var/www/html/12.x/lib/core/Tiki/Profile.php:364
+PHP  16. Tiki_Profile->getPageContent() /var/www/html/12.x/lib/core/Tiki/Profile.php:368
+PHP  17. Tiki_Profile_Transport_Repository->getPageContent() /var/www/html/12.x/lib/core/Tiki/Profile.php:377
+PHP  18. TikiLib->httprequest() /var/www/html/12.x/lib/core/Tiki/Profile/Transport/Repository.php:22
+PHP  19. TikiLib->get_http_client() /var/www/html/12.x/lib/tikilib.php:649
+PHP  20. Zend_Http_Client->setUri() /var/www/html/12.x/lib/tikilib.php:448
+PHP  21. Zend_Uri::factory() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Http/Client.php:305
+PHP  22. Zend_Uri_Http->__construct() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Uri.php:143
+PHP  23. Zend_Uri_Http->valid() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Uri/Http.php:154
+PHP  24. Zend_Uri_Http->validateHost() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Uri/Http.php:277
+PHP  25. Zend_Validate_Hostname->isValid() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Uri/Http.php:445
+PHP  26. iconv_set_encoding() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Validate/Hostname.php:649
+PHP Deprecated:  iconv_set_encoding(): Use of iconv.internal_encoding is deprecated in /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Validate/Hostname.php on line 553
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/12.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/12.x/console.php:123
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Application.php:121
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Application.php:191
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Application.php:881
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:241
+PHP   7. Tiki_Profile::fromNames() /var/www/html/12.x/lib/core/Tiki/Command/ProfileInstallCommand.php:48
+PHP   8. Tiki_Profile::fromUrl() /var/www/html/12.x/lib/core/Tiki/Profile.php:208
+PHP   9. Tiki_Profile->loadYaml() /var/www/html/12.x/lib/core/Tiki/Profile.php:179
+PHP  10. Tiki_Profile->fetchExternals() /var/www/html/12.x/lib/core/Tiki/Profile.php:351
+PHP  11. Tiki_Profile->traverseForExternals() /var/www/html/12.x/lib/core/Tiki/Profile.php:357
+PHP  12. Tiki_Profile->traverseForExternals() /var/www/html/12.x/lib/core/Tiki/Profile.php:364
+PHP  13. Tiki_Profile->traverseForExternals() /var/www/html/12.x/lib/core/Tiki/Profile.php:364
+PHP  14. Tiki_Profile->traverseForExternals() /var/www/html/12.x/lib/core/Tiki/Profile.php:364
+PHP  15. Tiki_Profile->traverseForExternals() /var/www/html/12.x/lib/core/Tiki/Profile.php:364
+PHP  16. Tiki_Profile->getPageContent() /var/www/html/12.x/lib/core/Tiki/Profile.php:368
+PHP  17. Tiki_Profile_Transport_Repository->getPageContent() /var/www/html/12.x/lib/core/Tiki/Profile.php:377
+PHP  18. TikiLib->httprequest() /var/www/html/12.x/lib/core/Tiki/Profile/Transport/Repository.php:22
+PHP  19. TikiLib->get_http_client() /var/www/html/12.x/lib/tikilib.php:649
+PHP  20. Zend_Http_Client->setUri() /var/www/html/12.x/lib/tikilib.php:448
+PHP  21. Zend_Uri::factory() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Http/Client.php:305
+PHP  22. Zend_Uri_Http->__construct() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Uri.php:143
+PHP  23. Zend_Uri_Http->valid() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Uri/Http.php:154
+PHP  24. Zend_Uri_Http->validateHost() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Uri/Http.php:277
+PHP  25. Zend_Validate_Hostname->isValid() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Uri/Http.php:445
+PHP  26. iconv_set_encoding() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Validate/Hostname.php:553
+PHP Deprecated:  iconv_set_encoding(): Use of iconv.internal_encoding is deprecated in /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Validate/Hostname.php on line 649
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/12.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/12.x/console.php:123
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Application.php:121
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Application.php:191
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Application.php:881
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:241
+PHP   7. Tiki_Profile::fromNames() /var/www/html/12.x/lib/core/Tiki/Command/ProfileInstallCommand.php:48
+PHP   8. Tiki_Profile::fromUrl() /var/www/html/12.x/lib/core/Tiki/Profile.php:208
+PHP   9. Tiki_Profile->loadYaml() /var/www/html/12.x/lib/core/Tiki/Profile.php:179
+PHP  10. Tiki_Profile->fetchExternals() /var/www/html/12.x/lib/core/Tiki/Profile.php:351
+PHP  11. Tiki_Profile->traverseForExternals() /var/www/html/12.x/lib/core/Tiki/Profile.php:357
+PHP  12. Tiki_Profile->traverseForExternals() /var/www/html/12.x/lib/core/Tiki/Profile.php:364
+PHP  13. Tiki_Profile->traverseForExternals() /var/www/html/12.x/lib/core/Tiki/Profile.php:364
+PHP  14. Tiki_Profile->traverseForExternals() /var/www/html/12.x/lib/core/Tiki/Profile.php:364
+PHP  15. Tiki_Profile->traverseForExternals() /var/www/html/12.x/lib/core/Tiki/Profile.php:364
+PHP  16. Tiki_Profile->getPageContent() /var/www/html/12.x/lib/core/Tiki/Profile.php:368
+PHP  17. Tiki_Profile_Transport_Repository->getPageContent() /var/www/html/12.x/lib/core/Tiki/Profile.php:377
+PHP  18. TikiLib->httprequest() /var/www/html/12.x/lib/core/Tiki/Profile/Transport/Repository.php:22
+PHP  19. TikiLib->get_http_client() /var/www/html/12.x/lib/tikilib.php:649
+PHP  20. Zend_Http_Client->setUri() /var/www/html/12.x/lib/tikilib.php:448
+PHP  21. Zend_Uri::factory() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Http/Client.php:305
+PHP  22. Zend_Uri_Http->__construct() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Uri.php:143
+PHP  23. Zend_Uri_Http->valid() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Uri/Http.php:154
+PHP  24. Zend_Uri_Http->validateHost() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Uri/Http.php:277
+PHP  25. Zend_Validate_Hostname->isValid() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Uri/Http.php:445
+PHP  26. iconv_set_encoding() /var/www/html/12.x/vendor/bombayworks/zendframework1/library/Zend/Validate/Hostname.php:649
+PHP Notice:  Undefined index: outboundEmail in /var/www/html/12.x/lib/core/Tiki/Profile/InstallHandler/Tracker.php on line 141
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/12.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/12.x/console.php:123
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Application.php:121
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Application.php:191
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Application.php:881
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:241
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/12.x/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/12.x/lib/core/Tiki/Profile/Installer.php:253
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/12.x/lib/core/Tiki/Profile/Installer.php:320
+PHP  10. Tiki_Profile_InstallHandler_Tracker->_install() /var/www/html/12.x/lib/core/Tiki/Profile/InstallHandler.php:24
+Profile applied.

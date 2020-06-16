@@ -1,0 +1,148 @@
+PHP Warning:  file_put_contents(/var/www/html/14.x/temp/cache/container.php): failed to open stream: Permission denied in /var/www/html/14.x/lib/init/initlib.php on line 103
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/14.x/console.php:0
+PHP   2. require_once() /var/www/html/14.x/console.php:66
+PHP   3. require_once() /var/www/html/14.x/tiki-setup.php:47
+PHP   4. TikiLib::lib() /var/www/html/14.x/tiki-setup_base.php:117
+PHP   5. TikiInit::getContainer() /var/www/html/14.x/lib/tikilib.php:59
+PHP   6. file_put_contents() /var/www/html/14.x/lib/init/initlib.php:103
+
+<html><body>
+<h2><font color='red'>Tiki is not properly set up:</font></h2>
+<pre>
+The directory '/var/www/html/14.x/dump/' is not writeable by xavi.
+The directory '/var/www/html/14.x/img/wiki/' is not writeable by xavi.
+The directory '/var/www/html/14.x/img/wiki_up/' is not writeable by xavi.
+The directory '/var/www/html/14.x/modules/cache/' is not writeable by xavi.
+The directory '/var/www/html/14.x/temp/' is not writeable by xavi.
+The directory '/var/www/html/14.x/templates_c/' is not writeable by xavi.
+
+Your options:
+
+
+	1- With FTP access:
+		a) Change the permissions (chmod) of the directories to 777.
+		b) Create any missing directories
+		c) <a href='tiki-install.php'>Execute the Tiki installer again</a> (Once you have executed these commands, this message will disappear!)
+
+	or
+
+	2- With shell (SSH) access, you can run the command below.
+
+		a) Run setup.sh and follow the instructions:
+			$ bash
+			$ cd /var/www/html/14.x
+			$ sh setup.sh
+
+		The script will offer you options depending on your server configuration.
+
+		b) <a href='tiki-install.php'>Execute the Tiki installer again</a> (Once you have executed these commands, this message will disappear!)
+
+
+<hr>
+If you have problems accessing a directory, check the open_basedir entry in
+/etc/php/5.6/cli/php.ini or httpd.conf.
+
+<hr>
+
+<a href='http://doc.tiki.org/Installation' target='_blank'>Consult the tiki.org installation guide</a> if you need more help or <a href='http://tiki.org/tiki-forums.php' target='_blank'>visit the forums</a>
+
+</pre></body></html>PHP Warning:  file_put_contents(/var/www/html/14.x/temp/cache/container.php): failed to open stream: Permission denied in /var/www/html/14.x/lib/init/initlib.php on line 103
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/14.x/console.php:0
+PHP   2. require_once() /var/www/html/14.x/console.php:66
+PHP   3. require_once() /var/www/html/14.x/tiki-setup.php:47
+PHP   4. TikiLib::lib() /var/www/html/14.x/tiki-setup_base.php:117
+PHP   5. TikiInit::getContainer() /var/www/html/14.x/lib/tikilib.php:59
+PHP   6. file_put_contents() /var/www/html/14.x/lib/init/initlib.php:103
+
+<html><body>
+<h2><font color='red'>Tiki is not properly set up:</font></h2>
+<pre>
+The directory '/var/www/html/14.x/dump/' is not writeable by xavi.
+The directory '/var/www/html/14.x/img/wiki/' is not writeable by xavi.
+The directory '/var/www/html/14.x/img/wiki_up/' is not writeable by xavi.
+The directory '/var/www/html/14.x/modules/cache/' is not writeable by xavi.
+The directory '/var/www/html/14.x/temp/' is not writeable by xavi.
+The directory '/var/www/html/14.x/templates_c/' is not writeable by xavi.
+
+Your options:
+
+
+	1- With FTP access:
+		a) Change the permissions (chmod) of the directories to 777.
+		b) Create any missing directories
+		c) <a href='tiki-install.php'>Execute the Tiki installer again</a> (Once you have executed these commands, this message will disappear!)
+
+	or
+
+	2- With shell (SSH) access, you can run the command below.
+
+		a) Run setup.sh and follow the instructions:
+			$ bash
+			$ cd /var/www/html/14.x
+			$ sh setup.sh
+
+		The script will offer you options depending on your server configuration.
+
+		b) <a href='tiki-install.php'>Execute the Tiki installer again</a> (Once you have executed these commands, this message will disappear!)
+
+
+<hr>
+If you have problems accessing a directory, check the open_basedir entry in
+/etc/php/5.6/cli/php.ini or httpd.conf.
+
+<hr>
+
+<a href='http://doc.tiki.org/Installation' target='_blank'>Consult the tiki.org installation guide</a> if you need more help or <a href='http://tiki.org/tiki-forums.php' target='_blank'>visit the forums</a>
+
+</pre></body></html>PHP Warning:  file_put_contents(/var/www/html/14.x/temp/cache/container.php): failed to open stream: Permission denied in /var/www/html/14.x/lib/init/initlib.php on line 103
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/14.x/console.php:0
+PHP   2. require_once() /var/www/html/14.x/console.php:66
+PHP   3. require_once() /var/www/html/14.x/tiki-setup.php:47
+PHP   4. TikiLib::lib() /var/www/html/14.x/tiki-setup_base.php:117
+PHP   5. TikiInit::getContainer() /var/www/html/14.x/lib/tikilib.php:59
+PHP   6. file_put_contents() /var/www/html/14.x/lib/init/initlib.php:103
+
+<html><body>
+<h2><font color='red'>Tiki is not properly set up:</font></h2>
+<pre>
+The directory '/var/www/html/14.x/dump/' is not writeable by xavi.
+The directory '/var/www/html/14.x/img/wiki/' is not writeable by xavi.
+The directory '/var/www/html/14.x/img/wiki_up/' is not writeable by xavi.
+The directory '/var/www/html/14.x/modules/cache/' is not writeable by xavi.
+The directory '/var/www/html/14.x/temp/' is not writeable by xavi.
+The directory '/var/www/html/14.x/templates_c/' is not writeable by xavi.
+
+Your options:
+
+
+	1- With FTP access:
+		a) Change the permissions (chmod) of the directories to 777.
+		b) Create any missing directories
+		c) <a href='tiki-install.php'>Execute the Tiki installer again</a> (Once you have executed these commands, this message will disappear!)
+
+	or
+
+	2- With shell (SSH) access, you can run the command below.
+
+		a) Run setup.sh and follow the instructions:
+			$ bash
+			$ cd /var/www/html/14.x
+			$ sh setup.sh
+
+		The script will offer you options depending on your server configuration.
+
+		b) <a href='tiki-install.php'>Execute the Tiki installer again</a> (Once you have executed these commands, this message will disappear!)
+
+
+<hr>
+If you have problems accessing a directory, check the open_basedir entry in
+/etc/php/5.6/cli/php.ini or httpd.conf.
+
+<hr>
+
+<a href='http://doc.tiki.org/Installation' target='_blank'>Consult the tiki.org installation guide</a> if you need more help or <a href='http://tiki.org/tiki-forums.php' target='_blank'>visit the forums</a>
+
+</pre></body></html>

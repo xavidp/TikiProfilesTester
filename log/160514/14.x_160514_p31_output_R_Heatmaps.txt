@@ -1,0 +1,4 @@
+Installation completed.
+Queries executed successfully: 1414
+Clearing all caches
+Profile applied.

@@ -1,0 +1,56 @@
+Installation completed.
+Queries executed successfully: 1407
+Clearing all caches
+PHP Warning:  preg_match() expects parameter 2 to be string, object given in /var/www/html/15.x/lib/filegals/filegallib.php on line 3927
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/15.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/15.x/console.php:178
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/15.x/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/15.x/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/15.x/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/15.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/15.x/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/15.x/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/15.x/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_FileGallery->_install() /var/www/html/15.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. Tiki_Profile_InstallHandler_FileGallery->upload() /var/www/html/15.x/lib/core/Tiki/Profile/InstallHandler/FileGallery.php:159
+PHP  12. FileGalLib->get_info_from_url() /var/www/html/15.x/lib/core/Tiki/Profile/InstallHandler/FileGallery.php:173
+PHP  13. FileGalLib->get_info_from_http() /var/www/html/15.x/lib/filegals/filegallib.php:3884
+PHP  14. preg_match() /var/www/html/15.x/lib/filegals/filegallib.php:3927
+PHP Warning:  PDOStatement::execute(): SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'deleteAfter' at row 1 in /var/www/html/15.x/lib/core/TikiDb/Pdo.php on line 77
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/15.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/15.x/console.php:178
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/15.x/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/15.x/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/15.x/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/15.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/15.x/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/15.x/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/15.x/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_FileGallery->_install() /var/www/html/15.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. Tiki_Profile_InstallHandler_FileGallery->upload() /var/www/html/15.x/lib/core/Tiki/Profile/InstallHandler/FileGallery.php:159
+PHP  12. FileGalLib->upload_single_file() /var/www/html/15.x/lib/core/Tiki/Profile/InstallHandler/FileGallery.php:179
+PHP  13. FileGalLib->insert_file() /var/www/html/15.x/lib/filegals/filegallib.php:3831
+PHP  14. TikiDb_Table->insert() /var/www/html/15.x/lib/filegals/filegallib.php:360
+PHP  15. TikiDb->queryException() /var/www/html/15.x/lib/core/TikiDb/Table.php:40
+PHP  16. TikiDb_Pdo->query() /var/www/html/15.x/lib/core/TikiDb.php:72
+PHP  17. TikiDb_Pdo->_query() /var/www/html/15.x/lib/core/TikiDb/Pdo.php:118
+PHP  18. PDOStatement->execute() /var/www/html/15.x/lib/core/TikiDb/Pdo.php:77
+Installation failed:
+Applying profile: Random_header_images_14
+Preference set: feature_sitelogo=n
+Preference set: layout_fixed_width=990px
+Preference set: fgal_elfinder_feature=y
+Preference set: fgal_default_view=finder
+Preference set: header_custom_css=#top_modules .imgbox {
+	width: 802px;
+	height: 160px !important;
+}
+
+Preference set: feature_iepngfix=y
+Preference set: feature_top_bar=y
+Preference set: sitemycode_publish=y
+Preference set: feature_layoutshadows=y
+Preference set: fgal_fix_mime_type=y
+An error occurred: Incorrect integer value: '' for column 'deleteAfter' at row 1

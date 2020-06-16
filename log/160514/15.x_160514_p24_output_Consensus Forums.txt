@@ -1,0 +1,15 @@
+Installation completed.
+Queries executed successfully: 1389
+PHP Fatal error:  Uncaught exception 'Search_MySql_LimitReachedException' with message 'Could not perform index modification: Incorrect datetime value: '0000-00-00 00:00:00' for column 'creation_date' at row 1' in /var/www/html/15.x/lib/core/Search/MySql/QueryBuffer.php:55
+Stack trace:
+#0 /var/www/html/15.x/lib/core/Search/MySql/QueryBuffer.php(37): Search_MySql_QueryBuffer->realFlush()
+#1 /var/www/html/15.x/lib/core/Search/MySql/Table.php(195): Search_MySql_QueryBuffer->flush()
+#2 /var/www/html/15.x/lib/core/Search/MySql/Table.php(28): Search_MySql_Table->flush()
+#3 [internal function]: Search_MySql_Table->__destruct()
+#4 {main}
+  thrown in /var/www/html/15.x/lib/core/Search/MySql/QueryBuffer.php on line 55
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/15.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/15.x/console.php:176
+Clearing all caches
+Profile not found.

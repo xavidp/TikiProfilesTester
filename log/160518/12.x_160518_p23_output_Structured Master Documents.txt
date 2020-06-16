@@ -1,0 +1,28 @@
+Installation completed.
+Queries executed successfully: 1374
+PHP Notice:  Undefined index: country in /var/www/html/12.x/lib/core/Search/ContentSource/UserSource.php on line 56
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/12.x/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/12.x/console.php:123
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Application.php:121
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Application.php:191
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Application.php:881
+PHP   6. Tiki\Command\InstallCommand->execute() /var/www/html/12.x/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:241
+PHP   7. UnifiedSearchLib->rebuild() /var/www/html/12.x/lib/core/Tiki/Command/InstallCommand.php:53
+PHP   8. TikiLib->allocate_extra() /var/www/html/12.x/lib/search/searchlib-unified.php:219
+PHP   9. UnifiedSearchLib->{closure:/var/www/html/12.x/lib/search/searchlib-unified.php:217-219}() /var/www/html/12.x/lib/tikilib.php:416
+PHP  10. Search_Indexer->rebuild() /var/www/html/12.x/lib/search/searchlib-unified.php:218
+PHP  11. Search_Indexer->addDocument() /var/www/html/12.x/lib/core/Search/Indexer.php:64
+PHP  12. Search_Indexer->getDocuments() /var/www/html/12.x/lib/core/Search/Indexer.php:90
+PHP  13. Search_ContentSource_UserSource->getDocument() /var/www/html/12.x/lib/core/Search/Indexer.php:115
+
+
+                       
+  [RuntimeException]   
+  Too many arguments.  
+                       
+
+
+profile:apply [--force] profile [repository]
+
+

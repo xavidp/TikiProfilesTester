@@ -1,0 +1,63 @@
+Installation completed.
+Queries executed successfully: 1407
+Clearing all caches
+Installation failed:
+Applying profile: R_demo
+Preference set: feature_search_fulltext=y
+Preference set: feature_wiki_argvariable=y
+Preference set: feature_syntax_highlighter=y
+Preference set: feature_syntax_highlighter_theme=default
+Preference set: wiki_dynvar_style=double
+Preference set: wikiplugin_iframe=y
+Preference set: wikiplugin_pluginmanager=y
+Preference set: wikiplugin_list=y
+Preference set: wikiplugin_listpages=y
+Preference set: wikiplugin_titlesearch=y
+Preference set: wikiplugininline_div=y
+Preference set: wikiplugininline_iframe=y
+Preference set: wikiplugininline_img=y
+Preference set: wikiplugininline_fade=y
+Preference set: wikiplugininline_remarksbox=y
+Preference set: wikiplugininline_pluginmanager=y
+Preference set: wikiplugininline_list=y
+Preference set: wikiplugininline_listpages=y
+Preference set: wikiplugininline_titlesearch=y
+Preference set: feature_multilingual=y
+Preference set: lang_use_db=y
+Added (or modified): tracker "Datasets"
+Added (or modified): tracker_field "Summary"
+Added (or modified): tracker_field "Description"
+Added (or modified): tracker_field "From user"
+Added (or modified): tracker_field "Dataset file"
+Added (or modified): tracker_field "Minimum value for axis X"
+Added (or modified): tracker_field "Maximum value for axis X"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker_item "No name"
+Added (or modified): module "last_modif_tracker_items"
+Added (or modified): wiki_page "Welcome to Plugin R"
+Added (or modified): wiki_page "r_demo01_simple_test"
+Added (or modified): wiki_page "r_demo02_params"
+Added (or modified): wiki_page "r_demo03_interface"
+Added (or modified): wiki_page "r_demo03_template01"
+Added (or modified): wiki_page "r_demo04_export"
+Added (or modified): wiki_page "r_demo05_wordcloud"
+Added (or modified): wiki_page "r_demo06_googleVis"
+Added (or modified): wiki_page "r_demo07_plot.ly"
+Added (or modified): wiki_page "r_demo08_customoutput"
+Added (or modified): wiki_page "r_demo09_rcharts"
+Added (or modified): wiki_page "r_demo09_rcharts_highcharts"
+Added (or modified): wiki_page "r_demo09_rcharts_leaflet"
+Added (or modified): wiki_page "r_demo09_rcharts_morris"
+Added (or modified): wiki_page "r_demo09_rcharts_nvd3"
+Added (or modified): wiki_page "r_demo09_rcharts_polychart"
+Added (or modified): wiki_page "r_demo09_rcharts_rickshaw"
+Added (or modified): wiki_page "r_demo09_rcharts_xcharts"
+Added (or modified): wiki_page "r_demo09_rcharts_512paths"
+Added (or modified): wiki_page "r_demo10_clickme"
+Added (or modified): wiki_page "r_demo11_animation"
+Added (or modified): wiki_page "r_demo12_ecoengine"
+Added (or modified): wiki_page "r_demo13_parse_body"
+Added (or modified): wiki_page "r_demo13_template01"
+Added (or modified): wiki_page "r_demo14_webshot"
+An error occurred: Data too long for column 'description' at row 1

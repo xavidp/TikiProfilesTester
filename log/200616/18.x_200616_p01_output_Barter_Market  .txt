@@ -1,0 +1,5 @@
+Installation completed.
+Queries executed successfully: 928
+Clearing all caches
+Installation failed:
+An error occurred: Object (#want_001) of type tracker_item in profiles.tiki.org:Barter_Market does not validate

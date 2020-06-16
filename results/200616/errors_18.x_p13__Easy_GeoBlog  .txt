@@ -1,0 +1,1 @@
+PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function BlogLib::replace_blog(), 13 passed in /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler/Blog.php on line 66 and at least 21 expected in /opt/html_git/18.x/lib/blogs/bloglib.php:472

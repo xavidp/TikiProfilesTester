@@ -1,0 +1,397 @@
+Installation completed.
+Queries executed successfully: 1389
+PHP Fatal error:  Uncaught exception 'Search_MySql_LimitReachedException' with message 'Could not perform index modification: Incorrect datetime value: '0000-00-00 00:00:00' for column 'creation_date' at row 1' in /var/www/html/trunk/lib/core/Search/MySql/QueryBuffer.php:55
+Stack trace:
+#0 /var/www/html/trunk/lib/core/Search/MySql/QueryBuffer.php(37): Search_MySql_QueryBuffer->realFlush()
+#1 /var/www/html/trunk/lib/core/Search/MySql/Table.php(195): Search_MySql_QueryBuffer->flush()
+#2 /var/www/html/trunk/lib/core/Search/MySql/Table.php(28): Search_MySql_Table->flush()
+#3 [internal function]: Search_MySql_Table->__destruct()
+#4 {main}
+  thrown in /var/www/html/trunk/lib/core/Search/MySql/QueryBuffer.php on line 55
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+Clearing all caches
+PHP Notice:  Undefined index: value in /var/www/html/trunk/lib/trackers/trackerlib.php on line 1638
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_TrackerItem->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TrackerLib->replace_item() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/TrackerItem.php:117
+PHP Parse error:  syntax error, unexpected ';' in /var/www/html/trunk/lib/core/Tracker/Field/Computed.php(125) : eval()'d code on line 1
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_TrackerItem->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TrackerLib->replace_item() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/TrackerItem.php:117
+PHP  12. Tiki_Event_Manager->trigger() /var/www/html/trunk/lib/trackers/trackerlib.php:1791
+PHP  13. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:66
+PHP  14. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  15. Tiki_Event_Chain->__invoke() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  16. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Chain.php:21
+PHP  17. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  18. Tracker_Field_Computed::computeFields() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP Notice:  Undefined variable: value in /var/www/html/trunk/lib/core/Tracker/Field/Computed.php on line 126
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_TrackerItem->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TrackerLib->replace_item() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/TrackerItem.php:117
+PHP  12. Tiki_Event_Manager->trigger() /var/www/html/trunk/lib/trackers/trackerlib.php:1791
+PHP  13. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:66
+PHP  14. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  15. Tiki_Event_Chain->__invoke() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  16. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Chain.php:21
+PHP  17. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  18. Tracker_Field_Computed::computeFields() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP Notice:  Undefined index: itemId in /var/www/html/trunk/lib/core/Tracker/Field/Computed.php on line 127
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_TrackerItem->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TrackerLib->replace_item() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/TrackerItem.php:117
+PHP  12. Tiki_Event_Manager->trigger() /var/www/html/trunk/lib/trackers/trackerlib.php:1791
+PHP  13. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:66
+PHP  14. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  15. Tiki_Event_Chain->__invoke() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  16. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Chain.php:21
+PHP  17. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  18. Tracker_Field_Computed::computeFields() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP Notice:  Undefined variable: value in /var/www/html/trunk/lib/core/Tracker/Field/Computed.php on line 127
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_TrackerItem->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TrackerLib->replace_item() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/TrackerItem.php:117
+PHP  12. Tiki_Event_Manager->trigger() /var/www/html/trunk/lib/trackers/trackerlib.php:1791
+PHP  13. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:66
+PHP  14. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  15. Tiki_Event_Chain->__invoke() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  16. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Chain.php:21
+PHP  17. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  18. Tracker_Field_Computed::computeFields() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP Notice:  Undefined index: value in /var/www/html/trunk/lib/trackers/trackerlib.php on line 1638
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_TrackerItem->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TrackerLib->replace_item() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/TrackerItem.php:117
+PHP Parse error:  syntax error, unexpected ';' in /var/www/html/trunk/lib/core/Tracker/Field/Computed.php(125) : eval()'d code on line 1
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_TrackerItem->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TrackerLib->replace_item() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/TrackerItem.php:117
+PHP  12. Tiki_Event_Manager->trigger() /var/www/html/trunk/lib/trackers/trackerlib.php:1791
+PHP  13. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:66
+PHP  14. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  15. Tiki_Event_Chain->__invoke() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  16. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Chain.php:21
+PHP  17. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  18. Tracker_Field_Computed::computeFields() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP Notice:  Undefined variable: value in /var/www/html/trunk/lib/core/Tracker/Field/Computed.php on line 126
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_TrackerItem->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TrackerLib->replace_item() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/TrackerItem.php:117
+PHP  12. Tiki_Event_Manager->trigger() /var/www/html/trunk/lib/trackers/trackerlib.php:1791
+PHP  13. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:66
+PHP  14. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  15. Tiki_Event_Chain->__invoke() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  16. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Chain.php:21
+PHP  17. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  18. Tracker_Field_Computed::computeFields() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP Notice:  Undefined index: itemId in /var/www/html/trunk/lib/core/Tracker/Field/Computed.php on line 127
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_TrackerItem->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TrackerLib->replace_item() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/TrackerItem.php:117
+PHP  12. Tiki_Event_Manager->trigger() /var/www/html/trunk/lib/trackers/trackerlib.php:1791
+PHP  13. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:66
+PHP  14. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  15. Tiki_Event_Chain->__invoke() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  16. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Chain.php:21
+PHP  17. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  18. Tracker_Field_Computed::computeFields() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP Notice:  Undefined variable: value in /var/www/html/trunk/lib/core/Tracker/Field/Computed.php on line 127
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_TrackerItem->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TrackerLib->replace_item() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/TrackerItem.php:117
+PHP  12. Tiki_Event_Manager->trigger() /var/www/html/trunk/lib/trackers/trackerlib.php:1791
+PHP  13. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:66
+PHP  14. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  15. Tiki_Event_Chain->__invoke() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  16. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Chain.php:21
+PHP  17. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  18. Tracker_Field_Computed::computeFields() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP Notice:  Undefined index: value in /var/www/html/trunk/lib/trackers/trackerlib.php on line 1638
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_TrackerItem->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TrackerLib->replace_item() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/TrackerItem.php:117
+PHP Parse error:  syntax error, unexpected ';' in /var/www/html/trunk/lib/core/Tracker/Field/Computed.php(125) : eval()'d code on line 1
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_TrackerItem->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TrackerLib->replace_item() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/TrackerItem.php:117
+PHP  12. Tiki_Event_Manager->trigger() /var/www/html/trunk/lib/trackers/trackerlib.php:1791
+PHP  13. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:66
+PHP  14. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  15. Tiki_Event_Chain->__invoke() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  16. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Chain.php:21
+PHP  17. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  18. Tracker_Field_Computed::computeFields() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP Notice:  Undefined variable: value in /var/www/html/trunk/lib/core/Tracker/Field/Computed.php on line 126
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_TrackerItem->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TrackerLib->replace_item() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/TrackerItem.php:117
+PHP  12. Tiki_Event_Manager->trigger() /var/www/html/trunk/lib/trackers/trackerlib.php:1791
+PHP  13. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:66
+PHP  14. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  15. Tiki_Event_Chain->__invoke() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  16. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Chain.php:21
+PHP  17. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  18. Tracker_Field_Computed::computeFields() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP Notice:  Undefined index: itemId in /var/www/html/trunk/lib/core/Tracker/Field/Computed.php on line 127
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_TrackerItem->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TrackerLib->replace_item() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/TrackerItem.php:117
+PHP  12. Tiki_Event_Manager->trigger() /var/www/html/trunk/lib/trackers/trackerlib.php:1791
+PHP  13. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:66
+PHP  14. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  15. Tiki_Event_Chain->__invoke() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  16. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Chain.php:21
+PHP  17. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  18. Tracker_Field_Computed::computeFields() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP Notice:  Undefined variable: value in /var/www/html/trunk/lib/core/Tracker/Field/Computed.php on line 127
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_TrackerItem->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TrackerLib->replace_item() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/TrackerItem.php:117
+PHP  12. Tiki_Event_Manager->trigger() /var/www/html/trunk/lib/trackers/trackerlib.php:1791
+PHP  13. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:66
+PHP  14. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  15. Tiki_Event_Chain->__invoke() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  16. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Chain.php:21
+PHP  17. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  18. Tracker_Field_Computed::computeFields() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP Notice:  Undefined index: value in /var/www/html/trunk/lib/trackers/trackerlib.php on line 1638
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_TrackerItem->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TrackerLib->replace_item() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/TrackerItem.php:117
+PHP Parse error:  syntax error, unexpected ';' in /var/www/html/trunk/lib/core/Tracker/Field/Computed.php(125) : eval()'d code on line 1
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_TrackerItem->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TrackerLib->replace_item() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/TrackerItem.php:117
+PHP  12. Tiki_Event_Manager->trigger() /var/www/html/trunk/lib/trackers/trackerlib.php:1791
+PHP  13. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:66
+PHP  14. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  15. Tiki_Event_Chain->__invoke() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  16. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Chain.php:21
+PHP  17. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  18. Tracker_Field_Computed::computeFields() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP Notice:  Undefined variable: value in /var/www/html/trunk/lib/core/Tracker/Field/Computed.php on line 126
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_TrackerItem->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TrackerLib->replace_item() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/TrackerItem.php:117
+PHP  12. Tiki_Event_Manager->trigger() /var/www/html/trunk/lib/trackers/trackerlib.php:1791
+PHP  13. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:66
+PHP  14. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  15. Tiki_Event_Chain->__invoke() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  16. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Chain.php:21
+PHP  17. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  18. Tracker_Field_Computed::computeFields() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP Notice:  Undefined index: itemId in /var/www/html/trunk/lib/core/Tracker/Field/Computed.php on line 127
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_TrackerItem->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TrackerLib->replace_item() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/TrackerItem.php:117
+PHP  12. Tiki_Event_Manager->trigger() /var/www/html/trunk/lib/trackers/trackerlib.php:1791
+PHP  13. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:66
+PHP  14. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  15. Tiki_Event_Chain->__invoke() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  16. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Chain.php:21
+PHP  17. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  18. Tracker_Field_Computed::computeFields() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP Notice:  Undefined variable: value in /var/www/html/trunk/lib/core/Tracker/Field/Computed.php on line 127
+PHP Stack trace:
+PHP   1. {main}() /var/www/html/trunk/console.php:0
+PHP   2. Symfony\Component\Console\Application->run() /var/www/html/trunk/console.php:176
+PHP   3. Symfony\Component\Console\Application->doRun() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:126
+PHP   4. Symfony\Component\Console\Application->doRunCommand() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:195
+PHP   5. Symfony\Component\Console\Command\Command->run() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Application.php:874
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /var/www/html/trunk/vendor/symfony/console/Symfony/Component/Console/Command/Command.php:253
+PHP   7. Tiki_Profile_Installer->install() /var/www/html/trunk/lib/core/Tiki/Command/ProfileInstallCommand.php:67
+PHP   8. Tiki_Profile_Installer->doInstall() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:375
+PHP   9. Tiki_Profile_InstallHandler->install() /var/www/html/trunk/lib/core/Tiki/Profile/Installer.php:450
+PHP  10. Tiki_Profile_InstallHandler_TrackerItem->_install() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TrackerLib->replace_item() /var/www/html/trunk/lib/core/Tiki/Profile/InstallHandler/TrackerItem.php:117
+PHP  12. Tiki_Event_Manager->trigger() /var/www/html/trunk/lib/trackers/trackerlib.php:1791
+PHP  13. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:66
+PHP  14. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  15. Tiki_Event_Chain->__invoke() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  16. Tiki_Event_Manager->internalTrigger() /var/www/html/trunk/lib/core/Tiki/Event/Chain.php:21
+PHP  17. call_user_func:{/var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83}() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+PHP  18. Tracker_Field_Computed::computeFields() /var/www/html/trunk/lib/core/Tiki/Event/Manager.php:83
+
+
+                                                                                                                                  
+  [Search_MySql_LimitReachedException]                                                                                            
+  Could not perform index modification: Incorrect datetime value: '0000-00-00 00:00:00' for column 'tracker_field_data' at row 1  
+                                                                                                                                  
+
+
+profile:apply [--force] profile [repository]
+
+
