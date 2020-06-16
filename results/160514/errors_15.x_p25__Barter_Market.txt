@@ -1,0 +1,1 @@
+PHP Fatal error:  Uncaught exception 'Search_MySql_LimitReachedException' with message 'Could not perform index modification: Incorrect datetime value: '0000-00-00 00:00:00' for column 'creation_date' at row 1' in /var/www/html/15.x/lib/core/Search/MySql/QueryBuffer.php:55 An error occurred: Data too long for column 'isHidden' at row 1
