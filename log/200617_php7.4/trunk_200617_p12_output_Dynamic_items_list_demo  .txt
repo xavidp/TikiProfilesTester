@@ -1,0 +1,82 @@
+Trying to access array offset on value of type bool on line 102 of /opt/html_git/trunk/lib/userprefs/userprefslib.php
+Trying to access array offset on value of type bool on line 103 of /opt/html_git/trunk/lib/userprefs/userprefslib.php
+Installation completed.
+Queries executed successfully: 1551
+Array to string conversion on line 299 of /opt/html_git/trunk/lib/search/searchlib-unified.php
+Array to string conversion on line 299 of /opt/html_git/trunk/lib/search/searchlib-unified.php
+Trying to access array offset on value of type bool on line 670 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 671 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 670 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 671 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 670 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 671 of /opt/html_git/trunk/lib/prefslib.php
+error: <a title="Rebuild search index" href="tiki-admin.php?page=search&rebuild=now">Click here to rebuild index</a>
+
+
+Clearing all caches
+Trying to access array offset on value of type bool on line 670 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 671 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 670 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 671 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 670 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 671 of /opt/html_git/trunk/lib/prefslib.php
+
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+PDOStatement::execute(): SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'profiles.tiki.org-Dynamic_items_list_demo  -dynamicProducts' for key 'PRIMARY' on line 100 of /opt/html_git/trunk/lib/core/TikiDb/Pdo.php
+Installation failed:
+Applying profile: Dynamic_items_list_demo
+Preference set: feature_trackers=y
+Preference set: trackerfield_autoincrement=y
+Preference set: trackerfield_itemslist=y
+Preference set: trackerfield_dynamiclist=y
+Preference set: trackerfield_dropdownother=y
+Preference set: instructions=Profile_Dynamic_items_list_demo_services_page
+Added (or modified): tracker "Dynamic Demo Products"
+Added (or modified): tracker_field "Name"
+Added (or modified): tracker_field "Version"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker "Dynamic Demo Service"
+Added (or modified): tracker_field "Product Name"
+Added (or modified): tracker_field "Product Version"
+Added (or modified): tracker_field "Dynamic Demo Service Name"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker_item "No name"
+Added (or modified): wiki_page "Dynamic Demo Services"
+Applying profile: Dynamic_items_list_demo  
+An error occurred: Duplicate entry found (profiles.tiki.org-Dynamic_items_list_demo  -dynamicProducts) for key 'PRIMARY'
+

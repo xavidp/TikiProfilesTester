@@ -1,0 +1,172 @@
+Installation completed.
+Queries executed successfully: 1551
+Array to string conversion on line 299 of /opt/html_git/trunk/lib/search/searchlib-unified.php
+Array to string conversion on line 299 of /opt/html_git/trunk/lib/search/searchlib-unified.php
+error: <a title="Rebuild search index" href="tiki-admin.php?page=search&rebuild=now">Click here to rebuild index</a>
+
+
+Clearing all caches
+
+Not quoting the scalar "%id%" starting with the "%" indicator character is deprecated since Symfony 3.1 and will throw a ParseException in 4.0 on line 30. on line 359 of /opt/html_git/trunk/vendor_bundled/vendor/symfony/yaml/Inline.php
+Not quoting the scalar "%id%" starting with the "%" indicator character is deprecated since Symfony 3.1 and will throw a ParseException in 4.0 on line 30. on line 359 of /opt/html_git/trunk/vendor_bundled/vendor/symfony/yaml/Inline.php
+Not quoting the scalar "%id%" starting with the "%" indicator character is deprecated since Symfony 3.1 and will throw a ParseException in 4.0 on line 30. on line 359 of /opt/html_git/trunk/vendor_bundled/vendor/symfony/yaml/Inline.php
+Undefined index: mail on line 126 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Forum.php
+Undefined index: list_att_nb on line 172 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Forum.php
+Undefined index: use_items_icons on line 141 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: parse on line 144 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Only variables should be passed by reference on line 150 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: position on line 164 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+PDOStatement::execute(): SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'profiles.tiki.org-Collaborative_Community_12x  -module_since_las' for key 'PRIMARY' on line 100 of /opt/html_git/trunk/lib/core/TikiDb/Pdo.php
+Installation failed:
+Applying profile: Collaborative_Community_12x
+Preference set: sitetitle=Our community
+Preference set: sitesubtitle=Log on, Learn, Share
+Preference set: browsertitle=Community Wiki
+Preference set: feature_top_bar=y
+Preference set: feature_sitemenu=y
+Preference set: allowRegister=y
+Preference set: modseparateanon=y
+Preference set: feature_modulecontrols=y
+Preference set: users_prefs_user_information=public
+Preference set: feature_community_mouseover=y
+Preference set: users_prefs_show_mouseover_user_info=y
+Preference set: feature_search_fulltext=y
+Preference set: search_autocomplete=y
+Preference set: useGroupHome=y
+Preference set: limitedGoGroupHome=y
+Preference set: feature_site_report=y
+Preference set: feature_contact=y
+Preference set: contact_anon=y
+Preference set: feature_wiki_print=y
+Preference set: feature_wiki_attachments=y
+Preference set: wiki_auto_toc=y
+Preference set: wiki_inline_auto_toc=y
+Preference set: wikiplugin_proposal=y
+Preference set: wikiplugininline_proposal=y
+Preference set: wikiplugininline_remarksbox=y
+Preference set: wikipluginprefs_pending_notification=y
+Preference set: feature_wiki_comments=y
+Preference set: comments_field_email=y
+Preference set: comments_field_website=y
+Preference set: feature_forums=y
+Preference set: feature_forum_parse=y
+Preference set: feature_user_watches=y
+Preference set: feature_group_watches=y
+Preference set: calendar_fullcalendar=y
+Preference set: feature_trackers=y
+Preference set: ajax_inline_edit=y
+Preference set: tracker_change_field_type=y
+Preference set: wikiplugin_trackercalendar=y
+Preference set: trackerfield_dropdownother=y
+Preference set: feature_calendar=y
+Preference set: wikiplugin_convene=y
+Added (or modified): module "since_last_visit_new"
+Added (or modified): module "quick_edit"
+Added (or modified): wiki_page "HomePage"
+Added (or modified): wiki_page "Instructions"
+Added (or modified): wiki_page "Community"
+Added (or modified): wiki_page "Wiki Help"
+Added (or modified): forum "Discussion forum"
+Added (or modified): tracker "Tracker to show items through a calendar"
+Added (or modified): tracker_field "Summary"
+Added (or modified): tracker_field "Location"
+Added (or modified): tracker_field "Priority"
+Added (or modified): tracker_field "Description"
+Added (or modified): tracker_field "Start date"
+Added (or modified): tracker_field "End date"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker_item "No name"
+Added (or modified): plugin_alias "event"
+Added (or modified): calendar "Main Calendar"
+Added (or modified): wiki_page "Community Members HomePage"
+Added (or modified): menu "My Menu"
+Added (or modified): module "menu"
+Group changed (or modified): Anonymous
+Modified permission tiki_p_view for Anonymous
+Modified permission tiki_p_wiki_view_attachments for Anonymous
+Modified permission tiki_p_wiki_view_comments for Anonymous
+Modified permission tiki_p_read_comments for Anonymous
+Modified permission tiki_p_forum_read for Anonymous
+Modified permission tiki_p_download_files for Anonymous
+Modified permission tiki_p_list_file_galleries for Anonymous
+Modified permission tiki_p_view_file_gallery for Anonymous
+Modified permission tiki_p_tracker_view_attachments for Anonymous
+Modified permission tiki_p_tracker_view_comments for Anonymous
+Modified permission tiki_p_list_trackers for Anonymous
+Modified permission tiki_p_tracker_view_ratings for Anonymous
+Modified permission tiki_p_view_trackers for Anonymous
+Modified permission tiki_p_view_calendar for Anonymous
+Modified permission tiki_p_view_events for Anonymous
+Group changed (or modified): Registered
+Modified permission tiki_p_site_report for Registered
+Modified permission tiki_p_edit for Registered
+Modified permission tiki_p_edit_categorized for Registered
+Modified permission tiki_p_upload_files for Registered
+Modified permission tiki_p_upload_picture for Registered
+Modified permission tiki_p_wiki_view_history for Registered
+Modified permission tiki_p_wiki_view_source for Registered
+Modified permission tiki_p_comment for Registered
+Modified permission tiki_p_post_comments for Registered
+Modified permission tiki_p_forums_report for Registered
+Modified permission tiki_p_forum_attach for Registered
+Modified permission tiki_p_forum_edit_own_posts for Registered
+Modified permission tiki_p_forum_post for Registered
+Modified permission tiki_p_forum_post_topic for Registered
+Modified permission tiki_p_forum_vote for Registered
+Modified permission tiki_p_attach_trackers for Registered
+Modified permission tiki_p_comment_tracker_items for Registered
+Modified permission tiki_p_create_tracker_items for Registered
+Modified permission tiki_p_modify_tracker_items for Registered
+Modified permission tiki_p_tracker_vote_ratings for Registered
+Modified permission tiki_p_tracker_revote_ratings for Registered
+Modified permission tiki_p_view_trackers_closed for Registered
+Modified permission tiki_p_view_trackers_pending for Registered
+Modified permission tiki_p_watch_trackers for Registered
+Modified permission tiki_p_add_events for Registered
+Modified permission tiki_p_calendar_add_my_particip for Registered
+Modified permission tiki_p_calendar_add_guest_particip for Registered
+Group changed (or modified): Editors
+Modified permission tiki_p_admin_wiki for Editors
+Modified permission tiki_p_lock for Editors
+Modified permission tiki_p_minor for Editors
+Modified permission tiki_p_wiki_admin_attachments for Editors
+Modified permission tiki_p_edit_comments for Editors
+Modified permission tiki_p_remove_comments for Editors
+Modified permission tiki_p_admin_forum for Editors
+Modified permission tiki_p_admin_file_galleries for Editors
+Modified permission tiki_p_modify_tracker_items_pending for Editors
+Modified permission tiki_p_modify_tracker_items_closed for Editors
+Modified permission tiki_p_change_events for Editors
+Group changed (or modified): SubAdmins
+Modified permission tiki_p_admin_users for SubAdmins
+Modified permission tiki_p_admin_comments for SubAdmins
+Modified permission tiki_p_admin_trackers for SubAdmins
+Modified permission tiki_p_remove_tracker_items for SubAdmins
+Modified permission tiki_p_remove_tracker_items_pending for SubAdmins
+Modified permission tiki_p_remove_tracker_items_closed for SubAdmins
+Modified permission tiki_p_export_tracker for SubAdmins
+Modified permission tiki_p_tracker_dump for SubAdmins
+Modified permission tiki_p_admin_calendar for SubAdmins
+Group changed (or modified): Admins
+Modified permission tiki_p_admin for Admins
+Applying profile: Collaborative_Community_12x  
+An error occurred: Duplicate entry found (profiles.tiki.org-Collaborative_Community_12x  -module_since_las) for key 'PRIMARY'
+

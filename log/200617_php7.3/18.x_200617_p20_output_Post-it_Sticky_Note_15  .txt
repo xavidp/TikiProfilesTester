@@ -1,0 +1,4 @@
+Installation completed.
+Queries executed successfully: 928
+Clearing all caches
+Some of the named object references in the profile are invalid

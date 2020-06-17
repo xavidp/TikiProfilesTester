@@ -1,0 +1,80 @@
+Installation completed.
+Queries executed successfully: 1551
+Array to string conversion on line 299 of /opt/html_git/trunk/lib/search/searchlib-unified.php
+Array to string conversion on line 299 of /opt/html_git/trunk/lib/search/searchlib-unified.php
+Trying to access array offset on value of type bool on line 670 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 671 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 670 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 671 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 670 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 671 of /opt/html_git/trunk/lib/prefslib.php
+error: <a title="Rebuild search index" href="tiki-admin.php?page=search&rebuild=now">Click here to rebuild index</a>
+
+
+Clearing all caches
+Trying to access array offset on value of type bool on line 670 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 671 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 670 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 671 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 670 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 671 of /opt/html_git/trunk/lib/prefslib.php
+
+Undefined index: use_author on line 61 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Blog.php
+Undefined index: add_date on line 62 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Blog.php
+Undefined index: alwaysOwner on line 70 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Blog.php
+Undefined index: show_related on line 72 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Blog.php
+Undefined index: related_max on line 73 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Blog.php
+Undefined index: use_excerpt on line 74 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Blog.php
+Undefined index: excerpt on line 63 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/BlogPost.php
+Undefined index: user_blog_watch_editor on line 857 of /opt/html_git/trunk/lib/blogs/bloglib.php
+Undefined index: excerpt on line 63 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/BlogPost.php
+Undefined index: user_blog_watch_editor on line 857 of /opt/html_git/trunk/lib/blogs/bloglib.php
+Undefined index: excerpt on line 63 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/BlogPost.php
+Undefined index: user_blog_watch_editor on line 857 of /opt/html_git/trunk/lib/blogs/bloglib.php
+Array and string offset access syntax with curly braces is deprecated on line 78 of /opt/html_git/trunk/vendor_bundled/vendor/ezyang/htmlpurifier/library/HTMLPurifier/TagTransform/Font.php
+Array and string offset access syntax with curly braces is deprecated on line 78 of /opt/html_git/trunk/vendor_bundled/vendor/ezyang/htmlpurifier/library/HTMLPurifier/TagTransform/Font.php
+Array and string offset access syntax with curly braces is deprecated on line 162 of /opt/html_git/trunk/vendor_bundled/vendor/ezyang/htmlpurifier/library/HTMLPurifier/Encoder.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/trunk/lib/trackers/trackerlib.php
+Undefined index: mail on line 126 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Forum.php
+Undefined index: list_att_nb on line 172 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Forum.php
+Undefined index: user_article_watch_editor on line 475 of /opt/html_git/trunk/lib/articles/artlib.php
+Undefined index: user_article_watch_editor on line 475 of /opt/html_git/trunk/lib/articles/artlib.php
+Undefined index: use_items_icons on line 141 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: parse on line 144 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Only variables should be passed by reference on line 150 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: position on line 164 of /opt/html_git/trunk/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Trying to access array offset on value of type null on line 117 of /opt/html_git/trunk/lib/wiki/wikilib.php
+Profile applied.
+

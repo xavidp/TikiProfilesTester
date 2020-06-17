@@ -1,0 +1,22 @@
+Installation completed.
+Queries executed successfully: 1547
+error: <a title="Rebuild search index" href="tiki-admin.php?page=search&rebuild=now">Click here to rebuild index</a>
+
+
+Clearing all caches
+
+Undefined index: use_items_icons on line 141 of /opt/html_git/21.x/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: parse on line 144 of /opt/html_git/21.x/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Only variables should be passed by reference on line 150 of /opt/html_git/21.x/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/21.x/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/21.x/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/21.x/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/21.x/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/21.x/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/21.x/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: icon on line 153 of /opt/html_git/21.x/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: position on line 164 of /opt/html_git/21.x/lib/core/Tiki/Profile/InstallHandler/Menu.php
+Undefined index: user_article_watch_editor on line 475 of /opt/html_git/21.x/lib/articles/artlib.php
+Undefined index: user_article_watch_editor on line 475 of /opt/html_git/21.x/lib/articles/artlib.php
+Profile applied.
+

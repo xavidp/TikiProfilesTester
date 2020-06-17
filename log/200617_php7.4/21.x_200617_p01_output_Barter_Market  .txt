@@ -1,0 +1,48 @@
+Installation completed.
+Queries executed successfully: 1547
+Array and string offset access syntax with curly braces is deprecated on line 31 of /opt/html_git/21.x/lib/core/Search/MySql/FieldQueryBuilder.php
+Array and string offset access syntax with curly braces is deprecated on line 41 of /opt/html_git/21.x/lib/core/Search/MySql/FieldQueryBuilder.php
+Array and string offset access syntax with curly braces is deprecated on line 331 of /opt/html_git/21.x/lib/core/Search/Indexer.php
+Array and string offset access syntax with curly braces is deprecated on line 336 of /opt/html_git/21.x/lib/core/Search/Indexer.php
+Array and string offset access syntax with curly braces is deprecated on line 3807 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Array and string offset access syntax with curly braces is deprecated on line 675 of /opt/html_git/21.x/lib/wiki-plugins/wikiplugin_customsearch.php
+Array and string offset access syntax with curly braces is deprecated on line 677 of /opt/html_git/21.x/lib/wiki-plugins/wikiplugin_customsearch.php
+Array and string offset access syntax with curly braces is deprecated on line 677 of /opt/html_git/21.x/lib/wiki-plugins/wikiplugin_customsearch.php
+Array and string offset access syntax with curly braces is deprecated on line 679 of /opt/html_git/21.x/lib/wiki-plugins/wikiplugin_customsearch.php
+Array and string offset access syntax with curly braces is deprecated on line 687 of /opt/html_git/21.x/lib/wiki-plugins/wikiplugin_customsearch.php
+Trying to access array offset on value of type bool on line 653 of /opt/html_git/21.x/lib/prefslib.php
+Trying to access array offset on value of type bool on line 654 of /opt/html_git/21.x/lib/prefslib.php
+Trying to access array offset on value of type bool on line 653 of /opt/html_git/21.x/lib/prefslib.php
+Trying to access array offset on value of type bool on line 654 of /opt/html_git/21.x/lib/prefslib.php
+Trying to access array offset on value of type bool on line 653 of /opt/html_git/21.x/lib/prefslib.php
+Trying to access array offset on value of type bool on line 654 of /opt/html_git/21.x/lib/prefslib.php
+error: <a title="Rebuild search index" href="tiki-admin.php?page=search&rebuild=now">Click here to rebuild index</a>
+
+
+Clearing all caches
+Array and string offset access syntax with curly braces is deprecated on line 31 of /opt/html_git/21.x/lib/core/Search/MySql/FieldQueryBuilder.php
+Array and string offset access syntax with curly braces is deprecated on line 41 of /opt/html_git/21.x/lib/core/Search/MySql/FieldQueryBuilder.php
+Array and string offset access syntax with curly braces is deprecated on line 675 of /opt/html_git/21.x/lib/wiki-plugins/wikiplugin_customsearch.php
+Array and string offset access syntax with curly braces is deprecated on line 677 of /opt/html_git/21.x/lib/wiki-plugins/wikiplugin_customsearch.php
+Array and string offset access syntax with curly braces is deprecated on line 677 of /opt/html_git/21.x/lib/wiki-plugins/wikiplugin_customsearch.php
+Array and string offset access syntax with curly braces is deprecated on line 679 of /opt/html_git/21.x/lib/wiki-plugins/wikiplugin_customsearch.php
+Array and string offset access syntax with curly braces is deprecated on line 687 of /opt/html_git/21.x/lib/wiki-plugins/wikiplugin_customsearch.php
+Trying to access array offset on value of type bool on line 653 of /opt/html_git/21.x/lib/prefslib.php
+Trying to access array offset on value of type bool on line 654 of /opt/html_git/21.x/lib/prefslib.php
+Trying to access array offset on value of type bool on line 653 of /opt/html_git/21.x/lib/prefslib.php
+Trying to access array offset on value of type bool on line 654 of /opt/html_git/21.x/lib/prefslib.php
+Trying to access array offset on value of type bool on line 653 of /opt/html_git/21.x/lib/prefslib.php
+Trying to access array offset on value of type bool on line 654 of /opt/html_git/21.x/lib/prefslib.php
+
+Array and string offset access syntax with curly braces is deprecated on line 389 of /opt/html_git/21.x/lib/core/WikiParser/PluginMatcher.php
+Array and string offset access syntax with curly braces is deprecated on line 602 of /opt/html_git/21.x/lib/core/WikiParser/PluginMatcher.php
+Array and string offset access syntax with curly braces is deprecated on line 27 of /opt/html_git/21.x/lib/core/WikiParser/PluginArgumentParser.php
+Array and string offset access syntax with curly braces is deprecated on line 35 of /opt/html_git/21.x/lib/core/WikiParser/PluginArgumentParser.php
+Array and string offset access syntax with curly braces is deprecated on line 39 of /opt/html_git/21.x/lib/core/WikiParser/PluginArgumentParser.php
+Using the comma as a group separator for floats is deprecated since Symfony 3.2 and will be removed in 4.0 on line 83. on line 790 of /opt/html_git/21.x/vendor_bundled/vendor/symfony/yaml/Inline.php
+Using the comma as a group separator for floats is deprecated since Symfony 3.2 and will be removed in 4.0 on line 83. on line 790 of /opt/html_git/21.x/vendor_bundled/vendor/symfony/yaml/Inline.php
+Using the comma as a group separator for floats is deprecated since Symfony 3.2 and will be removed in 4.0 on line 83. on line 790 of /opt/html_git/21.x/vendor_bundled/vendor/symfony/yaml/Inline.php
+Using the comma as a group separator for floats is deprecated since Symfony 3.2 and will be removed in 4.0 on line 83. on line 790 of /opt/html_git/21.x/vendor_bundled/vendor/symfony/yaml/Inline.php
+Installation failed:
+An error occurred: Object (#want_001) of type tracker_item in profiles.tiki.org:Barter_Market does not validate
+

@@ -1,0 +1,1 @@
+error: <a title="Rebuild search index" href="tiki-admin.php?page=search&rebuild=now">Click here to rebuild index</a> An error occurred: Object (#want_001) of type tracker_item in profiles.tiki.org:Barter_Market does not validate

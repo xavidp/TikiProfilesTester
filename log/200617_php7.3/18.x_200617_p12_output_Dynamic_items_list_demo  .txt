@@ -1,0 +1,94 @@
+Installation completed.
+Queries executed successfully: 928
+Clearing all caches
+PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /opt/html_git/18.x/lib/parser/parserlib.php on line 252
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\ProfileInstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. Tiki_Profile_Installer->install() /opt/html_git/18.x/lib/core/Tiki/Command/ProfileInstallCommand.php:79
+PHP   8. Tiki_Profile_Installer->doInstall() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:430
+PHP   9. Tiki_Profile_InstallHandler_WikiPage->install() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:511
+PHP  10. Tiki_Profile_InstallHandler_WikiPage->_install() /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TikiLib->create_page() /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler/WikiPage.php:181
+PHP  12. Tiki_Event_Manager->trigger() /opt/html_git/18.x/lib/tikilib.php:4255
+PHP  13. Tiki_Event_Manager->internalTrigger() /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:66
+PHP  14. Tiki_Event_Chain->__invoke() /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  15. Tiki_Event_Manager->internalTrigger() /opt/html_git/18.x/lib/core/Tiki/Event/Chain.php:21
+PHP  16. Tiki_Event_Chain->__invoke() /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  17. Tiki_Event_Manager->internalTrigger() /opt/html_git/18.x/lib/core/Tiki/Event/Chain.php:21
+PHP  18. Tiki_Event_Lib->__invoke() /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  19. FileGalLib->save_sync_file_backlinks() /opt/html_git/18.x/lib/core/Tiki/Event/Lib.php:26
+PHP  20. FileGalLib->syncFileBacklinks() /opt/html_git/18.x/lib/filegals/filegallib.php:2444
+PHP  21. ParserLib->getPlugins() /opt/html_git/18.x/lib/filegals/filegallib.php:2395
+PHP  22. ParserLib->plugin_match() /opt/html_git/18.x/lib/parser/parserlib.php:349
+PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /opt/html_git/18.x/lib/parser/parserlib.php on line 252
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\ProfileInstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. Tiki_Profile_Installer->install() /opt/html_git/18.x/lib/core/Tiki/Command/ProfileInstallCommand.php:79
+PHP   8. Tiki_Profile_Installer->doInstall() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:430
+PHP   9. Tiki_Profile_InstallHandler_WikiPage->install() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:511
+PHP  10. Tiki_Profile_InstallHandler_WikiPage->_install() /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. TikiLib->create_page() /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler/WikiPage.php:181
+PHP  12. Tiki_Event_Manager->trigger() /opt/html_git/18.x/lib/tikilib.php:4255
+PHP  13. Tiki_Event_Manager->internalTrigger() /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:66
+PHP  14. Tiki_Event_Chain->__invoke() /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  15. Tiki_Event_Manager->internalTrigger() /opt/html_git/18.x/lib/core/Tiki/Event/Chain.php:21
+PHP  16. Tiki_Event_Chain->__invoke() /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  17. Tiki_Event_Manager->internalTrigger() /opt/html_git/18.x/lib/core/Tiki/Event/Chain.php:21
+PHP  18. Tiki_Event_Lib->__invoke() /opt/html_git/18.x/lib/core/Tiki/Event/Manager.php:82
+PHP  19. FileGalLib->save_sync_file_backlinks() /opt/html_git/18.x/lib/core/Tiki/Event/Lib.php:26
+PHP  20. FileGalLib->syncFileBacklinks() /opt/html_git/18.x/lib/filegals/filegallib.php:2444
+PHP  21. ParserLib->getPlugins() /opt/html_git/18.x/lib/filegals/filegallib.php:2395
+PHP  22. ParserLib->plugin_match() /opt/html_git/18.x/lib/parser/parserlib.php:349
+PHP Warning:  PDOStatement::execute(): SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'profiles.tiki.org-Dynamic_items_list_demo  -dynamicProducts' for key 'PRIMARY' in /opt/html_git/18.x/lib/core/TikiDb/Pdo.php on line 84
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\ProfileInstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. Tiki_Profile_Installer->install() /opt/html_git/18.x/lib/core/Tiki/Command/ProfileInstallCommand.php:79
+PHP   8. Tiki_Profile_Installer->doInstall() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:430
+PHP   9. Tiki_Profile_InstallHandler_Tracker->install() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:511
+PHP  10. Tiki_Profile_Object->setValue() /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler.php:33
+PHP  11. Tiki_Profile->setSymbol() /opt/html_git/18.x/lib/core/Tiki/Profile/Object.php:94
+PHP  12. TikiDb_Table->insert() /opt/html_git/18.x/lib/core/Tiki/Profile.php:911
+PHP  13. TikiDb_Pdo->queryException() /opt/html_git/18.x/lib/core/TikiDb/Table.php:47
+PHP  14. TikiDb_Pdo->query() /opt/html_git/18.x/lib/core/TikiDb.php:84
+PHP  15. TikiDb_Pdo->_query() /opt/html_git/18.x/lib/core/TikiDb/Pdo.php:125
+PHP  16. PDOStatement->execute() /opt/html_git/18.x/lib/core/TikiDb/Pdo.php:84
+Installation failed:
+Applying profile: Dynamic_items_list_demo
+Preference set: feature_trackers=y
+Preference set: trackerfield_autoincrement=y
+Preference set: trackerfield_itemslist=y
+Preference set: trackerfield_dynamiclist=y
+Preference set: trackerfield_dropdownother=y
+Preference set: instructions=Profile_Dynamic_items_list_demo_services_page
+Added (or modified): tracker "Dynamic Demo Products"
+Added (or modified): tracker_field "Name"
+Added (or modified): tracker_field "Version"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker "Dynamic Demo Service"
+Added (or modified): tracker_field "Product Name"
+Added (or modified): tracker_field "Product Version"
+Added (or modified): tracker_field "Dynamic Demo Service Name"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker_item "No name"
+Added (or modified): wiki_page "Dynamic Demo Services"
+Applying profile: Dynamic_items_list_demo  
+An error occurred: Duplicate entry found (profiles.tiki.org-Dynamic_items_list_demo  -dynamicProducts)

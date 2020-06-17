@@ -1,0 +1,161 @@
+Installation completed.
+Queries executed successfully: 1547
+Array and string offset access syntax with curly braces is deprecated on line 31 of /opt/html_git/21.x/lib/core/Search/MySql/FieldQueryBuilder.php
+Array and string offset access syntax with curly braces is deprecated on line 41 of /opt/html_git/21.x/lib/core/Search/MySql/FieldQueryBuilder.php
+Array and string offset access syntax with curly braces is deprecated on line 331 of /opt/html_git/21.x/lib/core/Search/Indexer.php
+Array and string offset access syntax with curly braces is deprecated on line 336 of /opt/html_git/21.x/lib/core/Search/Indexer.php
+Array and string offset access syntax with curly braces is deprecated on line 3807 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Array and string offset access syntax with curly braces is deprecated on line 675 of /opt/html_git/21.x/lib/wiki-plugins/wikiplugin_customsearch.php
+Array and string offset access syntax with curly braces is deprecated on line 677 of /opt/html_git/21.x/lib/wiki-plugins/wikiplugin_customsearch.php
+Array and string offset access syntax with curly braces is deprecated on line 677 of /opt/html_git/21.x/lib/wiki-plugins/wikiplugin_customsearch.php
+Array and string offset access syntax with curly braces is deprecated on line 679 of /opt/html_git/21.x/lib/wiki-plugins/wikiplugin_customsearch.php
+Array and string offset access syntax with curly braces is deprecated on line 687 of /opt/html_git/21.x/lib/wiki-plugins/wikiplugin_customsearch.php
+Trying to access array offset on value of type bool on line 653 of /opt/html_git/21.x/lib/prefslib.php
+Trying to access array offset on value of type bool on line 654 of /opt/html_git/21.x/lib/prefslib.php
+Trying to access array offset on value of type bool on line 653 of /opt/html_git/21.x/lib/prefslib.php
+Trying to access array offset on value of type bool on line 654 of /opt/html_git/21.x/lib/prefslib.php
+Trying to access array offset on value of type bool on line 653 of /opt/html_git/21.x/lib/prefslib.php
+Trying to access array offset on value of type bool on line 654 of /opt/html_git/21.x/lib/prefslib.php
+error: <a title="Rebuild search index" href="tiki-admin.php?page=search&rebuild=now">Click here to rebuild index</a>
+
+
+Clearing all caches
+Array and string offset access syntax with curly braces is deprecated on line 31 of /opt/html_git/21.x/lib/core/Search/MySql/FieldQueryBuilder.php
+Array and string offset access syntax with curly braces is deprecated on line 41 of /opt/html_git/21.x/lib/core/Search/MySql/FieldQueryBuilder.php
+Array and string offset access syntax with curly braces is deprecated on line 675 of /opt/html_git/21.x/lib/wiki-plugins/wikiplugin_customsearch.php
+Array and string offset access syntax with curly braces is deprecated on line 677 of /opt/html_git/21.x/lib/wiki-plugins/wikiplugin_customsearch.php
+Array and string offset access syntax with curly braces is deprecated on line 677 of /opt/html_git/21.x/lib/wiki-plugins/wikiplugin_customsearch.php
+Array and string offset access syntax with curly braces is deprecated on line 679 of /opt/html_git/21.x/lib/wiki-plugins/wikiplugin_customsearch.php
+Array and string offset access syntax with curly braces is deprecated on line 687 of /opt/html_git/21.x/lib/wiki-plugins/wikiplugin_customsearch.php
+Trying to access array offset on value of type bool on line 653 of /opt/html_git/21.x/lib/prefslib.php
+Trying to access array offset on value of type bool on line 654 of /opt/html_git/21.x/lib/prefslib.php
+Trying to access array offset on value of type bool on line 653 of /opt/html_git/21.x/lib/prefslib.php
+Trying to access array offset on value of type bool on line 654 of /opt/html_git/21.x/lib/prefslib.php
+Trying to access array offset on value of type bool on line 653 of /opt/html_git/21.x/lib/prefslib.php
+Trying to access array offset on value of type bool on line 654 of /opt/html_git/21.x/lib/prefslib.php
+
+Array and string offset access syntax with curly braces is deprecated on line 389 of /opt/html_git/21.x/lib/core/WikiParser/PluginMatcher.php
+Array and string offset access syntax with curly braces is deprecated on line 602 of /opt/html_git/21.x/lib/core/WikiParser/PluginMatcher.php
+Array and string offset access syntax with curly braces is deprecated on line 27 of /opt/html_git/21.x/lib/core/WikiParser/PluginArgumentParser.php
+Array and string offset access syntax with curly braces is deprecated on line 35 of /opt/html_git/21.x/lib/core/WikiParser/PluginArgumentParser.php
+Array and string offset access syntax with curly braces is deprecated on line 39 of /opt/html_git/21.x/lib/core/WikiParser/PluginArgumentParser.php
+Array and string offset access syntax with curly braces is deprecated on line 675 of /opt/html_git/21.x/lib/wiki-plugins/wikiplugin_customsearch.php
+Array and string offset access syntax with curly braces is deprecated on line 677 of /opt/html_git/21.x/lib/wiki-plugins/wikiplugin_customsearch.php
+Array and string offset access syntax with curly braces is deprecated on line 677 of /opt/html_git/21.x/lib/wiki-plugins/wikiplugin_customsearch.php
+Array and string offset access syntax with curly braces is deprecated on line 679 of /opt/html_git/21.x/lib/wiki-plugins/wikiplugin_customsearch.php
+Array and string offset access syntax with curly braces is deprecated on line 687 of /opt/html_git/21.x/lib/wiki-plugins/wikiplugin_customsearch.php
+Array and string offset access syntax with curly braces is deprecated on line 3807 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2063 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+Trying to access array offset on value of type null on line 2064 of /opt/html_git/21.x/lib/trackers/trackerlib.php
+PDOStatement::execute(): SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'profiles.tiki.org-Shopping_Cart  -module_cart' for key 'PRIMARY' on line 100 of /opt/html_git/21.x/lib/core/TikiDb/Pdo.php
+Installation failed:
+Applying profile: Shopping_Cart
+Preference set: feature_trackers=y
+Preference set: feature_categories=y
+Preference set: feature_wiki_argvariable=y
+Preference set: feature_page_title=n
+Preference set: fgal_elfinder_feature=y
+Preference set: payment_feature=y
+Preference set: payment_currency=EUR
+Preference set: payment_paypal_business=unknown
+Preference set: payment_user_only_his_own=y
+Preference set: payment_user_only_his_own_past=y
+Preference set: payment_paypal_environment=https://www.sandbox.paypal.com/cgi-bin/webscr
+Preference set: wikiplugin_addtocart=y
+Preference set: wikiplugin_customsearch=y
+Preference set: wikiplugin_paypal=y
+Added (or modified): module "cart"
+Added (or modified): module "breadcrumb"
+Added (or modified): file_gallery "Product Images"
+Added (or modified): category "Products"
+Added (or modified): category "Food"
+Added (or modified): category "Drink"
+Added (or modified): category "Books"
+Added (or modified): tracker "Products"
+Added (or modified): tracker_field "Title"
+Added (or modified): tracker_field "Description"
+Added (or modified): tracker_field "Category"
+Added (or modified): tracker_field "Price"
+Added (or modified): tracker_field "Weight"
+Added (or modified): tracker_field "Images"
+Added (or modified): tracker_field "In Stock"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker_item "No name"
+Added (or modified): wiki_page "cart product"
+Added (or modified): wiki_page "cart products"
+Added (or modified): wiki_page "cart search form tpl"
+Added (or modified): wiki_page "Shopping Cart Instructions"
+Added (or modified): wiki_page "cart search"
+Group changed (or modified): Anonymous
+Modified permission tiki_p_view for Anonymous
+Modified permission tiki_p_view_trackers for Anonymous
+Modified permission tiki_p_view_trackers_pending for Anonymous
+Modified permission tiki_p_list_trackers for Anonymous
+Group changed (or modified): Registered
+Modified permission tiki_p_payment_view for Registered
+Modified permission tiki_p_payment_request for Registered
+Group changed (or modified): Customers
+Group changed (or modified): Managers
+Modified permission tiki_p_view_trackers_closed for Managers
+Modified permission tiki_p_payment_manual for Managers
+Modified permission tiki_p_payment_admin for Managers
+Modified permission tiki_p_admin_tracker for Managers
+Applying profile: Shopping_Cart  
+An error occurred: Duplicate entry found (profiles.tiki.org-Shopping_Cart  -module_cart) for key 'PRIMARY'
+

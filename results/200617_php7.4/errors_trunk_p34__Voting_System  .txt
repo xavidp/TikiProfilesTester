@@ -1,0 +1,1 @@
+error: <a title="Rebuild search index" href="tiki-admin.php?page=search&rebuild=now">Click here to rebuild index</a> A error was encountered while running a command

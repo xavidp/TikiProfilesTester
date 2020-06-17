@@ -1,0 +1,21 @@
+Installation completed.
+Queries executed successfully: 1547
+error: <a title="Rebuild search index" href="tiki-admin.php?page=search&rebuild=now">Click here to rebuild index</a>
+
+
+Clearing all caches
+
+Undefined offset: 0 on line 737 of /opt/html_git/21.x/lib/metadata/datatypes/exif.php
+Undefined offset: 1 on line 737 of /opt/html_git/21.x/lib/metadata/datatypes/exif.php
+Undefined offset: 0 on line 737 of /opt/html_git/21.x/lib/metadata/datatypes/exif.php
+Undefined offset: 1 on line 737 of /opt/html_git/21.x/lib/metadata/datatypes/exif.php
+Undefined offset: 0 on line 737 of /opt/html_git/21.x/lib/metadata/datatypes/exif.php
+Undefined offset: 1 on line 737 of /opt/html_git/21.x/lib/metadata/datatypes/exif.php
+Undefined offset: 0 on line 737 of /opt/html_git/21.x/lib/metadata/datatypes/exif.php
+Undefined offset: 1 on line 737 of /opt/html_git/21.x/lib/metadata/datatypes/exif.php
+Undefined offset: 0 on line 737 of /opt/html_git/21.x/lib/metadata/datatypes/exif.php
+Undefined offset: 1 on line 737 of /opt/html_git/21.x/lib/metadata/datatypes/exif.php
+Undefined offset: 0 on line 737 of /opt/html_git/21.x/lib/metadata/datatypes/exif.php
+Undefined offset: 1 on line 737 of /opt/html_git/21.x/lib/metadata/datatypes/exif.php
+Profile applied.
+

@@ -1,0 +1,38 @@
+Trying to access array offset on value of type bool on line 102 of /opt/html_git/trunk/lib/userprefs/userprefslib.php
+Trying to access array offset on value of type bool on line 103 of /opt/html_git/trunk/lib/userprefs/userprefslib.php
+Installation completed.
+Queries executed successfully: 1551
+Array to string conversion on line 299 of /opt/html_git/trunk/lib/search/searchlib-unified.php
+Array to string conversion on line 299 of /opt/html_git/trunk/lib/search/searchlib-unified.php
+Trying to access array offset on value of type bool on line 670 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 671 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 670 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 671 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 670 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 671 of /opt/html_git/trunk/lib/prefslib.php
+error: <a title="Rebuild search index" href="tiki-admin.php?page=search&rebuild=now">Click here to rebuild index</a>
+
+
+Clearing all caches
+Trying to access array offset on value of type bool on line 670 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 671 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 670 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 671 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 670 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 671 of /opt/html_git/trunk/lib/prefslib.php
+
+Undefined offset: 0 on line 737 of /opt/html_git/trunk/lib/metadata/datatypes/exif.php
+Undefined offset: 1 on line 737 of /opt/html_git/trunk/lib/metadata/datatypes/exif.php
+Undefined offset: 0 on line 737 of /opt/html_git/trunk/lib/metadata/datatypes/exif.php
+Undefined offset: 1 on line 737 of /opt/html_git/trunk/lib/metadata/datatypes/exif.php
+Undefined offset: 0 on line 737 of /opt/html_git/trunk/lib/metadata/datatypes/exif.php
+Undefined offset: 1 on line 737 of /opt/html_git/trunk/lib/metadata/datatypes/exif.php
+Undefined offset: 0 on line 737 of /opt/html_git/trunk/lib/metadata/datatypes/exif.php
+Undefined offset: 1 on line 737 of /opt/html_git/trunk/lib/metadata/datatypes/exif.php
+Undefined offset: 0 on line 737 of /opt/html_git/trunk/lib/metadata/datatypes/exif.php
+Undefined offset: 1 on line 737 of /opt/html_git/trunk/lib/metadata/datatypes/exif.php
+Undefined offset: 0 on line 737 of /opt/html_git/trunk/lib/metadata/datatypes/exif.php
+Undefined offset: 1 on line 737 of /opt/html_git/trunk/lib/metadata/datatypes/exif.php
+Trying to access array offset on value of type null on line 117 of /opt/html_git/trunk/lib/wiki/wikilib.php
+Profile applied.
+

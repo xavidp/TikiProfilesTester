@@ -1,0 +1,9 @@
+Installation completed.
+Queries executed successfully: 1547
+error: <a title="Rebuild search index" href="tiki-admin.php?page=search&rebuild=now">Click here to rebuild index</a>
+
+
+Clearing all caches
+
+Profile applied.
+

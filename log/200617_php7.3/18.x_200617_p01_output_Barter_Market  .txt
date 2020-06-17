@@ -1,0 +1,487 @@
+Installation completed.
+Queries executed successfully: 928
+PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /opt/html_git/18.x/lib/core/Search/MySql/FieldQueryBuilder.php on line 31
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\InstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\InstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. UnifiedSearchLib->rebuild() /opt/html_git/18.x/lib/core/Tiki/Command/InstallCommand.php:65
+PHP   8. Search_MySql_Index->__construct() /opt/html_git/18.x/lib/search/searchlib-unified.php:211
+PHP   9. Search_MySql_QueryBuilder->__construct() /opt/html_git/18.x/lib/core/Search/MySql/Index.php:20
+PHP  10. spl_autoload_call() /opt/html_git/18.x/lib/core/Search/MySql/QueryBuilder.php:28
+PHP  11. Composer\Autoload\ClassLoader->loadClass() /opt/html_git/18.x/lib/core/Search/MySql/QueryBuilder.php:28
+PHP  12. Composer\Autoload\includeFile() /opt/html_git/18.x/vendor_bundled/vendor/composer/ClassLoader.php:322
+PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /opt/html_git/18.x/lib/core/Search/MySql/FieldQueryBuilder.php on line 41
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\InstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\InstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. UnifiedSearchLib->rebuild() /opt/html_git/18.x/lib/core/Tiki/Command/InstallCommand.php:65
+PHP   8. Search_MySql_Index->__construct() /opt/html_git/18.x/lib/search/searchlib-unified.php:211
+PHP   9. Search_MySql_QueryBuilder->__construct() /opt/html_git/18.x/lib/core/Search/MySql/Index.php:20
+PHP  10. spl_autoload_call() /opt/html_git/18.x/lib/core/Search/MySql/QueryBuilder.php:28
+PHP  11. Composer\Autoload\ClassLoader->loadClass() /opt/html_git/18.x/lib/core/Search/MySql/QueryBuilder.php:28
+PHP  12. Composer\Autoload\includeFile() /opt/html_git/18.x/vendor_bundled/vendor/composer/ClassLoader.php:322
+PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /opt/html_git/18.x/lib/core/Search/Indexer.php on line 285
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\InstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\InstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. UnifiedSearchLib->rebuild() /opt/html_git/18.x/lib/core/Tiki/Command/InstallCommand.php:65
+PHP   8. UnifiedSearchLib->buildIndexer() /opt/html_git/18.x/lib/search/searchlib-unified.php:240
+PHP   9. spl_autoload_call() /opt/html_git/18.x/lib/search/searchlib-unified.php:548
+PHP  10. Composer\Autoload\ClassLoader->loadClass() /opt/html_git/18.x/lib/search/searchlib-unified.php:548
+PHP  11. Composer\Autoload\includeFile() /opt/html_git/18.x/vendor_bundled/vendor/composer/ClassLoader.php:322
+PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /opt/html_git/18.x/lib/core/Search/Indexer.php on line 290
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\InstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\InstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. UnifiedSearchLib->rebuild() /opt/html_git/18.x/lib/core/Tiki/Command/InstallCommand.php:65
+PHP   8. UnifiedSearchLib->buildIndexer() /opt/html_git/18.x/lib/search/searchlib-unified.php:240
+PHP   9. spl_autoload_call() /opt/html_git/18.x/lib/search/searchlib-unified.php:548
+PHP  10. Composer\Autoload\ClassLoader->loadClass() /opt/html_git/18.x/lib/search/searchlib-unified.php:548
+PHP  11. Composer\Autoload\includeFile() /opt/html_git/18.x/vendor_bundled/vendor/composer/ClassLoader.php:322
+PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /opt/html_git/18.x/lib/trackers/trackerlib.php on line 3792
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\InstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\InstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. UnifiedSearchLib->rebuild() /opt/html_git/18.x/lib/core/Tiki/Command/InstallCommand.php:65
+PHP   8. UnifiedSearchLib->buildIndexer() /opt/html_git/18.x/lib/search/searchlib-unified.php:240
+PHP   9. UnifiedSearchLib->addSources() /opt/html_git/18.x/lib/search/searchlib-unified.php:549
+PHP  10. Search_ContentSource_UserSource->__construct() /opt/html_git/18.x/lib/search/searchlib-unified.php:640
+PHP  11. TikiLib::lib() /opt/html_git/18.x/lib/core/Search/ContentSource/UserSource.php:23
+PHP  12. Symfony\Component\DependencyInjection\ContainerBuilder->get() /opt/html_git/18.x/lib/tikilib.php:68
+PHP  13. Symfony\Component\DependencyInjection\ContainerBuilder->doGet() /opt/html_git/18.x/vendor_bundled/vendor/symfony/dependency-injection/ContainerBuilder.php:588
+PHP  14. Symfony\Component\DependencyInjection\ContainerBuilder->createService() /opt/html_git/18.x/vendor_bundled/vendor/symfony/dependency-injection/ContainerBuilder.php:634
+PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /opt/html_git/18.x/lib/wiki-plugins/wikiplugin_customsearch.php on line 673
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\InstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\InstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. PreferencesLib->rebuildIndex() /opt/html_git/18.x/lib/core/Tiki/Command/InstallCommand.php:66
+PHP   8. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:647
+PHP   9. PreferencesLib->getDependencies() /opt/html_git/18.x/lib/prefslib.php:177
+PHP  10. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:590
+PHP  11. PreferencesLib->loadData() /opt/html_git/18.x/lib/prefslib.php:99
+PHP  12. PreferencesLib->getFileData() /opt/html_git/18.x/lib/prefslib.php:545
+PHP  13. PreferencesLib->realLoad() /opt/html_git/18.x/lib/prefslib.php:551
+PHP  14. prefs_wikiplugin_list() /opt/html_git/18.x/lib/prefslib.php:578
+PHP  15. ParserLib->plugin_info() /opt/html_git/18.x/lib/prefs/wikiplugin.php:127
+PHP  16. ParserLib->plugin_exists() /opt/html_git/18.x/lib/parser/parserlib.php:601
+PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /opt/html_git/18.x/lib/wiki-plugins/wikiplugin_customsearch.php on line 675
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\InstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\InstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. PreferencesLib->rebuildIndex() /opt/html_git/18.x/lib/core/Tiki/Command/InstallCommand.php:66
+PHP   8. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:647
+PHP   9. PreferencesLib->getDependencies() /opt/html_git/18.x/lib/prefslib.php:177
+PHP  10. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:590
+PHP  11. PreferencesLib->loadData() /opt/html_git/18.x/lib/prefslib.php:99
+PHP  12. PreferencesLib->getFileData() /opt/html_git/18.x/lib/prefslib.php:545
+PHP  13. PreferencesLib->realLoad() /opt/html_git/18.x/lib/prefslib.php:551
+PHP  14. prefs_wikiplugin_list() /opt/html_git/18.x/lib/prefslib.php:578
+PHP  15. ParserLib->plugin_info() /opt/html_git/18.x/lib/prefs/wikiplugin.php:127
+PHP  16. ParserLib->plugin_exists() /opt/html_git/18.x/lib/parser/parserlib.php:601
+PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /opt/html_git/18.x/lib/wiki-plugins/wikiplugin_customsearch.php on line 675
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\InstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\InstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. PreferencesLib->rebuildIndex() /opt/html_git/18.x/lib/core/Tiki/Command/InstallCommand.php:66
+PHP   8. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:647
+PHP   9. PreferencesLib->getDependencies() /opt/html_git/18.x/lib/prefslib.php:177
+PHP  10. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:590
+PHP  11. PreferencesLib->loadData() /opt/html_git/18.x/lib/prefslib.php:99
+PHP  12. PreferencesLib->getFileData() /opt/html_git/18.x/lib/prefslib.php:545
+PHP  13. PreferencesLib->realLoad() /opt/html_git/18.x/lib/prefslib.php:551
+PHP  14. prefs_wikiplugin_list() /opt/html_git/18.x/lib/prefslib.php:578
+PHP  15. ParserLib->plugin_info() /opt/html_git/18.x/lib/prefs/wikiplugin.php:127
+PHP  16. ParserLib->plugin_exists() /opt/html_git/18.x/lib/parser/parserlib.php:601
+PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /opt/html_git/18.x/lib/wiki-plugins/wikiplugin_customsearch.php on line 677
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\InstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\InstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. PreferencesLib->rebuildIndex() /opt/html_git/18.x/lib/core/Tiki/Command/InstallCommand.php:66
+PHP   8. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:647
+PHP   9. PreferencesLib->getDependencies() /opt/html_git/18.x/lib/prefslib.php:177
+PHP  10. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:590
+PHP  11. PreferencesLib->loadData() /opt/html_git/18.x/lib/prefslib.php:99
+PHP  12. PreferencesLib->getFileData() /opt/html_git/18.x/lib/prefslib.php:545
+PHP  13. PreferencesLib->realLoad() /opt/html_git/18.x/lib/prefslib.php:551
+PHP  14. prefs_wikiplugin_list() /opt/html_git/18.x/lib/prefslib.php:578
+PHP  15. ParserLib->plugin_info() /opt/html_git/18.x/lib/prefs/wikiplugin.php:127
+PHP  16. ParserLib->plugin_exists() /opt/html_git/18.x/lib/parser/parserlib.php:601
+PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /opt/html_git/18.x/lib/wiki-plugins/wikiplugin_customsearch.php on line 685
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\InstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\InstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. PreferencesLib->rebuildIndex() /opt/html_git/18.x/lib/core/Tiki/Command/InstallCommand.php:66
+PHP   8. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:647
+PHP   9. PreferencesLib->getDependencies() /opt/html_git/18.x/lib/prefslib.php:177
+PHP  10. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:590
+PHP  11. PreferencesLib->loadData() /opt/html_git/18.x/lib/prefslib.php:99
+PHP  12. PreferencesLib->getFileData() /opt/html_git/18.x/lib/prefslib.php:545
+PHP  13. PreferencesLib->realLoad() /opt/html_git/18.x/lib/prefslib.php:551
+PHP  14. prefs_wikiplugin_list() /opt/html_git/18.x/lib/prefslib.php:578
+PHP  15. ParserLib->plugin_info() /opt/html_git/18.x/lib/prefs/wikiplugin.php:127
+PHP  16. ParserLib->plugin_exists() /opt/html_git/18.x/lib/parser/parserlib.php:601
+PHP Notice:  Trying to access array offset on value of type bool in /opt/html_git/18.x/lib/prefslib.php on line 609
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\InstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\InstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. PreferencesLib->rebuildIndex() /opt/html_git/18.x/lib/core/Tiki/Command/InstallCommand.php:66
+PHP   8. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:647
+PHP   9. PreferencesLib->getDependencies() /opt/html_git/18.x/lib/prefslib.php:177
+PHP Notice:  Trying to access array offset on value of type bool in /opt/html_git/18.x/lib/prefslib.php on line 610
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\InstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\InstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. PreferencesLib->rebuildIndex() /opt/html_git/18.x/lib/core/Tiki/Command/InstallCommand.php:66
+PHP   8. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:647
+PHP   9. PreferencesLib->getDependencies() /opt/html_git/18.x/lib/prefslib.php:177
+PHP Notice:  Trying to access array offset on value of type bool in /opt/html_git/18.x/lib/prefslib.php on line 609
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\InstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\InstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. PreferencesLib->rebuildIndex() /opt/html_git/18.x/lib/core/Tiki/Command/InstallCommand.php:66
+PHP   8. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:647
+PHP   9. PreferencesLib->getDependencies() /opt/html_git/18.x/lib/prefslib.php:177
+PHP Notice:  Trying to access array offset on value of type bool in /opt/html_git/18.x/lib/prefslib.php on line 610
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\InstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\InstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. PreferencesLib->rebuildIndex() /opt/html_git/18.x/lib/core/Tiki/Command/InstallCommand.php:66
+PHP   8. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:647
+PHP   9. PreferencesLib->getDependencies() /opt/html_git/18.x/lib/prefslib.php:177
+PHP Notice:  Trying to access array offset on value of type bool in /opt/html_git/18.x/lib/prefslib.php on line 609
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\InstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\InstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. PreferencesLib->rebuildIndex() /opt/html_git/18.x/lib/core/Tiki/Command/InstallCommand.php:66
+PHP   8. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:647
+PHP   9. PreferencesLib->getDependencies() /opt/html_git/18.x/lib/prefslib.php:177
+PHP Notice:  Trying to access array offset on value of type bool in /opt/html_git/18.x/lib/prefslib.php on line 610
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\InstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\InstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. PreferencesLib->rebuildIndex() /opt/html_git/18.x/lib/core/Tiki/Command/InstallCommand.php:66
+PHP   8. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:647
+PHP   9. PreferencesLib->getDependencies() /opt/html_git/18.x/lib/prefslib.php:177
+Clearing all caches
+PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /opt/html_git/18.x/lib/core/Search/MySql/FieldQueryBuilder.php on line 31
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\CacheClearCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\CacheClearCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. PreferencesLib->rebuildIndex() /opt/html_git/18.x/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. UnifiedSearchLib->getIndex() /opt/html_git/18.x/lib/prefslib.php:638
+PHP   9. Search_MySql_Index->__construct() /opt/html_git/18.x/lib/search/searchlib-unified.php:738
+PHP  10. Search_MySql_QueryBuilder->__construct() /opt/html_git/18.x/lib/core/Search/MySql/Index.php:20
+PHP  11. spl_autoload_call() /opt/html_git/18.x/lib/core/Search/MySql/QueryBuilder.php:28
+PHP  12. Composer\Autoload\ClassLoader->loadClass() /opt/html_git/18.x/lib/core/Search/MySql/QueryBuilder.php:28
+PHP  13. Composer\Autoload\includeFile() /opt/html_git/18.x/vendor_bundled/vendor/composer/ClassLoader.php:322
+PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /opt/html_git/18.x/lib/core/Search/MySql/FieldQueryBuilder.php on line 41
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\CacheClearCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\CacheClearCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. PreferencesLib->rebuildIndex() /opt/html_git/18.x/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. UnifiedSearchLib->getIndex() /opt/html_git/18.x/lib/prefslib.php:638
+PHP   9. Search_MySql_Index->__construct() /opt/html_git/18.x/lib/search/searchlib-unified.php:738
+PHP  10. Search_MySql_QueryBuilder->__construct() /opt/html_git/18.x/lib/core/Search/MySql/Index.php:20
+PHP  11. spl_autoload_call() /opt/html_git/18.x/lib/core/Search/MySql/QueryBuilder.php:28
+PHP  12. Composer\Autoload\ClassLoader->loadClass() /opt/html_git/18.x/lib/core/Search/MySql/QueryBuilder.php:28
+PHP  13. Composer\Autoload\includeFile() /opt/html_git/18.x/vendor_bundled/vendor/composer/ClassLoader.php:322
+PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /opt/html_git/18.x/lib/wiki-plugins/wikiplugin_customsearch.php on line 673
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\CacheClearCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\CacheClearCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. PreferencesLib->rebuildIndex() /opt/html_git/18.x/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:647
+PHP   9. PreferencesLib->getDependencies() /opt/html_git/18.x/lib/prefslib.php:177
+PHP  10. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:590
+PHP  11. PreferencesLib->loadData() /opt/html_git/18.x/lib/prefslib.php:99
+PHP  12. PreferencesLib->getFileData() /opt/html_git/18.x/lib/prefslib.php:545
+PHP  13. PreferencesLib->realLoad() /opt/html_git/18.x/lib/prefslib.php:551
+PHP  14. prefs_wikiplugin_list() /opt/html_git/18.x/lib/prefslib.php:578
+PHP  15. ParserLib->plugin_info() /opt/html_git/18.x/lib/prefs/wikiplugin.php:127
+PHP  16. ParserLib->plugin_exists() /opt/html_git/18.x/lib/parser/parserlib.php:601
+PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /opt/html_git/18.x/lib/wiki-plugins/wikiplugin_customsearch.php on line 675
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\CacheClearCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\CacheClearCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. PreferencesLib->rebuildIndex() /opt/html_git/18.x/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:647
+PHP   9. PreferencesLib->getDependencies() /opt/html_git/18.x/lib/prefslib.php:177
+PHP  10. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:590
+PHP  11. PreferencesLib->loadData() /opt/html_git/18.x/lib/prefslib.php:99
+PHP  12. PreferencesLib->getFileData() /opt/html_git/18.x/lib/prefslib.php:545
+PHP  13. PreferencesLib->realLoad() /opt/html_git/18.x/lib/prefslib.php:551
+PHP  14. prefs_wikiplugin_list() /opt/html_git/18.x/lib/prefslib.php:578
+PHP  15. ParserLib->plugin_info() /opt/html_git/18.x/lib/prefs/wikiplugin.php:127
+PHP  16. ParserLib->plugin_exists() /opt/html_git/18.x/lib/parser/parserlib.php:601
+PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /opt/html_git/18.x/lib/wiki-plugins/wikiplugin_customsearch.php on line 675
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\CacheClearCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\CacheClearCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. PreferencesLib->rebuildIndex() /opt/html_git/18.x/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:647
+PHP   9. PreferencesLib->getDependencies() /opt/html_git/18.x/lib/prefslib.php:177
+PHP  10. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:590
+PHP  11. PreferencesLib->loadData() /opt/html_git/18.x/lib/prefslib.php:99
+PHP  12. PreferencesLib->getFileData() /opt/html_git/18.x/lib/prefslib.php:545
+PHP  13. PreferencesLib->realLoad() /opt/html_git/18.x/lib/prefslib.php:551
+PHP  14. prefs_wikiplugin_list() /opt/html_git/18.x/lib/prefslib.php:578
+PHP  15. ParserLib->plugin_info() /opt/html_git/18.x/lib/prefs/wikiplugin.php:127
+PHP  16. ParserLib->plugin_exists() /opt/html_git/18.x/lib/parser/parserlib.php:601
+PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /opt/html_git/18.x/lib/wiki-plugins/wikiplugin_customsearch.php on line 677
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\CacheClearCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\CacheClearCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. PreferencesLib->rebuildIndex() /opt/html_git/18.x/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:647
+PHP   9. PreferencesLib->getDependencies() /opt/html_git/18.x/lib/prefslib.php:177
+PHP  10. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:590
+PHP  11. PreferencesLib->loadData() /opt/html_git/18.x/lib/prefslib.php:99
+PHP  12. PreferencesLib->getFileData() /opt/html_git/18.x/lib/prefslib.php:545
+PHP  13. PreferencesLib->realLoad() /opt/html_git/18.x/lib/prefslib.php:551
+PHP  14. prefs_wikiplugin_list() /opt/html_git/18.x/lib/prefslib.php:578
+PHP  15. ParserLib->plugin_info() /opt/html_git/18.x/lib/prefs/wikiplugin.php:127
+PHP  16. ParserLib->plugin_exists() /opt/html_git/18.x/lib/parser/parserlib.php:601
+PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /opt/html_git/18.x/lib/wiki-plugins/wikiplugin_customsearch.php on line 685
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\CacheClearCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\CacheClearCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. PreferencesLib->rebuildIndex() /opt/html_git/18.x/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:647
+PHP   9. PreferencesLib->getDependencies() /opt/html_git/18.x/lib/prefslib.php:177
+PHP  10. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:590
+PHP  11. PreferencesLib->loadData() /opt/html_git/18.x/lib/prefslib.php:99
+PHP  12. PreferencesLib->getFileData() /opt/html_git/18.x/lib/prefslib.php:545
+PHP  13. PreferencesLib->realLoad() /opt/html_git/18.x/lib/prefslib.php:551
+PHP  14. prefs_wikiplugin_list() /opt/html_git/18.x/lib/prefslib.php:578
+PHP  15. ParserLib->plugin_info() /opt/html_git/18.x/lib/prefs/wikiplugin.php:127
+PHP  16. ParserLib->plugin_exists() /opt/html_git/18.x/lib/parser/parserlib.php:601
+PHP Notice:  Trying to access array offset on value of type bool in /opt/html_git/18.x/lib/prefslib.php on line 609
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\CacheClearCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\CacheClearCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. PreferencesLib->rebuildIndex() /opt/html_git/18.x/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:647
+PHP   9. PreferencesLib->getDependencies() /opt/html_git/18.x/lib/prefslib.php:177
+PHP Notice:  Trying to access array offset on value of type bool in /opt/html_git/18.x/lib/prefslib.php on line 610
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\CacheClearCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\CacheClearCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. PreferencesLib->rebuildIndex() /opt/html_git/18.x/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:647
+PHP   9. PreferencesLib->getDependencies() /opt/html_git/18.x/lib/prefslib.php:177
+PHP Notice:  Trying to access array offset on value of type bool in /opt/html_git/18.x/lib/prefslib.php on line 609
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\CacheClearCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\CacheClearCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. PreferencesLib->rebuildIndex() /opt/html_git/18.x/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:647
+PHP   9. PreferencesLib->getDependencies() /opt/html_git/18.x/lib/prefslib.php:177
+PHP Notice:  Trying to access array offset on value of type bool in /opt/html_git/18.x/lib/prefslib.php on line 610
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\CacheClearCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\CacheClearCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. PreferencesLib->rebuildIndex() /opt/html_git/18.x/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:647
+PHP   9. PreferencesLib->getDependencies() /opt/html_git/18.x/lib/prefslib.php:177
+PHP Notice:  Trying to access array offset on value of type bool in /opt/html_git/18.x/lib/prefslib.php on line 609
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\CacheClearCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\CacheClearCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. PreferencesLib->rebuildIndex() /opt/html_git/18.x/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:647
+PHP   9. PreferencesLib->getDependencies() /opt/html_git/18.x/lib/prefslib.php:177
+PHP Notice:  Trying to access array offset on value of type bool in /opt/html_git/18.x/lib/prefslib.php on line 610
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\CacheClearCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\CacheClearCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. PreferencesLib->rebuildIndex() /opt/html_git/18.x/lib/core/Tiki/Command/CacheClearCommand.php:49
+PHP   8. PreferencesLib->getPreference() /opt/html_git/18.x/lib/prefslib.php:647
+PHP   9. PreferencesLib->getDependencies() /opt/html_git/18.x/lib/prefslib.php:177
+PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /opt/html_git/18.x/lib/core/WikiParser/PluginMatcher.php on line 387
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\ProfileInstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. Tiki_Profile::fromNames() /opt/html_git/18.x/lib/core/Tiki/Command/ProfileInstallCommand.php:55
+PHP   8. Tiki_Profile::fromUrl() /opt/html_git/18.x/lib/core/Tiki/Profile.php:218
+PHP   9. Tiki_Profile->loadYaml() /opt/html_git/18.x/lib/core/Tiki/Profile.php:189
+PHP  10. spl_autoload_call() /opt/html_git/18.x/lib/core/Tiki/Profile.php:356
+PHP  11. Composer\Autoload\ClassLoader->loadClass() /opt/html_git/18.x/lib/core/Tiki/Profile.php:356
+PHP  12. Composer\Autoload\includeFile() /opt/html_git/18.x/vendor_bundled/vendor/composer/ClassLoader.php:322
+PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /opt/html_git/18.x/lib/core/WikiParser/PluginMatcher.php on line 600
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\ProfileInstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. Tiki_Profile::fromNames() /opt/html_git/18.x/lib/core/Tiki/Command/ProfileInstallCommand.php:55
+PHP   8. Tiki_Profile::fromUrl() /opt/html_git/18.x/lib/core/Tiki/Profile.php:218
+PHP   9. Tiki_Profile->loadYaml() /opt/html_git/18.x/lib/core/Tiki/Profile.php:189
+PHP  10. spl_autoload_call() /opt/html_git/18.x/lib/core/Tiki/Profile.php:356
+PHP  11. Composer\Autoload\ClassLoader->loadClass() /opt/html_git/18.x/lib/core/Tiki/Profile.php:356
+PHP  12. Composer\Autoload\includeFile() /opt/html_git/18.x/vendor_bundled/vendor/composer/ClassLoader.php:322
+PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /opt/html_git/18.x/lib/core/WikiParser/PluginArgumentParser.php on line 27
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\ProfileInstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. Tiki_Profile::fromNames() /opt/html_git/18.x/lib/core/Tiki/Command/ProfileInstallCommand.php:55
+PHP   8. Tiki_Profile::fromUrl() /opt/html_git/18.x/lib/core/Tiki/Profile.php:218
+PHP   9. Tiki_Profile->loadYaml() /opt/html_git/18.x/lib/core/Tiki/Profile.php:189
+PHP  10. spl_autoload_call() /opt/html_git/18.x/lib/core/Tiki/Profile.php:357
+PHP  11. Composer\Autoload\ClassLoader->loadClass() /opt/html_git/18.x/lib/core/Tiki/Profile.php:357
+PHP  12. Composer\Autoload\includeFile() /opt/html_git/18.x/vendor_bundled/vendor/composer/ClassLoader.php:322
+PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /opt/html_git/18.x/lib/core/WikiParser/PluginArgumentParser.php on line 35
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\ProfileInstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. Tiki_Profile::fromNames() /opt/html_git/18.x/lib/core/Tiki/Command/ProfileInstallCommand.php:55
+PHP   8. Tiki_Profile::fromUrl() /opt/html_git/18.x/lib/core/Tiki/Profile.php:218
+PHP   9. Tiki_Profile->loadYaml() /opt/html_git/18.x/lib/core/Tiki/Profile.php:189
+PHP  10. spl_autoload_call() /opt/html_git/18.x/lib/core/Tiki/Profile.php:357
+PHP  11. Composer\Autoload\ClassLoader->loadClass() /opt/html_git/18.x/lib/core/Tiki/Profile.php:357
+PHP  12. Composer\Autoload\includeFile() /opt/html_git/18.x/vendor_bundled/vendor/composer/ClassLoader.php:322
+PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /opt/html_git/18.x/lib/core/WikiParser/PluginArgumentParser.php on line 39
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\ProfileInstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. Tiki_Profile::fromNames() /opt/html_git/18.x/lib/core/Tiki/Command/ProfileInstallCommand.php:55
+PHP   8. Tiki_Profile::fromUrl() /opt/html_git/18.x/lib/core/Tiki/Profile.php:218
+PHP   9. Tiki_Profile->loadYaml() /opt/html_git/18.x/lib/core/Tiki/Profile.php:189
+PHP  10. spl_autoload_call() /opt/html_git/18.x/lib/core/Tiki/Profile.php:357
+PHP  11. Composer\Autoload\ClassLoader->loadClass() /opt/html_git/18.x/lib/core/Tiki/Profile.php:357
+PHP  12. Composer\Autoload\includeFile() /opt/html_git/18.x/vendor_bundled/vendor/composer/ClassLoader.php:322
+Installation failed:
+An error occurred: Object (#want_001) of type tracker_item in profiles.tiki.org:Barter_Market does not validate

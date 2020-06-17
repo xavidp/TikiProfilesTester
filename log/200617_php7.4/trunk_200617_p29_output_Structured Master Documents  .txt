@@ -1,0 +1,38 @@
+Installation completed.
+Queries executed successfully: 1551
+Array to string conversion on line 299 of /opt/html_git/trunk/lib/search/searchlib-unified.php
+Array to string conversion on line 299 of /opt/html_git/trunk/lib/search/searchlib-unified.php
+Trying to access array offset on value of type bool on line 670 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 671 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 670 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 671 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 670 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 671 of /opt/html_git/trunk/lib/prefslib.php
+error: <a title="Rebuild search index" href="tiki-admin.php?page=search&rebuild=now">Click here to rebuild index</a>
+
+
+Clearing all caches
+Trying to access array offset on value of type bool on line 670 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 671 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 670 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 671 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 670 of /opt/html_git/trunk/lib/prefslib.php
+Trying to access array offset on value of type bool on line 671 of /opt/html_git/trunk/lib/prefslib.php
+
+Trying to access array offset on value of type null on line 342 of /opt/html_git/trunk/lib/structures/structlib.php
+Trying to access array offset on value of type null on line 117 of /opt/html_git/trunk/lib/wiki/wikilib.php
+Profile applied.
+error: TikiLib::create_page: Cannot create page "D1 Cover", it already exists.)
+error: TikiLib::create_page: Cannot create page "D1 Copyright", it already exists.)
+error: TikiLib::create_page: Cannot create page "D1 Table of Contents", it already exists.)
+error: TikiLib::create_page: Cannot create page "D1 Preface", it already exists.)
+error: TikiLib::create_page: Cannot create page "D1 Chapter 1", it already exists.)
+error: TikiLib::create_page: Cannot create page "D1 Chapter 2", it already exists.)
+error: TikiLib::create_page: Cannot create page "D1 Chapter 3", it already exists.)
+error: TikiLib::create_page: Cannot create page "D1 Chapter 4", it already exists.)
+error: TikiLib::create_page: Cannot create page "D1 Chapter 2.1", it already exists.)
+error: TikiLib::create_page: Cannot create page "D1 Chapter 2.2", it already exists.)
+error: TikiLib::create_page: Cannot create page "D1 Apendix A", it already exists.)
+error: TikiLib::create_page: Cannot create page "D1 Apendix B", it already exists.)
+
+

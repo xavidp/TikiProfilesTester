@@ -1,0 +1,81 @@
+PHP Notice:  Array to string conversion in /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php on line 647
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\ProfileInstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. Tiki_Profile_Installer->install() /opt/html_git/18.x/lib/core/Tiki/Command/ProfileInstallCommand.php:79
+PHP   8. Tiki_Profile_Installer->doInstall() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:430
+PHP   9. Tiki_Profile_Installer->applyPreferences() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:492
+PHP Notice:  Array to string conversion in /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php on line 647
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\ProfileInstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. Tiki_Profile_Installer->install() /opt/html_git/18.x/lib/core/Tiki/Command/ProfileInstallCommand.php:79
+PHP   8. Tiki_Profile_Installer->doInstall() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:430
+PHP   9. Tiki_Profile_Installer->applyPreferences() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:492
+PHP Notice:  Undefined index: user_category_watch_editor in /opt/html_git/18.x/lib/notifications/notificationemaillib.php on line 697
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\ProfileInstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. Tiki_Profile_Installer->install() /opt/html_git/18.x/lib/core/Tiki/Command/ProfileInstallCommand.php:79
+PHP   8. Tiki_Profile_Installer->doInstall() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:430
+PHP   9. Tiki_Profile_InstallHandler_Category->install() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:511
+PHP  10. Tiki_Profile_InstallHandler_Category->_install() /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. CategLib->add_category() /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler/Category.php:70
+PHP  12. CategLib->notify() /opt/html_git/18.x/lib/categories/categlib.php:256
+PHP  13. sendCategoryEmailNotification() /opt/html_git/18.x/lib/categories/categlib.php:1641
+PHP Warning:  PDOStatement::execute(): SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'catObjectId' cannot be null in /opt/html_git/18.x/lib/core/TikiDb/Pdo.php on line 84
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\ProfileInstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. Tiki_Profile_Installer->install() /opt/html_git/18.x/lib/core/Tiki/Command/ProfileInstallCommand.php:79
+PHP   8. Tiki_Profile_Installer->doInstall() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:430
+PHP   9. Tiki_Profile_InstallHandler_Category->install() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:511
+PHP  10. Tiki_Profile_InstallHandler_Category->_install() /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP  11. CategLib->categorize_any() /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler/Category.php:82
+PHP  12. CategLib->add_categorized_object() /opt/html_git/18.x/lib/categories/categlib.php:811
+PHP  13. CategLib->query() /opt/html_git/18.x/lib/categories/categlib.php:323
+PHP  14. TikiDb_Pdo->query() /opt/html_git/18.x/lib/core/TikiDb/Bridge.php:27
+PHP  15. TikiDb_Pdo->_query() /opt/html_git/18.x/lib/core/TikiDb/Pdo.php:125
+PHP  16. PDOStatement->execute() /opt/html_git/18.x/lib/core/TikiDb/Pdo.php:84
+Installation failed:
+Applying profile: Revision Approval (ISO9001)  
+Preference set: feature_categories=y
+Preference set: feature_community_mouseover=y
+Preference set: feature_group_watches=y
+Preference set: feature_messages=y
+Preference set: feature_mytiki=y
+Preference set: feature_syntax_highlighter=y
+Preference set: feature_syntax_highlighter_theme=default
+Preference set: feature_user_watches=y
+Preference set: feature_wiki_categorize_structure=y
+Preference set: feature_wiki_make_structure=y
+Preference set: feature_wiki_print=y
+Preference set: feature_wiki_multiprint=y
+Preference set: feature_wiki_open_as_structure=y
+Preference set: feature_wiki_structure=y
+Preference set: flaggedrev_approval=y
+Preference set: feature_wiki_argvariable=y
+Preference set: search_default_where=Array
+Preference set: unified_identifier_fields=Array
+Preference set: user_show_realnames=y
+Preference set: users_prefs_show_mouseover_user_info=y
+Preference set: users_prefs_user_information=public
+Preference set: wiki_auto_toc=y
+Preference set: instructions=Profile_ISO9001_instructions
+An error occurred: Column 'catObjectId' cannot be null

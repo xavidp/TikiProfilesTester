@@ -1,0 +1,15 @@
+Installation completed.
+Queries executed successfully: 928
+Clearing all caches
+PHP Notice:  Array to string conversion in /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php on line 647
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\ProfileInstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. Tiki_Profile_Installer->install() /opt/html_git/18.x/lib/core/Tiki/Command/ProfileInstallCommand.php:79
+PHP   8. Tiki_Profile_Installer->doInstall() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:430
+PHP   9. Tiki_Profile_Installer->applyPreferences() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:533
+Profile applied.

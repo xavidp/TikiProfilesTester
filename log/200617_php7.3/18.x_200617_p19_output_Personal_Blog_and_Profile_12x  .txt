@@ -1,0 +1,35 @@
+Installation completed.
+Queries executed successfully: 928
+Clearing all caches
+PHP Notice:  Undefined index: use_author in /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler/Blog.php on line 61
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\ProfileInstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. Tiki_Profile_Installer->install() /opt/html_git/18.x/lib/core/Tiki/Command/ProfileInstallCommand.php:79
+PHP   8. Tiki_Profile_Installer->doInstall() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:430
+PHP   9. Tiki_Profile_InstallHandler_Blog->install() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:511
+PHP  10. Tiki_Profile_InstallHandler_Blog->_install() /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Notice:  Undefined index: add_date in /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler/Blog.php on line 62
+PHP Stack trace:
+PHP   1. {main}() /opt/html_git/18.x/console.php:0
+PHP   2. Tiki\Command\Application->run() /opt/html_git/18.x/console.php:80
+PHP   3. Tiki\Command\Application->doRun() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:148
+PHP   4. Tiki\Command\Application->doRunCommand() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:255
+PHP   5. Tiki\Command\ProfileInstallCommand->run() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Application.php:987
+PHP   6. Tiki\Command\ProfileInstallCommand->execute() /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php:255
+PHP   7. Tiki_Profile_Installer->install() /opt/html_git/18.x/lib/core/Tiki/Command/ProfileInstallCommand.php:79
+PHP   8. Tiki_Profile_Installer->doInstall() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:430
+PHP   9. Tiki_Profile_InstallHandler_Blog->install() /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php:511
+PHP  10. Tiki_Profile_InstallHandler_Blog->_install() /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler.php:24
+PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function BlogLib::replace_blog(), 13 passed in /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler/Blog.php on line 66 and at least 21 expected in /opt/html_git/18.x/lib/blogs/bloglib.php:472
+Stack trace:
+#0 /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler/Blog.php(66): BlogLib->replace_blog('My Personal Blo...', 'Random daily th...', 'admin', 'n', 10, 0, '', NULL, NULL, 'y', 'y', 'n', '')
+#1 /opt/html_git/18.x/lib/core/Tiki/Profile/InstallHandler.php(24): Tiki_Profile_InstallHandler_Blog->_install()
+#2 /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php(511): Tiki_Profile_InstallHandler->install()
+#3 /opt/html_git/18.x/lib/core/Tiki/Profile/Installer.php(430): Tiki_Profile_Installer->doInstall(Object(Tiki_Profile), false)
+#4 /opt/html_git/18.x/lib/core/Tiki/Command/ProfileInstallCommand.php(79): Tiki_Profile_Installer->install(Object(Tiki_Profile), 'all', false)
+#5 /opt/html_git/18.x/vendor_bundled/vendor/symfony/console/Command/Command.php(255) in /opt/html_git/18.x/lib/blogs/bloglib.php on line 472
