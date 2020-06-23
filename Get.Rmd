@@ -1,5 +1,5 @@
 ---
-title: "TikiProfilesTester"
+title: "TikiProfilesTester - Get Results"
 author: "Xavier de Pedro Puente"
 output: html_document
 ---
@@ -311,7 +311,6 @@ if (F) {
 ```
 
 
-
 ```{rn Extract R code and save on disk, echo=T}
-purl("TikiProfilesTester.Rmd", documentation = 0)
+purl("Get.Rmd", documentation = 2)
 ```

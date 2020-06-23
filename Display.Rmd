@@ -1,0 +1,123 @@
+---
+title: "TikiProfilesTester - Display results"
+author: "Xavier de Pedro Puente"
+output:
+  html_document:
+    code_folding: hide
+---
+
+```{r}
+# Libraries needed
+if (!require(pacman)) install.packages("pacman"); require(pacman)
+p_load(knitr,
+       devtools,
+       readr,
+       tidyr,
+       fs,
+       purrr,
+       here,
+       dplyr,
+       janitor,
+       stringr,
+       rpivotTable)
+
+
+```
+
+## Load result files
+
+```{r message=FALSE, warning=FALSE}
+# list files
+path.abs.results <- file.path(here(), "results")
+
+path.abs.results %>% 
+#  dir_ls(glob = "*12.x.csv|*15.x.csv|*18.x.csv|*21.x.csv|*trunk.csv", recurse=TRUE) 
+  dir_ls(glob = "*12.x.csv|*15.x.csv|*18.x.csv|*21.x.csv", recurse=TRUE) 
+
+
+# Load files
+d <- path.abs.results %>% 
+#  dir_ls(regexp = "\\.csv$") %>%
+  dir_ls(glob = "*12.x.csv|*15.x.csv|*18.x.csv|*21.x.csv", recurse=TRUE) %>% 
+  map_dfr(read_csv, .id = "source") %>% 
+  clean_names() %>% 
+#  mutate(source=str_replace(source, path.abs.results, ""))
+  mutate(
+    profile_name=case_when(
+      !is.na(profile_name_12_x) ~ profile_name_12_x,
+      !is.na(profile_name_15_x) ~ profile_name_15_x,
+      !is.na(profile_name_18_x) ~ profile_name_18_x,
+      !is.na(profile_name_21_x) ~ profile_name_21_x,
+#      !is.na(profile_name_trunk) ~ profile_name_trunk,
+      TRUE ~ "-")
+  ) %>% 
+  mutate(
+    ver=case_when(
+      !is.na(version) ~ version,
+      !is.na(versions_vv) ~ versions_vv,
+      TRUE ~ "-"),
+      rev=case_when(
+      !is.na(revision) ~ revision,
+      !is.na(revision_vv) ~ revision_vv,
+      TRUE ~ "-")
+  ) %>% 
+#  mutate(phpv=str_replace(phpv, "PHP ", ""))
+  mutate(revision_vv=str_replace(revision_vv, "Revision: ", "")) %>% 
+  separate(phpv, into=c("php_s", "php_v", "php_rest"), sep=" ") %>% 
+  mutate(phpv = php_v) %>% 
+    select(-source,
+         -profile_name_12_x,
+         -profile_name_15_x,
+         -profile_name_18_x,
+         -profile_name_21_x,
+#         -profile_name_trunk,
+         -php_s,
+         -php_v,
+         -php_rest,
+         -versions_vv,
+         -revision_vv,
+         -version,
+         -revision,
+         -profile_category)
+  
+d
+```
+
+# Make some quick charts showing evolution over time
+
+```{r}
+# Evolution over time
+rpivotTable(d, 
+            rows=c("ver"),
+            cols=c("test_date"),
+            rendererName= "Bar Chart",
+            aggregatorName= "Average",
+            vals="n_errors",
+            locale="en",
+            subtotals=FALSE,
+#            exclusions=list(phpv=list("null")),
+            width=1200
+            )
+```
+
+## Make some quick display through a pivot table
+
+```{r}
+rpivotTable(d, 
+            rows=c("profile_name"),
+            cols=c("ver", "phpv"),
+            rendererName= "Heatmap",
+            aggregatorName= "Average",
+            vals="n_errors",
+            locale="en",
+            subtotals=FALSE,
+#            exclusions=list(phpv=list("null")),
+            width=1200
+            )
+```
+
+
+```{rn Extract R code and save on disk, eval=FALSE, include=FALSE}
+# Last steps
+purl("Display.Rmd", documentation = 2)
+```
