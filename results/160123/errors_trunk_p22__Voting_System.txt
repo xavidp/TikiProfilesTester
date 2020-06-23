@@ -1,1 +1,0 @@
-An error occurred: Cannot add user user1 to nonexistent group Group1
