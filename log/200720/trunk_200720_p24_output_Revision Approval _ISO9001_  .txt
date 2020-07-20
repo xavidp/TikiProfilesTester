@@ -1,0 +1,28 @@
+PDOStatement::execute(): SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'catObjectId' cannot be null on line 100 of /opt/html_git/trunk/lib/core/TikiDb/Pdo.php
+Installation failed:
+Applying profile: Revision Approval (ISO9001)  
+Preference set: feature_categories=y
+Preference set: feature_community_mouseover=y
+Preference set: feature_group_watches=y
+Preference set: feature_messages=y
+Preference set: feature_mytiki=y
+Preference set: feature_syntax_highlighter=y
+Preference set: feature_syntax_highlighter_theme=default
+Preference set: feature_user_watches=y
+Preference set: feature_wiki_categorize_structure=y
+Preference set: feature_wiki_make_structure=y
+Preference set: feature_wiki_print=y
+Preference set: feature_wiki_multiprint=y
+Preference set: feature_wiki_open_as_structure=y
+Preference set: feature_wiki_structure=y
+Preference set: flaggedrev_approval=y
+Preference set: feature_wiki_argvariable=y
+Preference set: search_default_where=wiki page
+Preference set: unified_identifier_fields=language, gallery_id, searchable, view_permission, primary_image, geo_located, geo_location, title_initial, url, object_type, object_id, addongroup, addonleadergroup, addonpendinggroup
+Preference set: user_show_realnames=y
+Preference set: users_prefs_show_mouseover_user_info=y
+Preference set: users_prefs_user_information=public
+Preference set: wiki_auto_toc=y
+Preference set: instructions=Profile_ISO9001_instructions
+An error occurred: Column 'catObjectId' cannot be null
+

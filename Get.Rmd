@@ -311,6 +311,6 @@ if (F) {
 ```
 
 
-```{rn Extract R code and save on disk, echo=T}
+```{r Extract R code and save on disk, echo=T}
 purl("Get.Rmd", documentation = 2)
 ```

@@ -1,0 +1,1 @@
+PHP  14. TikiDb_Pdo->query($query = *uninitialized*, $values = *uninitialized*, $numrows = *uninitialized*, $offset = *uninitialized*, $reporterrors = *uninitialized*) /opt/html_git/18.x/lib/core/TikiDb.php:84 An error occurred: Duplicate entry found (profiles.tiki.org-Dynamic_items_list_demo  -dynamicProducts)

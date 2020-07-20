@@ -1,0 +1,10 @@
+Installation completed.
+Queries executed successfully: 1547
+error: <a title="Rebuild search index" href="tiki-admin.php?page=search&rebuild=now">Click here to rebuild index</a>
+
+
+Clearing all caches
+
+count(): Parameter must be an array or an object that implements Countable on line 384 of /opt/html_git/21.x/lib/diff.php
+Profile applied.
+

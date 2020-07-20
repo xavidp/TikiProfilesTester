@@ -1,0 +1,1 @@
+PHP Fatal error:  Uncaught Error: Call to a member function renderOutput() on boolean in /opt/html_git/18.x/lib/trackers/trackerlib.php:3789

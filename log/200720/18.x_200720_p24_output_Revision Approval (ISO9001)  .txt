@@ -1,0 +1,3 @@
+Installation completed.
+Queries executed successfully: 928
+Clearing all caches

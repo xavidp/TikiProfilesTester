@@ -1,0 +1,46 @@
+Installation completed.
+Queries executed successfully: 1551
+Array to string conversion on line 299 of /opt/html_git/trunk/lib/search/searchlib-unified.php
+Array to string conversion on line 299 of /opt/html_git/trunk/lib/search/searchlib-unified.php
+error: <a title="Rebuild search index" href="tiki-admin.php?page=search&rebuild=now">Click here to rebuild index</a>
+
+
+Clearing all caches
+
+Not quoting the scalar "%id%" starting with the "%" indicator character is deprecated since Symfony 3.1 and will throw a ParseException in 4.0 on line 30. on line 359 of /opt/html_git/trunk/vendor_bundled/vendor/symfony/yaml/Inline.php
+Not quoting the scalar "%id%" starting with the "%" indicator character is deprecated since Symfony 3.1 and will throw a ParseException in 4.0 on line 30. on line 359 of /opt/html_git/trunk/vendor_bundled/vendor/symfony/yaml/Inline.php
+Not quoting the scalar "%id%" starting with the "%" indicator character is deprecated since Symfony 3.1 and will throw a ParseException in 4.0 on line 30. on line 359 of /opt/html_git/trunk/vendor_bundled/vendor/symfony/yaml/Inline.php
+PDOStatement::execute(): SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'profiles.tiki.org-Tracker_as_Calendar_19 -trac_as_cal' for key 'PRIMARY' on line 100 of /opt/html_git/trunk/lib/core/TikiDb/Pdo.php
+Installation failed:
+Applying profile: Tracker_as_Calendar_19
+Preference set: calendar_fullcalendar=y
+Preference set: feature_trackers=y
+Preference set: feature_user_watches=y
+Preference set: feature_wiki_argvariable=y
+Preference set: feature_jquery_tablesorter=y
+Preference set: feature_left_column=y
+Preference set: wikiplugin_trackercalendar=y
+Preference set: trackerfield_dropdownother=y
+Preference set: instructions=Profile_Tracker_as_Calendar_page_19
+Added (or modified): tracker "Tracker to show items through a calendar"
+Added (or modified): tracker_field "Summary"
+Added (or modified): tracker_field "Location"
+Added (or modified): tracker_field "Priority"
+Added (or modified): tracker_field "Description"
+Added (or modified): tracker_field "Start date"
+Added (or modified): tracker_field "End date"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker_item "No name"
+Added (or modified): tracker_item "No name"
+Added (or modified): module "last_modif_tracker_items"
+Added (or modified): module "last_tracker_comments"
+Added (or modified): wiki_page "Tracker_as_Calendar_19"
+Added (or modified): plugin_alias "event"
+Applying profile: Tracker_as_Calendar_19 
+An error occurred: Duplicate entry found (profiles.tiki.org-Tracker_as_Calendar_19 -trac_as_cal) for key 'PRIMARY'
+
